@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
     <meta title="TESTING ZONE VER 2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Zone ver.2</title>
-    <!--<script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>-->
+    <title>Địt mẹ Hamilton</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Begin copy text code -->
@@ -12,14 +11,15 @@
         function copyToClipboard(element) {
             var $temp = $("<textarea>");
             $("body").append($temp);
-            $temp.val($(element).html().trim().replace(/  +/g, ' ').replace('<span class="hashtag">', '').replace('</span>', '').replace(/<br\s*[\/]?>/gi, "")).select();
+            $temp.val($(element).html().trim().replace(/  +/g, ' ').replace('<span class="hashtag">', '').replace('<span class="karambit">', '').replace('</span>', '').replace(/<br\s*[\/]?>/gi, "")).select();
             document.execCommand("copy");
             $temp.remove();
         }
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery-min.js"></script>
     <!-- End copy text code -->
     <script src="smoothscroll.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="menu">
-            <a><span class="icon fa fa-moon" id="fuckdarkmode"></span><span class="text">Dark Mode</span></a>
+            <a><span class="icon fa fa-moon" id="fuckdm" onclick="theThing()"></span><span class="text" id="fuckdarkmode">Dark Mode</span></a>
 			<a href="#wibu" class="smoothScroll"><span class="icon fab fa-accessible-icon"></span><span class="text">Văn mẫu Wibu</span></a>
 			<a href="#chuinhau" class="smoothScroll"><span class="icon fas fa-comments"></span><span class="text">Văn mẫu chửi nhau</span></a>
 			<a href="#khochiu" class="smoothScroll"><span class="icon fas fa-flushed"></span><span class="text">Khiến người khác khó chịu khi nhìn vào</span></a>
@@ -44,19 +44,7 @@
             <a href="#csgo" class="smoothScroll"><span class="icon fas fa-hat-wizard"></span><span class="text">VN-CSGO</span></a>
 		</div>
 	</div>
-    <!--nav bar-->
-    <!--<nav class="floating-menu">
-        <div class="icon">
-         <i class="fa fa-bars fa-2x"></i>
-        </div>
-        <div class="menu-text">
-        <a href="#wibu" class="smoothScroll">deo co gi</a>
-        <a href="#chuinhau" class="smoothScroll">o day dau</a>
-        <a href="#khochiu" class="smoothScroll">cut</a>
-        </div>
-      </nav>-->
-    <!--end nav bar-->
-    <h2 style="text-align: center;">JS buoi cho</h2>
+    <h2 style="text-align: center;">Khu vực thử nghiệm cho <a href="https://ditmenavi.xyz" style="text-decoration: none; color: var(--text);">Địt mẹ Navi</a></h2>
     <!--<button class="button-dark-mode" id="fuckdarkmode" onclick="theThing()" value="toggle Light Mode">toggle Light Mode</button>-->
     <!--accordion 1-->
     <div class="accordion-menu">
@@ -698,6 +686,31 @@
                     <button class="button-copy" onclick="copyToClipboard('#pc42')">Copy text</button>
                 </p>
             </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Trace tranh</h2>
+                <p><span id="pc43">Vì quá bức xúc vấn nạn trace tranh nên mình phốt bạn này cho chừa 😠 👊 ôi bạn ơi bạn nhìn con oc bạn có xứng để collab với người ta ko 😫😫? Nhìn bộ quần áo chắc chắn là trace luôn, không khác 1 tí nào, phơi phới tưa tưa ko khác gì bản gốc😱 bạn nghĩ có thể làm màu nhạt tí là có thể thoát á? Ui trời ơi ko khác gì luôn 😤😤😤 cái tay cũng y chang luôn, tỉ lệ tay nhỏ nhắn đó nhìn ko khác gì! nhìn bạn trace mà mình mắc ói 😠😵 bạn nghĩ sao mà vẽ y chang và đổi màu là thành oc bạn à? Tóc cũng thế ko khác gì luôn? Bạn vẽ đường cong tóc kiểu gì mà sao giống đến thế? 😡😡 ko những giống tóc mà mắt giống cả màu sắc luôn 😦  bạn ơi tôn trọng artist tí đi bạn, ko thôi mình tới nhà mình đấm cho bạn khỏi trace luôn á. Bạn nào là artist né né bạn này ra nha ko thôi bạn này trace đó <br>:)))))</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pc43')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Vk à</h2>
+                <p><span id="pc44">vk à 😊😊 <br>
+                    ck mún ns vs vk rằng là☺️☺️ chúg đã ko còn trẻ nx😔 ck 10t vk 9000t 😊😊 cũng ko còn nhỏ nx❤️ chúng ta nên xinh con đẽ cái để sau này nó báo hiếu cho chúng mik ☺️☺️☺️☺️ <br>
+                    ck sẽ cố gắng hết mik vì vk.🥰<br>
+                    ck bik rằng nhìu lúc vk dận ck lắm😭<br>
+                    do ck tánh con nít☺️☺️<br>
+                    nhưng cho dù cs j ik nx <br>
+                    thì ck vẫn mãi mãi iu vk❤️❤️<br>
+                    mong vk thông cảm cho ck 🤗🤗<br>
+                    sau bài viết này☺️ ck mún ns vs vk rằng ☺️☺️ ck iu vk nhìu lắm❤️ <br>
+                    iu vk❤️❤️❤️❤️</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pc44')">Copy text</button>
+                </p>
+            </li>
         </ul>
     </div>
     <div class="accordion-menu">
@@ -1324,17 +1337,1085 @@
                     <button class="button-copy" onclick="copyToClipboard('#pd34')">Copy text</button>
                 </p>
             </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Mông</h2>
+                <p><span id="pd35">Anh muốn nhìn mông em gửi hình mông cho anh nhé em<br>
+                    Anh muốn mình không phải nói hình mông mà vẫn có xem<br>
+                    Em nói hình mông em gửi thì không được cho nó xem<br>
+                    Anh nói đừng lo anh ngó một giây rồi anh xóa ngay<br>
+                    Bởi vì hình mông em trông không giống như mông con Hồng<br>
+                    Bởi vì hình mông em cho anh sống giấc mộng mùa đông<br>
+                    Từ trên xuống dưới anh chỉ muốn cưới cái mông em về<br>
+                    Để cho anh nhìn anh ngắm anh mân mê<br>
+                    Em gửi hình mông sao dính chùm lông bạn trai của em<br>
+                    Anh thích hình mông chỉ có hình mông hình mong của em<br>
+                    Một tấm hình mông hai tấm hình mông nhìn không có phê<br>
+                    Chỉ muốn nhìn mông một tấm hình mông mà sao khó ghê</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pd35')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Con nhện</h2>
+                <p><span id="pd36">Trong 1 lúc dọn phòng năm lớp 7 tôi vô tình thấy con nhện con nên tôi k giết nó và cho nó ăn nhưng tôi phát hiện ra rằng nó hút máu con mồi 1 lúc thì nhả luôn nên lần sau tôi cho nó hút máu của mình thử ai ngờ nó hút thật nó cx k đau lắm nó tê tê thôi kể từ đó tôi cho nó hút máu của mình thay vì động vật sau 10 năm là thời điểm bây giờ. Tôi đang buồn chán và cô đơn thì con nhện nhảy ra bây h nó to bằng bắp chân tôi rồi, tôi tưởng nó đói nên cho nó hút máu nó cũng rất cẩn thận nó biết răng nó to hơn rất nhiêu nên nó cho 1 chút chất độc tê vào người tôi nên tôi cũng ko đau lắm, lần này nó hút máu nhiều hơn bình thường nên tôi nghĩ rằng nó lớn hơn nên hút nhiều hơn nên ko để ý sau vài phút cả người nó bắt đầu hoá màu đỏ tôi còn tưởng nó bị gì nên rất lo cho nó sau đó thì rất nhiều hoa văn khác nhau xuất hiện sau đó nó hoá thành hình dáng của 1 con người con gái với mái tóc đen ngực cỡ D-cup thế là trong lúc mất nhiều máu với sự xuất hiện của cô gái trước mặt tôi thì t ngất đi. Sau 1 hồi ngủ thì tôi thức dậy thấy em nó đã mặc đồ rồi và nó giải thích cho tôi là nó là con nhện tôi hay nuôi biến thành, tôi hỏi nó tại sao em lại biết nói tiếng việt thì em nó bảo do em hay nghe anh giao tiếp với người khác nên em học theo em có đọc mấy cuốn sách của anh nữa nên em biết rõ tiếng việt và sau đó chúng tôi địt nhau</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pd36')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Touch grass</h2>
+                <p><span id="pd37">Hiện nay, có một thuật ngữ đang được sử dụng thường xuyên trên internet, đặc biệt là bởi những game thủ. Đó chính là “touch grass” (chạm cỏ).<br>
+                    Nhiều người nghĩ rằng nó chỉ là một câu đùa vô hại, nhưng họ không biết rằng điều đó vô tình cổ vũ hành vi xâm hại tình dục cỏ. Cỏ cũng có cảm xúc, họ không hề muốn bị chạm vào.<br>
+                    Hãy dừng hành vi xâm hại này lại, đừng sử dụng thuật ngữ này.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pd37')">Copy text</button>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="accordion-menu">
+        <h1 name="postnay">POST NÀY KHIẾN TÔI MUỐN</h1>
+        <ul>
+            <!--tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi bạn muốn đưa ra lời khuyên</h2>
+                <p><span id="pe01">Này ông, tôi không biết mọi người thấy meme này như thế nào, nhưng đối với tôi, nó tuyệt lắm, cơ mà có vẻ như nó không đáp ứng được tiêu chí là một món ăn tinh thần cho anh em trong group và cả tôi, tôi chắc chắn rằng ông có thể tạo ra những meme còn tuyệt hơn như thế này nhiều, tôi và cả anh em trong group cảm thấy thật hạnh phúc khi có ông trong group, chúng tôi tự hào và xúc động về những cố gắng ông đã đóng góp để phát triển group của chúng ta, tôi thật may mắn vì đã gặp được ông, chào ông và thân ái</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe01')">Copy text</button>
+                </p>
+            </li>
+            <!--end tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi ai đó vừa đăng gì đó cực ngu</h2>
+                <p><span id="p502">Theo mình thì không nên đăng những bài như thế này. Cái xấu xa, mình phải quên nó đi, cho nó mất dần. K nên nhắc lại. Ng tốt sẽ bị ám ảnh, k tốt cho tinh thần, ng xấu sẽ ghi nhận. Ng k hiểu biết sẽ ghi nhớ. Và nếu nhóm còn đăng nhiều bài như t… thế này thì mình sẽ rời nhóm. Cuộc sống rất ngắn ngủi, tại sao phải để tâm đến điều cần quên đi. Hãy sống tích cực và tươi sáng.</span><br>
+                <button class="button-copy" onclick="copyToClipboard('#p502')">Copy text</button>
+
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Giống cái trên nhưng dài hơn</h2>
+                <p><span id="pe03">Post của bạn khiến tôi bị: Phình động mạch chủ bụng Viêm túi mật cấp tính Ung thư máu Bệnh bạch cầu tủy cấp tính Viêm tụy cấp Suy tuyến thượng thận nguyên phát Bệnh gan liên quan đến rượu Viêm mũi dị ứng Bệnh Alzheimer Ung thư hậu môn Sốc phản vệ Phù mạch Viêm cột sống dính khớp Chán ăn tâm thần Rối loạn lo âu Viêm ruột thừa Viêm khớp Bệnh bụi phổi amiăng Hen suyễn Mù lòa Rối loạn tăng động thái chú ý Rối loạn phổ tự kỷ Mở rộng tuyến tiền liệt Ung thư ống mật Mất khẩu vị Rối loạn lưỡng cực Ung thư bàng quang Nhiễm trùng huyết Ung thư xương Ung thư ruột Đại tiện không tự chủ Polyp đại trực tràng Bại não Khối u não Ung thư vú Giãn phế quản Viêm phế quản Cuồng ăn Biến dạng ngón chân cái Viêm chảy Viêm mô tế bào Ung thư cổ tử cung Nhiễm trùng ngực Đau ngực Sởi Thủy đậu Bệnh cước tay chân Hội chứng mệt mỏi mãn tính Bệnh bạch cầu lymphocytic mãn tính Bệnh bạch cầu dòng tủy mãn tính Bệnh phổi tắc nghẽn mạn tính Viêm tụy mãn tính Xơ gan Vi khuẩn gây viêm đại tràng giả mạc Rối loạn tự miễn dịch Cảm lạnh Hôn mê Bệnh tim thông thường Bệnh tim bẩm sinh Viêm kết mạc Táo bón Bệnh phong COVID-19 Ho Viêm đường ruột mãn tính Viêm thanh khí phế quản cấp Xơ nang Viêm bàng quang Điếc Huyết khối tĩnh mạch sâu Mất nước Sa sút trí tuệ Áp xe răng Phiền muộn Viêm da herpes Bệnh tiêu chảy Viêm túi thừa Chóng mặt Hội chứng đao Khô miệng Chứng khó nuốt Loạn trương lực cơ Đau tai Ráy tai tích tụ Ebola Câm Có thai ngoài tử cung Lạc nội mạc tử cung Động kinh Rối loạn cương dương E. coli Ung thư mô liên kết xương Ung thư mắt Sốt Co giật do sốt U xơ Đau cơ xơ Đầy hơi Cúm Rối loạn phổ rượu ở thai nhi Ngộ độc thực phẩm Nhiễm nấm móng Ung thư túi mật Sỏi mật U nang hạch Viêm dạ dày ruột Bệnh trào ngược dạ dày thực quản Mụn rộp sinh dục Mụn cóc sinh dục Khối u tế bào mầm Sốt tuyến Bệnh Gout Bệnh nướu răng Trĩ nội Trĩ ngoại Bệnh bạch cầu tế bào lông Bệnh tay chân miệng Ung thư đầu cổ Chấy Nhức đầu Mất thính lực Suy tim Viêm gan A Viêm gan B Viêm gan C Thoát vị đĩa đệm Cholesterol cao HIV / AIDS Ung thư hạch Rối loạn di truyền làm chết não Tăng tiết mồ hôi Tăng đường huyết Hạ đường huyết Xơ hóa phổi tự phát Chốc lở Khó tiêu Móng chân mọc ngược Mất ngủ Thiếu máu thiếu sắt Hội chứng ruột kích thích Hông kích thích Ngứa Ung thư thận Nhiễm trùng thận Sỏi thận Đái đường Viêm mê đạo tai Hội chứng không dung nạp Lactose Bệnh mô bào Viêm thanh quản Ung thư thanh quản Chuột rút Địa y Ung thư gan Khối u gan Mất ham muốn Ung thư phổi Bệnh Lyme Phù bạch huyết Sốt rét Khối u não ác tính Suy dinh dưỡng Bệnh sởi Viêm màng não Mãn kinh U trung biểu mô Nhiễm trùng tai giữa Đau nửa đầu Sẩy thai Bệnh thần kinh vận động Ung thư miệng Miệng loét Đa u tủy Bệnh đa xơ cứng Quai bị Rối loạn thính lực Ung thư mũi và xoang Ung thư vòm họng U nguyên bào thần kinh Khối u thần kinh Bệnh gan nhiễm mỡ không do rượu Ung thư hạch không Hodgkin Chảy máu cam Béo phì Rối loạn ám ảnh cưỡng chế Ngưng thở khi ngủ Ung thư thực quản Nấm miệng ở người lớn Viêm xương khớp Loãng xương Loạn sản xương Viêm tai ngoài Bệnh ung thư buồng trứng U nang buồng trứng Tuyến giáp thừa Bệnh Paget vú Ung thư tuyến tụy Bệnh tâm thần hoảng loạn Bệnh Parkinson Viêm cơ quan vùng chậu Ung thư dương vật Bệnh lý thần kinh ngoại biên Rối loạn nhân cách Bệnh phổi Viêm phổi Viêm đa khớp dạng thấp Rối loạn căng thẳng sau chấn thương Trầm cảm sau khi sinh Thai kỳ Loét áp lực Ung thư tuyến tiền liệt Viêm khớp vảy nến Tâm thần Sốt xuất huyết Khối u hiếm Co thắt động mạch Viêm khớp phản ứng Hội chứng chân tay bồn chồn U nguyên bào võng mạc Ung thư mô liên kết Viêm khớp dạng thấp Bệnh giun đũa và các bệnh nhiễm nấm Chứng đỏ mặt Bệnh ghẻ Sốt đỏ Tâm thần phân liệt Vẹo cột sống Sốc nhiễm trùng Nhiễm trùng lây qua đường tình dục Tấm lợp Khó thở Bệnh hồng cầu hình liềm Viêm xoang Hội chứng Sjogren Hội chứng Stockholm Ung thư da Hội chứng má tát Sacôm mô mềm Đau họng Xơ gan lá lách to Đau dạ dày và đau bụng Ung thư dạ dày Loét dạ dày Căng thẳng, lo lắng và tâm trạng thấp Đột quỵ Tả Cháy nắng Sưng hạch bạch huyết Sưng tinh hoàn Ung thư tinh hoàn Khát nước Giun kim Bệnh tưa miệng Ung thư tuyến giáp Ù tai Viêm amiđan Sâu răng Bệnh đau răng Thiếu máu não thoáng qua Đau dây thần kinh sinh ba Lao phổi Liệt cơ Bệnh tiểu đường loại 1 Bệnh tiểu đường loại 2 Viêm loét đại tràng Tuyến giáp thấp Nhiễm trùng đường tiết niệu Mề đay Ung thư âm đạo Viêm âm đạo Bệnh chàm Suy tĩnh mạch Loét tĩnh mạch chân Chóng mặt Thiếu máu Nôn Mụn cóc Bệnh ho gà Khối u nguyên bào thận Sốt vàng da
+                </span><br>
+                <button class="button-copy" onclick="copyToClipboard('#pe03')">Copy text</button>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi post này không vui</h2>
+                <p><span id="pe04">Không vui chút nào, tôi đã không cười. Trò đùa của bạn thật tệ, tôi sẽ thích trò đùa này nếu nó được xoá khỏi đầu tôi và bạn vui lòng từ bỏ nói lại cho tôi trò đùa đấy. Nói thật, đây là một nỗ lực kinh khủng khi cố gắng để mang một nụ cười ra khỏi tôi. Không phải cười, không phải hehe, thậm chí không phải là một sự bùng nổ tinh tế từ thực quản của tôi. Khoa học có nói trước khi bạn cười não của bạn chuẩn bị cơ mặt nhưng tôi thậm chí không cảm thấy một chuyển động nào dù là nhỏ nhất. 0/10 trò đùa này thật tệ, tôi không thể tin là có người lại đủ pháp lý để cho phép bạn được quyền sáng tạo. Lượng sức mạnh não bộ mà bạn đã đưa vào trò đùa đó có thể tạo năng lượng cho mọi ngôi nhà trên Trái Đất. Hãy có một nhân cách và học cách tạo ra trò đùa, đọc một cuốn sách đi. Tôi không nói điều này để trở nên buồn cười, tôi thực sự có ý đó về cách mà đây chỉ là sự bi hài trong hài kịch. Bạn đã giết chết sự hài hước và mọi hành động hài kịch trên hành tinh. Tôi rất thất vọng vì xã hội đã thất bại trong việc có thể dạy bạn cách hài hước. Thật lòng mà nói nếu tôi đặt tất cả sức mạnh và thời gian để cố gắng và làm cho trò đùa của bạn buồn cười, nó sẽ yêu cầu Einstein phải xây dựng một thiết bị để tôi có thể kết nối với năng lượng của một tỷ ngôi sao để làm điều đó, và thứ duy nhất mà trò đùa đó nhận được từ mọi người là một sự khinh bỉ tinh tế. Bạn thật may mắn vì tôi vẫn còn chút cảm thông cho bạn sau khi kể trò đùa đó nếu không tôi sẽ nhận hết mọi tội ác chiến tranh từng được ghi lại trong sử sách chỉ để ngăn cản bạn cố gắng mang đến bất kỳ sự hài hước nào nữa. Chúng ta nên đặt trò đùa đó vào sách giáo khoa để các thế hệ tương lai có thể cảnh giác khỏi việc trở thành một thất bại tuyệt đối trong hài kịch. Tôi thất vọng, tổn thương và bị xúc phạm hoàn toàn khi thời gian quý báu của tôi đã bị lãng phí chỉ để não tôi có thể hiểu trò đùa đó. Trong khoảng thời gian đó tôi đã lên kế hoạch giúp đỡ những đứa trẻ mồ côi, nhưng vì điều đó bạn đã làm tôi đã phải giải thích với một cách ít tục tĩu nhất về nỗ lực khủng khiếp của bạn trong hài kịch. Bây giờ những đứa trẻ đang đau khổ khi không có bữa ăn và không có ai để đổ lỗi ngoài bạn. Tôi hy vọng bạn hạnh phúc với những gì bạn đã làm và tôi thực sự hy vọng bạn có thể bước tiếp và học hỏi từ nỗ lực đáng thương này.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe04')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi post cực hài</h2>
+                <p><span id="pe05">Xin chào bạn, tôi là nhà tuyển dụng của tập đoàn giải trí Rạp xiếc Trung Ương Group. Trong quá trình tìm kiếm và đào tạo những người hài hước của chúng tôi (đi săn chất xám và nhân tài) tôi nhận thấy bạn là người có khiếu hài hước, tập đoàn chúng tôi thật sự cần một chú hề đúng nghĩa, tôi đã thấy bạn vừa mở mồm là mọi người đã cười ầm lên, không cần phải biểu diễn. Đặc biệt đối với chúng tôi thì những vị trí lãnh đạo rạp xiếc cấp cao phải tìm người “có tâm, có tầm” Một môi trường của những thiên tài hề, xung quanh bạn là những nhân vật: cha đẻ của tiếng cười, nhà khoa học hề, chúa hề địa phương, bait đồ tể, chúa tể rạp xiết Môi trường làm việc năng động, hài hước</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe05')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Như trên nhưng khác tí</h2>
+                <p><span id="pe06">Siêu hài hước, tôi đã cười sau khi đọc cap của bạn, sau đó tôi đưa cho bạn bè tôi, hõ cũng cười, gọi tôi là cây hài của lớp, khi tôi đưa cho crush, ngay lập tức tài khoản của cô ấy biến thành chữ Người dùng Facebook, khi bị các chú cảnh sát giao thông gọi vào, tôi không xuất trình giấy tờ xe hay bằng lái, mà thay vào đó tôi đưa các chú bài viết của bạn, tôi đã được thả đi ngay sau khi nộp trà đá 500k cho các chú, khi bị gọi đi nghĩa vụ quân sự, tôi đã được miễn nghĩa vụ bằng cách đưa người ta xem bài viết của bạn, thật sự cảm ơn bạn rất nhiều, nhờ bài viết của bạn mà tôi không còn muốn tự tử vào mỗi tối, tôi cảm thấy bớt tự ti hơn vì ngoài xã hội kia vẫn còn nhiều thằng hài hước như mình, tôi thật sự cảm ơn vì bài viết của bạn đã cho tôi nhiều hơn là tiếng cười.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe06')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Trong trường hợp</h2>
+                <p><span id="pe07">Trong trường hợp nhóm này bị điều tra bởi các cơ quan trực thuộc bộ công an (hoặc các tổ chức chính trị tương tự phục vụ cho nhà nước CHXHCNVN), tôi khẳng định mình không liên quan tới nhóm hoặc những cá nhân khác trong nhóm này. Tôi không rõ tại sao mình lại có mặt ở đây vào thời điểm này, có lẽ tài khoản của tôi đã được thêm bởi một bên thứ ba. Tôi cũng xin khẳng định rằng mình không hề giúp sức cho những hành động chống phá Đảng và nhà nước của các thành viên trong nhóm này</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe07')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Trong trường hợp 2</h2>
+                <p><span id="pe08">Nhóm này đã bị điều tra bởi các cơ quan trực thuộc Bộ Công an (và/hoặc các tổ chức chính trị tương tự phục vụ cho nhà nước CHXHCNVN). Cơ quan điều tra (CQĐT) khẳng định các thành viên trong này liên quan tới nhóm hoặc những cá nhân khác trong đây. CQĐT biết rõ tại sao các thành viên lại có mặt ở đây vào thời điểm này, tài khoản của họ không được thêm bởi một bên thứ ba mà chính họ tự tham gia vào đây. Các nhân viên của CQĐT cũng xin khẳng định rằng những hành động chống phá Đảng và Nhà nước đã được thực hiện bởi các thành viên trong nhóm này. Nhà nước CHXHCNVN cũng không quên khẳng định quyết tâm chiến thắng đại dịch Covid-19, nhấn mạnh chủ quyền không thể tranh cãi với quần đảo Hoàng Sa và Trường Sa, cũng như tính chính nghĩa của cuộc chiến giải phóng người dân Campuchia khỏi thảm họa diệt chủng Khmer Đỏ.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe08')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi ai hỏi</h2>
+                <p><span id="pe09">Ai mượn bạn nói mà cái địt mẹ bạn lúc lồn nào cũng “aI hỎi?”. Là tôi, tôi đã hỏi. Thật là một cực hình khi phải nặng gánh trách nhiệm của một kẻ tội đồ đã đưa ra câu hỏi và giấu mình vào ngôi thứ ba. Trách nhiệm nặng như quả đất, đặt vào đôi bờ vai nhỏ bé của tôi. Nó như đè nát thân tâm tôi, nó rằng xé con người tôi bởi sức nặng khủng khiếp của Kẻ Đã Hỏi. Thật là một cực hình, quả là địa ngục trần gian, đúng là tra tấn man rợn. Nhưng cuối cùng, tôi cũng được giải phóng khỏi chuỗi ngày đau khổ đó. Đúng, là tôi, tôi đã hỏi, có vấn đề gì không?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe09')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Gà</h2>
+                <p><span id="pe10">chỉ với một tiếng ”Gà” mà nó đã khiến trái tim toi thổn thức, muốn vỡ ra làm từng mảnh, khóe mắt muốn ứa lệ… Sao ông lại có thể nặng lời với tôi như thế, ông thật phũ phàng, ông có biết lời nói của ông như con dao đâm vào trái tym mỏng manh íu đíu này hiccc</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe10')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Sắc dục là tai họa</h2>
+                <p><span id="pe11">Sắc dục là tai họa của đời này, chúng ta gặp phải, lâm nguy khó tránh. Nữ sắc suy cho cùng cũng chỉ là da với thịt, máu mủ tanh hôi. Cái bẫy luân hồi đau khổ vô lượng kiếp, sa chân vào lục đục biết bao giờ thoát khỏi? Đừng vì thế mà cho những người bet trung thành, người còn niềm tin vào anh chết tức tưởi…</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe11')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Tôi yêu Nanahira</h2>
+                <p><span id="pe12">Tôi rất yêu Nanahira, rất rất nhiều. Bạn không bao giờ hiểu nổi đâu. Tôi yêu cô ấy nhiều đến mức tôi không thể giải thích tôi yêu cô ấy như thế nào được, và tôi chắc 90% là tôi có 1 sự ám ảnh không tốt chút nào cả. Tôi sẽ không bao giờ cảm thấy mệt mỏi khi nghe giọng hát ngọt ngào, êm diệu và như thiên thần của cô ấy. Mục đích sống của tôi là gặp cô ấy ngoài đời và nói xin chào với cô. Tôi khi ngủ thường mơ về việc cô ấy sẽ tổ chức một buổi diễn riêng cho tôi, và cô ấy sẽ mệt tới nổi cô ấy sẽ đến bên tôi và cả hai cùng âu yếm nhau trong khi chúng tôi ngủ cùng nhau. Nếu tôi có thể nắm tay cô ấy chỉ trong tích tắc thôi, tôi sẽ chết, 1 cách sung sướng. Nếu được, tôi sẽ cắn tai cô ấy chỉ để nghe cô ấy rên 1 cách ngọt ngào như thế nào. Sau đó, tôi sẽ ôm cô ấy trong khi cô ấy bám lấy tôi chỉ mong rằng tôi sẽ ngừng, nhưng tôi sẽ tiếp tục trong khi cô ấy rên to và to hơn. Tôi sẽ đánh đổi mọi thứ chỉ để được cô ấy nhìn vào tôi. Bất kì việc gì tôi làm, tôi đều nghĩ tới cô ấy, khi tôi dậy, cô ấy là điều mà tôi nghĩ đến đầu tiên. Khi tôi đi học, tôi chỉ để ý tới cô ấy. Khi tôi về nhà, tôi mơ đến cô ấy và mong rằng chúng tôi sẽ sống hạnh phúc bên nhau. Cô ấy là niềm kiêu hãnh, đam mê và hạnh phúc của tôi. Tôi không ước gì ngoài việc cô ấy được sống hạnh phúc. Nếu cô ấy gọi tôi là “Onii-chan”, tôi sẽ bị tiểu đường từ sự ngọt ngào của cô ấy và chết vì nó. Nếu nó là cho cô ấy, tôi sẽ từ bỏ cuộc sống mà không cần nghĩ lại. Thiếu cố ấy, cuộc đời của tôi cũng chả có nghĩa lý gì. Tôi rất yêu Nanahira</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe12')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi bạn không muốn người khác sân si</h2>
+                <p><span id="pe13">Đầu tiên em cần xem lại bản thân mình. Cách em đối sử với mọi người từ cử chỉ, hành động đến lời nói của mình. Đôi khi sự sổ sàng của em, em ko ý gì nhưng có thể tổn hại đến người khác. A thấy e sân si trên mạng khá nhiều rồi em cứ như vậy thì chỉ đẩy cả thế giới xa lánh em thôi. Người ta thích chơi với 1 người hòa đồng vui vẻ hơn 1 người thích đi tìm điểu yếu ngươi khác phê bình đánh giá. Hành động của em ko góp phần để phát triển giúp đỡ 1 ai đó. Nó chỉ là hành động thể hiện cái tôi cá nhân của mình. Hãy đặt mình vào vị trí của những người khác khi mình tác động đến họ. E hãy coi các bộ phim hoạt hình nhật em như yughi oh, dấu ấn rồng thiên: dũng sỹ đai, doraemon, vua pháp sư của nhật (đặc biệt bộ này a thấy tính nhân văn và triết lý nhà phật cho trẻ em rất hay) và các bộ phim em sẽ thấy. Nhân vật chính họ luôn có nhiều bạn bè gắn kết với mình. Vì họ tốt bụng, chân thành luôn quan tâm đối sử với người khác bằng tình yêu chứ không phải lời chê trách. Hãy học đức tính của những nhân vật ấy một bộ phim hoạt hình nó không chỉ là những cảnh đánh nhau hoành tráng, những em gái siêu sinh, anh trai cực ngầu nó còn mang tính giáo dục nhân cách chúng ta. Ngoài ra em có thể tham khảo thêm ở kênh của anh Dưa Leo về kiến thức tâm lý con người, xã hội. E hiểu được vấn đề thì tư dưng cuộc đời em thay đổi.<br>
+                    Em còn trẻ nên chắc khó kiên nhân học triết lý nhà phật. Em học được thì tốt ko được cứ học theo những bộ phim trên. Ngoài ra nên bớt chơi các game tranh đấu. Chơi các game trải nghiêm cốt truyện sẽ hay hơn. A ko nói game tranh đấu (vd: cs,pug) là hoàn toàn xấu chúng ta đôi khi thay đổi không khí giải trí chẳng sao cả. Nhưng nếu nó đem đến cho em sự cọc cằng, hả hê khi chửi ai đó thì mình nên dừng lại.<br>
+                    Nó xuất phát từ bên trong em nên không ai có thể cứu em được ngoài trừ bản thân em.<br>
+                    Nếu cần gì thì cứ inbox a</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe13')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Đọc tin nhắn này</h2>
+                <p><span id="pe14">Đọc tin này em shock tới nỗi rơi con iphone 11 màn hình 6.5 inchs, Super Retina XDR, 1242 x 2688 Pixels. Camera trước 12.0 MP, camera sau Triple 12MP Ultra Wide, Wide and Telephoto cameras. RAM 4 GB,bộ nhớ trong 64 GB. CPU Apple A13 Bionic, 6. GPU Apple GPU 4 nhân. Dung lượng pin Lâu hơn iPhone Xs Max 5h. Hệ điều hành iOS 13. Thẻ SIM eSIM và NanoSIM, 1 Sim. Xuất xứ Trung Quốc, năm sản xuất 2019 xuống sân thượng rộng năm héc ta phủ vàng trên mỏ kim cương nên bị mẹ em lấy cây chổi lông chồn về đánh tới nỗi em phải chạy ra ngoài vườn gỗ xưa rồi trèo lên bộ bàn ghế gỗ lim mà trốn mẹ. Giờ đói quá cho nên phải lẻn ra bể bơi rộng 20×50 mét mà bắt tôm hùm ăn cho đỡ sốc. Ai ngờ bị ngộ độc cho nên đau bụng quá phải chạy vào nhà đi vệ sinh sao cho cái Camera Hikvision DS-2CE56C0T-IT3 Cảm biến: 1/3″ Progressive Scan CMOS Độ phân giải: 1 Megapixel. Hồng ngoại: 40m.Độ nhạy sáng 0.1 Lux@F1.2 Ống kính: 3.6mm hoặc 6mm (Đặt hàng 2.8mm, 8mm) Hỗ trợ: Bù ngược sáng BLC, Giảm nhiễu DNR, Hồng ngoại thông minh, Phát hiện chuyển động (Motion Detection). Tiêu chuẩn ngoài trời IP66 nó không phát hiện ra. Trốn được thì em ngồi luôn xuống cái bệ xí rát vàng và pẹt ra một bữa cháo khoán đẳng cấp 4 sao Michelin. Mùa đông nên ngồi khá lạnh làm em nhớ tới lúc bắt hổ ở Nam Cực với bố. Sau khi pẹt xong em lấy xấp tiền đô ra chùi cho thật sạch rồi định nhanh chóng chuồn lên tầng 5 của căn biệt thự vài nghìn tỷ nhà em. Ra khỏi nhà vệ sinh em chạy đến cái thang máy mà bấm núi tầng năm nhưng do nhà có tới mấy trăm tầng nên nhìn hơi lâu mà bấm chậm. Đúng lúc đó mẹ em thấy em ở thang máy nên mẹ lái con Ferrari chạy đến nhưng không, em đã lên được tầng năm. Đến tầng năm em chạy vào phòng rồi khóa cửa, nằm lên gường ổn định tinh thần. Định đọc lại bài báo nhưng Đọc tin này em shock tới nỗi rơi con iphone 11 màn hình 6.5 inchs, Super Retina XDR, 1242 x 2688 Pixels. Camera trước 12.0 MP, camera sau Triple 12MP Ultra Wide, Wide and Telephoto cameras. RAM 4 GB,bộ nhớ trong 64 GB. CPU Apple A13 Bionic, 6. GPU Apple GPU 4 nhân. Dung lượng pin Lâu hơn iPhone Xs Max 5h. Hệ điều hành iOS 13. Thẻ SIM eSIM và NanoSIM, 1 Sim. Xuất xứ Trung Quốc, năm sản xuất 2019 xuống sân thượng</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe14')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi bạn không muốn đọc cốt truyện</h2>
+                <p><span id="pe15">nhảm shjt nhỉ, game online còn bày vẽ cốt truyện dài dòng, chả ai quan tâm đến chúng nó đến từ đâu làm gì, ngta chỉ quan tâm thắng đối thủ trong game là đc, ngay cả cái game liên minh cốt truyện cũng tào lao, cứ ra tướng mới là lại phải gắn cho nó câu chuyện gì đấy, rồi tự nhiên nhảy vào câu chuyện của các tướng khác, rồi 1 đống trang phục chả liên quan mẹ gì đến cốt truyện, bó mẹ tay chưa thấy cái game online nào tào lao cốt truyện như bọn riot</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe15')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Tôi muốn</h2>
+                <p><span id="pe16">Địt mẹ tôi muốn thụ tinh với M4 SOPMOD II vãi lồn . t muốn cô ấy sinh ra những đứa trẻ với cái vòng hông tuyệt đẹp đó . Cô súng tuyệt đẹp như là một nữ thần xuống trần gian để làm rửa tội ác của chúng ta làm ra.<br>
+                    M4 SOPMOD II còn hơn một doll . t không thể quỳ xuống để cúng bái mỗi khi t thấy hình dáng cô ấy được . t vừa cúng bái cô ấy và vừa thờ cúng . T sẽ thực hiện nhiều tội ác chiến tranh hơn cả chính quyền nazix chỉ để liếm được ngọt nước mọng chảy ra từ làn da mượt mà của M4 SOPMOD II, t muốn M4 SOPMOD II rên trong khi t con tim t đang nằm cạnh cô ấy t muốn đc nghe thấy trái tim của elaina đập trong , khi cơ thể của t hòa hợp vào cơ thể của M4 SOPMOD II để linh hồn thể xác của chúng ta có thể đảo ngược và đan xen qua những tội ác kinh thánh của đạo Ki Tô.<br>
+                    t muốn bú ti M4 SOPMOD II , hút những giọt nước dừa dinh dưỡng từ vú cô ấy trong khi M4 SOPMOD II từ từ sục con chim đang nứng của t , t sẽ đổ nước âm đạo của M4 SOPMOD II vào trà của t rồi để chim t ngâm trong đó , tiếng khóc của cô ấy và tiếng giường sẽ to hơn cả tập âm của hơn 10000 khẩu GAU-8 bắn cùng 1 lúc . t sẽ làm tình với M4 SOPMOD II cho tới khi t mất hồn và sau đó t sẽ để M4 SOPMOD II xé xương sườn của t ra , t sẽ để M4 SOPMOD II đập chết t với con Ro của cô ý chỉ để t đc bên cô ý.<br>
+                    M4 SOPMOD II quá hoàn hoản nó thực sự làm t đau . mỗi khi không có cô ấy t phải chịu một sức đau đớn kinh khủng hơn cả bị bẻ từng khúc xương của t ra trong khi t đang bị đuối nước rồi phải ăn tương ớt với hàng nghìn mảnh kính vỡ đang ở trong mồm t . t cần elaina t muốn M4 SOPMOD II t muốn cúng bái cô ấy , t muốn cưới M4 SOPMOD II và sau đó nghỉ hưu sau khi đẻ ra 27 đứa con và cho chúng việc làm . t muốn đôi môi ngọt ngào đó nói ra những lời bẩn thỉu vào trong tai t khi cô ấy đang cho từng mảnh đá vào lỗ lồn t .<br>
+                    t muốn địt M4 SOPMOD II như M4 SOPMOD II đang nợ tiền t . t sẽ để M4 SOPMOD II dẫm lên t chỉ đc để cảm nhận được sự mềm mại , sự ấm áp vững chắc của bàn chân cô ấy trên mặt và háng của t . t sẽ ngủ dưới giường của M4 SOPMOD II để hút từng giọt nước dãi vào mồm t , t sẽ nhặt hết tóc của M4 SOPMOD II trong ống thoát nước bồn tắm chỉ để ngửi mùi hương quyến và sau đó biến nó thành chuỗi vòng cổ hoặc 1 vòng dưới chim để cô ấy sẽ luôn đc bên t , Bất cứ điều gì sẽ làm hài lòng cô ấy nhiều hơn.<br>
+                    đcm t sẽ làm mọi thứ cho M4 SOPMOD II , t sẽ từ bỏ cuộc đời này , tất cả mọi ước mơ tất cả các hi vọng , chỉ được làm chiếc tất dưới dưới chân M4 SOPMOD II để t có thể làm ấm những ngón chân mọng nước của cô ấy , để cô ấy có thể cảm nhận được trái tim đang yêu của t . t sẽ giải phẫu để trở thành thềm cửa trước nhà M4 SOPMOD II để đc cô ấy chùi giầy vào mặt . t sẽ xé t từng mảnh ra . t không biết sẽ làm gì sau đó nhưng nếu M4 SOPMOD II thích các mảng thân thể t thì t sẽ làm.<br>
+                    Cô súng doll của anh , nữ thần của anh , ánh sáng của cuộc đời t . xin chúa hãy cho con xin cô ấy , xin hãy trao cô ấy cho con . con muốn cô ấy là của con và chỉ có mình con . t sẽ liếm vụn bánh mì từ tay M4 SOPMOD II và đổ đầy lỗ rốn của M4 SOPMOD II với mù tạt mật ông để cho chim t vào , t sẽ cho M4 SOPMOD II tắm bọt biển bằng lưỡi t mỗi sáng và cho ấy ăn sáng trên giường t sẽ để cô ấy ăn sáng trên người t nếu nó làm cô ấy hài lòng , không quan tâm bỏng cấp độ 3 sẽ đau như thế nào.<br>
+                    t sẽ chịu đựng sự đau đớn bất tận cho tới cuối cùng để được liếm cái anten wifi của M4 SOPMOD II . không có thứ gì t không thể làm vì cô ấy . t sẽ không bao giờ nói không , t sẽ đập chết bạn t với con chim khổng lồ của t để mang lại nụ cười tươi sáng của M4 SOPMOD II . t sẽ không xuất tinh nếu không có sự đồng ý của cô ý .<br>
+                    Anh yêu em M4 SOPMOD II , anh thực sự rất yêu em , xin xin xin hãy là của anh , hãy làm vợ của anh , người yêu của anh , mọi thứ của anh , nói có . anh có thể thấy nó trong mắt anh , khi em vẫn bàn bạc về việc xảy ra ở vương quốc của thần mèo hay gì đó , hãy cho anh 1 câu trả lời , một thứ gì đó thôi , anh sẽ đợi em.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe16')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Simp tình nguyện</h2>
+                <p><span id="pe17">Ai muốn gia nhập câu lạc bộ simp tình nguyện ở trường với tui không ?<br>
+                    Hoạt động chủ yếu: xách cặp cho các bạn nữ từ cổng trường tới lớp học, tích tiền để tặng mỗi bạn 1 chai nước giải khát, quan tâm chăm sóc khi các bạn nữ cảm thấy mệt mỏi trong việc học, đưa đón các bạn nữ đi học ( nếu có xe ), luôn lắng nghe khi các bạn nữ cần tâm sự.<br>
+                    Hoạt động bắt buộc: phải trợ giúp các bạn nữ khi làm thuyết trình hoặc đồ án, mỗi khi thấy các nữ bị chọc hay bắt nạt phải ra tay trợ giúp ngay lập tức, bất cứ dịp lễ nào cũng phải tặng quà cho các bạn nữ, khi bạn nữ nhờ việc gì phải làm ngay ( nếu có thể ).<br>
+                    Các việc làm nghiêm cấm: tán tỉnh, ngủ chung, đ!t nhau, tia các vùng nhạy cảm, sàm sở các bạn nữ khi chưa cho phép.<br>
+                    ( CÁC VIỆC LÀM TRÊN CHỈ ÁP DỤNG VỚI CÁC BẠN NỮ, KHÔNG ÁP DỤNG VỚI CON TRAI )<br>
+                    những quyền lợi khi gia nhập câu lạc bộ: cảm thấy đời tươi tắn, vui vẻ , được những bạn nữ yêu mến, may mắn hơn sẽ được các bạn nữ nắm tay, được hôn tay các bạn nữ.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe17')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Ngừng thudam</h2>
+                <p><span id="pe18">Ngày trước tôi cũng như vậy, cứ rảnh lúc nào là thu dam lúc ấy. Chỉ nhớ những ngày ấy chìm trong ảo mộng của dục vọng, luôn mong muốn bản thân mình được trải nghiệm cái cảm xúc xác thịt của đời người, đầu óc thì luôn mụ mị, người gầy ốm và những mặc cảm của bản thân luôn bủa vây.Rồi ngày ấy tôi gặp em, em trao cho tôi sự yêu thương mà tôi chưa từng thấy, sự chân thành của em làm con người tôi vốn dĩ đã và đang lầm đường lạc lối nay đã có những bước đi đầu tiên về đúng quỹ đạo của mình. Em động viên tôi trở thành con người tốt hơn, tập thể dục nhiều hơn đi anh – em nói như vậy.Những bữa học cùng em trong thư viện yên tĩnh, những chuyến đi xa đến nơi nông thôn yên bình, và những điều khúc mắc của đôi ta được giải đáp và lấp đầy bởi mỗi người trong chúng ta. Những ngày hạnh phúc đó, mãi mãi không bao giờ quên đi được nữa.Rồi tháng ba năm ấy, em đi xa… Với học bổng trên tay, bạn bè động viên em và cả sự thật tâm của anh dành cho em là mong ước của em, hạnh phúc của em nên là ưu tiên số một. Anh mong một ngày hai chúng ta rồi cũng sẽ gặp lại nhau, cùng nắm tay nhau trên con xe cà tàng, đi mãi về phía mặt trời đã dần lặn…</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe18')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Chúc mừng sinh nhật</h2>
+                <p><span id="pe19">Kính vị huynh đệ, ta trong giang hồ đã nghe danh vị huynh đệ từ lâu.Danh sư huynh, trên thông thiên văn, dưới tường địa lí, tửu sắc kinh hoạ, huynh đều một phất khuynh đảo giang sơn.Ấy, chưa nhắc tới năm xưa chặt tay Dương Quá, đốt nhà Tiêu Phong, lại thách đấu trăm hiệp với Tiểu Lí cầm dùi cui… Nghe danh đại huynh thật là như giữa trận cuồng phong tan tác. Nay vạn sự hỉ, tỉ sự duyên, lại hợp ngày đại huynh giáng hạ trần thế, ta thật không biết lời nào cho phải lẽ, đành dâng ít rượu đào ngâm thuốc lào từ năm ngoái. Rượu này mà nhắm với thịt chó gầm cầu thì thật muôn vàn hương sắc. Tiện đây, nhà ta nuôi con chó ghẻ cũng đã ba mùa lứa, huynh có thể mang cây Đồ Long Đao năm xưa cướp được từ tay Quách Tĩnh ra để huynh đệ vừa cạo lông chó, vừa hàn huyên tâm sự. Quả thật, gặp được huynh như vịt trúng lò quay chưa gì đã thơm lây ra tận đường cái.Thôi, dài dòng văn tự, chúc huynh tuổi mới an thọ, bách niên giai lãoTại hạ xin phép cáo từ.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe19')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Cô giáo chủ nhiệm của con đây</h2>
+                <p><span id="pe20">Chào con, là cô chủ nhiệm của con đây, nhớ thời con còn bé, con rất hiếu động thường giơ tay hỏi cô mọi điều từ vô lý đến có lý. Lúc đó con rất hiền hoà, thân thiện, cô cứ tưởng con sẽ thành công trên con đường sự nghiệp nhưng không ngờ dòng đời xô đẩy đã biến con thành cô hồn dã quỷ giết người bằng lời nói. Cô thật sự muốn chết đi vì con đã làm cô thấy hụt hẫng, cô mong con làm lại một người đàng hoàng, có ích cho xã hội chứ không phải ở đây ăn hiếp kẻ nhỏ, ỷ mạnh hiếp yếu, thân gửi.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe20')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Tà râm</h2>
+                <p><span id="pe21">Công nhận là đọc nhiều bài rồi, xem nhiều clip rồi mà rất khó để bỏ, nhưng mà đúng thật thủ dâm nhiều chỉ gây hại chứ lợi thì ít, tôi trước cũng thế ham mê đến mức độ ngày không làm 3, 4 shot là không chịu được thấy bứt rứt trong người, quay xong thì chỉ thấy hối hận, rồi lúc méo nào cũng từ mai không làm nữa nhưng rồi tay vẫn tìm đến nơi chim làm tổ, dần dần bạn bè ít hơn thậm chí là không có bạn, ngay cả mấy thằng bạn thân nhất dần dần cũng ít nói chuyện cả tháng cũng không đi chơi với nhau không trà đá, không bia bọt, game gủng gì cả, vì mỗi lần quay xong là thấy thư thái, dễ chịu, kiểu cảm giác đời chỉ cần thế là đủ, đi kèm với đấy là mệt mỏi, buồn ngủ, ai gọi cũng không muốn nghe, thế rồi cứ ngày qua ngày mắt thì thâm quầng do thức đêm xem porn, tần suất càng ngày càng nhiều, mắt vừa thâm vừa có bọng mắt trông cứ như thằng nghiện, da thì trắng bệch kiểu nhợt nhạt do không chịu ra ngoài cứ thu mình trong phòng với cái điện thoại, người thì xương xẩu mắt lồi trông rất kinh, nên mỗi lần đi ra ngoài rất mất tự tin không dám nhìn ai cả, đi qua người ta thì luôn có cảm giác bị người ta chỉ trỏ nói xấu mình(đầu tự tưởng tượng ra), bên đạo phật họ nói tướng do tâm sinh mình không hề tin, vì mình nghĩ tướng mạo do di truyền chứ tâm nào sinh được tướng, nhưng đúng là trước khi nghiện thủ dâm, nhìn những bức ảnh mình hồi chưa dậy thì trông rất ưa nhìn, tướng mặt tròn trịa rất phúc hậu, trả biết có phải do thủ dâm nhiều hay không mà sau này càng ngày mặt càng biến đổi gò má nhô cao hai bên má thì hóp, mắt thì lồi ra trắng dã bọng mắt to và thâm quầng, làm gì cũng yếu ớt không có sức lực, lưng thì tướng đi rất hèn mọn lúc nào mặt cũng cúi xuống đất, lưng gù, bạn bè người thân xì xầm bàn tán nói mình nghiện, ý là hàng cấm ý, mình cũng biết mình nghiện nhưng mà là nghiện thủ dâm, cứ thu mình như thế cho đến tận năm lớp 12, chuẩn bị thi tốt nghiệp nên mình lên chùa để cầu may mong đỗ, lúc đi ra thì gặp ông sư quét lá, kéo tay mình lại, đòi xem mặt, rồi xem chỉ tay, mình cứ dùng dằng, đòi bỏ ra dọa đánh cả ông ý vì nghĩ chắc gặp mấy thằng cha lừa xem bói đòi tiền, hay có khi gặp thôi miên cũng nên, ông ấy bỏ mình ra lúc mình quay lưng đi ông ý thở dài bảo thanh niên trai tráng, khí số rõ là tốt, thân hình cũng đĩnh đạc, tương lai rõ rộng mở mà tướng mặt lại bần tiện, lưng gù, kêu mình là không tin ông ấy cũng được nhưng nên trừ bỏ thủ dâm, ham mê sắc dục đi thì hơn, bằng không càng ngày tệ, thế là mình mới ngạc nhiên hỏi ông ấy sao biết mình thích thủ dâm, ông ý mới bảo nhìn tướng mặt là biết, mình không tin hỏi ông ý cuộc sống mình thế nào ông ý nói ngọn ngành biểu hiện của mình từ cả trước lúc biết thủ dâm và sau khi nghiện thủ dâm mình mới thấy lạnh sống lưng thật sự, không lệch một tí nào, mình bắt đầu sợ từ lúc đấy, mới hỏi ông ý cách cai nghiện thủ dâm, vì mình cũng tự thử nhiều lần rồi mà cứ không quá 3 hôm là lại làm, ông ý bảo mình 3 bước đơn giản thôi một là tạm thời đừng dùng điện thoại thông minh, chuyển sang dùng đen trắng, không dùng máy tính nữa, ti-vi nếu xem mà có hình ảnh hở hang mát mẻ thì tắt ngay hoặc hay chuyển kênh khác, 2 tối chịu khó ngâm chân bằng nước nóng khoảng 30 phút, sau đó lau khô chân rồi ngồi khoanh chân xếp bằng để thiền, mới bắt đầu thì đừng cố quá thấy mỏi thì thiền 15 phút thôi cũng được dần dần tăng lên một tiếng sau 1 tháng cũng được, đều đặn mỗi tối trước khi đi ngủ, sáng 5 giờ dậy chạy bộ 30 phút, sau khi về chịu khó chống đẩy nếu được thì tối đa 50 cái, mới tập còn yếu thì 10 cái thôi cũng được rồi tăng lên dần dần, 3 nữa là ăn ngủ đủ bữa đúng giờ, đừng đêm cày ngày thức nữa, quan trọng cuối là hạn chế chạm đến vùng nhạy cảm trừ lúc đi vệ sinh tránh mặc quần quá bó hoặc quá chật cọ xát dễ gây kích thích, nếu cứ duy trì thế được một tháng tự dưng bạn sẽ thấy cơ thể lẫn tướng mặt thay đổi ngay, tự tin giao tiếp, mặt mũi ưa nhìn hơn thân thể có lực hơn như không rệu rã như trước làm gì cũng thấy có động lực chứ không còn tư tưởng tự thỏa mãn như trước nữa, mình trước đấy không có lối thoát giờ thì cuộc sống thay đổi hẳn, ai không tin có thể thử các bước trên đừng biến mình thành một thằng bần tiện, không có tự tin ngại giao tiếp nữa, cùng nhau thay đổi bản thân đi thôi, đừng cố chấp và cho là mình đùa vì mình cũng là một thằng nghiện porn nặng nhưng giờ đã bỏ được, thủ dâm giúp bản thân tự thỏa mãn trong chốc lát nhưng nó lại làm bản thân bạn đánh mất nhiều thứ trong tương lai !</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe21')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Từ bỏ tà râm</h2>
+                <p><span id="pe22">Đời người ngắn ngủi, đẹp gì như tuổi thanh xuân. Nên nhân lúc chưa vướng bận việc đời, thân thể đương thì cường tráng, sức sống đương lúc tràn đầy mà gắng công rèn luyện, tu dưỡng phẩm hạnh thanh cao. Nuôi chí lớn lập nghiệp giúp đời, đem tài năng thi thố để thỏa công 10 năm đèn sách, báo đáp thâm ân của mẹ cha, thày dạy. Cớ sao lại đem tuổi xanh đốt hết trong dâm dục, ngụp lặn trong cuộc vui tạm bợ để cuối cùng thân thể tinh thần đều suy nhược, sự nghiệp dang dở nửa vời?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe22')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Từ bỏ tà râm 2</h2>
+                <p><span id="pe23">-Sách Thiên Kim Yếu Phương của danh y Tôn Tư Mạc viết “Trong việc hành dục, nam giới không thể không có nữ giới để phối hợp, nữ giới không thể không có nam giới để phối hợp. Nếu cho rằng hành dục chỉ là hành vi đơn độc không cần có vợ/chồng phối hợp thì quan niệm ấy sẽ làm nguy hại đến tuổi thọ, các loại bệnh tật do đó phát sinh”.<br>
+                    <br>
+                    -Kinh Dịch cũng nói “Cô âm bất sinh, cô dương bất trưởng”. Thủ dâm chỉ có một khí Dương hoặc Âm mà không có đủ cả hai để điều hòa sẽ làm thương tinh tổn thần, phạm đến tính mệnh. Trong tự nhiên, nếu khí hậu vận hành trái nghịch quy luật Âm Dương tất sẽ có thiên tai; nếu thế thời trái nghịch quy luật Âm Dương tất sẽ có đại loạn; con người mà sinh hoạt trái nghịch quy luật Âm Dương nhất định sẽ phát sinh bệnh tật. Đây là quy luật tự nhiên bất di bất dịch bởi Thiên – Địa – Nhân cùng tương thông, cảm ứng. Người đời nay tán dương thủ dâm bởi họ chỉ ham muốn cái vui nhất thời mà chẳng thấy được cái hại sâu xa của nó</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe23')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Phụ nữ tinh tế</h2>
+                <p><span id="pe24">Tôi không biết mấy ông như nào chứ tôi thích việc hở một cách tinh tế hơn là lột bỏ toàn bộ, nó đem lại một sự khiêu gợi nhẹ nhàng duyên dáng của người phụ nữ. Đó là một phương thức độc đáo và tinh tế trong việc thể hiện sức hút của bản thân người phụ nữ với 3 vòng hoàn hảo. Tạo nên sự thướt tha cho nhưng cặp tâm hồn trắng trẻo ngây dại của người bạn tình. Bên cạnh đó việc che đi càng khiến cho tôi cảm giác thèm muốn được cởi phăng đi phần bị che ấy và gợi trí tò mò của tôi, tưởng tượng không biết đằng sau những lớp vãi đó sẽ là những con bướm xinh xắn quyến rủ thướt tha, hay là những bờ nhũ hoa hồng hào, trắng trẻo, ngọt ngào như miền đất mẹ. Và trên hết khi nhờ những miếng đồ lót xinh xắn có thể che đi những khuyết điểm của người phụ nữ đồng thời tô nên vẻ yêu kiều người phụ nữ mà ta chuẩn bị thịt (có lẽ vậy hoặc do thằng khác thịt) nhầm đánh một dấu mốc rằng: “A đây là một con người và người ấy khiến ta xuất vì body bốc lửa của người ấy, chứ không phải là xuất vì bờ đít đỏ của một con đười ươi hay tinh tinh nào đấy”.Và sau cùng để chốt lại thì với tôi một người phụ nữ tinh tế khiến tôi nứng là người phụ nữ che đi những phần cần che và lộ ra những phần cần lộ (nhất là đôi bờ nhũ hoa kia).</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe24')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>NGỪNG ĐĂNG VỀ SUPER IDOL</h2>
+                <p><span id="pe25">DỪNG ĐĂNG LÊN VỀ SUPER IDOL, TÔI ĐÃ MỆT MỎI VÌ NHÌN THẤY NÓ RỒI, BẠN BÈ TÔI TRÊN DISCORD GỬI TÔI MEMES, CÒN TRÊN CỘNG ĐỒNG NÀY THÌ NHỮNG CÁI MEMES CHẾT TIỆT. *hít*, tôi đã đăng một bài viết trong cái group cringy này, đúng không ? VÀ ĐA SỐ CÁC BÀI ĐĂNG VÀ BÌNH LUẬN ĐỀU LÀ VỀ SUPER IDOL. TÔI, TÔI ĐÃ CỐ GẮNG HỌC TIẾNG TRUNG, HỎI BẠN TÔI VỀ NÓ VÀ NÓ NÓI RẰNG “Ê MÀY, KHI MÀ TIẾNG TRUNG LÀ SUPER IDOL” HAHA, ĐING ĐING ĐÍNG ĐING ĐING ĐÍNG ĐÌNG, ĐÍNG ĐING ĐÌNH ĐING ĐING. TÔI CẦM CHAI NƯỚC 105 ĐỘ C VÀ THẰNG BẠN NÓI RẰNG “KHI MÀ CHAI NƯỚC NÓ SUPER IDOL”, TÔI CHỈ VÀO CHAI NƯỚC ĐÓ RỒI NÓ LÀ “KHI MÀ CHAI NƯỚC 105 ĐỘ” AAAAAAAAAAAAAAAA<br>
+                    NẾU BẠN NÓI VỀ SUPER IDOL THÌ SẼ BỊ -30 SOCIAL CREDIT</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe25')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi đối phương joke ngu</h2>
+                <p><span id="pe26">XD, mùng 1 tết làm mấy cái joke óc chó thì đừng hỏi sao người khác cay. Mà bố mày đã cay thì cả nhà mày chưa chắc yên được, 150k có thể làm phiền tao chứ đéo đến lượt làm phiền gia đình tao đâu Và thôi cái trò làm người khác bực đi, đéo có vui đâu? Xàm lồn ít thôi, thật đấy Ngày thường thì xàm lồn được chứ bây giờ thì tốt nhất mày nên ngậm con mẹ cái mồm vào để người khác có chút vui vào ngày đầu năm là được rồi Xàm lồn giỏi, đéo quen biết con cặc gì. Giỏi thì địt con mẹ mày show cái mặt mày ra lên video call với bố mày mà nói này? Địt cái lồn mẹ mày xin lỗi cái con cặc, mày là một con chó cái bú cặc mèo. Sống chó hơn cả con mẹ mày, bú cặc tao mà giảng hoà thằng đĩ lồn thâm</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe26')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>POV: Bạn đang thudam</h2>
+                <p><span id="pe27">Bạn ngồi trong nhà vệ sinh để thủ dâm, nhưng bạn bắt đầu phóng tinh không kiểm soát. Sau mười lần phóng, bạn bắt đầu lo lắng. Bàn tay của bạn dính và nó hôi mùi tinh dịch. Bạn tuyệt vọng đẩy dương vật của mình vào một đống giấy vệ sinh, nhưng điều đó chỉ làm cho bi bạn đau. Dòng tinh dịch tăng tốc. 3 phút đã trôi qua, bạn không thể dừng xuất tinh. Sàn phòng tắm của bạn được bao phủ trong một lớp mỏng tinh dịch. Bạn cố gắng để xuất tinh vào ống thoát nước nhưng nó tích tụ quá nhanh. Bạn thử vào bồn vệ sinh, nhưng tinh dịch quá đặc để trôi xuống. Bạn khóa cửa phòng tắm để ngăn tinh dịch thoát ra. Không khí trở nên nóng và ẩm từ tinh dịch. Dòng tinh dịch tăng tốc. Bạn trượt và ngã vào tinh trùng của bạn. Tinh dịch bây giờ sâu sáu inch, gần như dài bằng vòi tinh dịch vẫn còn cương cứng của bạn. Nằm ngửa trên lưng, bạn bắt đầu bắn tinh trên trần nhà. Các giọt tinh màu trắng dính bắt đầu rơi như những hạt mưa, mang lại cho bạn một khuôn mặt đầy tinh trùng. Dòng tinh tăng tốc. Bạn vật lộn để đứng vững khi lực của dòng tinh bắt đầu đẩy bạn về phía sau như thể bạn đang ở trên một đường trượt. Trong khi quỳ xuống bất lực, tinh dịch đã lên đến cằm bạn. Để tránh chết đuối, bạn mở cửa phòng tắm. Sự tràn ngập dịch đàn ông khiến bạn nhớ đến trận đại hồng thủy năm 1919, chỉ với tinh dịch thay vì nước. Dòng tinh dịch tăng tốc. Đã hai giờ rồi. Con cái và vợ bạn hét lên trong nỗi kinh hoàng khi cơ thể của họ bị nhấn chìm bởi dịch trắng như tuyết. Đứa con út của bạn bị chìm xuống, với những bong bóng nổi lên và tiếng khóc thảm thiết đi cùng nó. Bạn cầu xin Chúa chấm dứt sự đau khổ của bạn.Dòng tinh dịch tăng tốc. Bạn bóp dương vật của bạn để ngăn chặn dòng tinh, nhưng nó bắt đầu rò rỉ ra khỏi lỗ đít của bạn. Bạn buông tay. Lực của tinh dịch xé toạc niệu đạo của bạn, chỉ để lại một lỗ hổng trong háng của bạn phun ra tinh dịch. Cơ thể của bạn tăng tốc khi nó trượt về phía sau. Bạn bay qua bức tường, bay vút vào bầu trời với vận tốc ba mươi dặm một giờ. Từ góc nhìn của chim bạn thấy ngôi nhà của bạn phủ trắng tinh dịch. Hàng xóm của bạn gọi cảnh sát. Dòng tinh dịch tăng tốc. Khi bạn tiếp tục lên cao, bạn thấy những chiếc xe cảnh sát chạy về phía ngôi nhà của bạn. Cảnh sát rút súng ra và nhắm, nhưng vô số tinh dịch bắn vào mắt họ, làm mù lòa. Dòng tinh dịch tăng tốc. Bây giờ bạn đang ở độ cao 1000 feet. Nhóm SWAT đến. Máy bay trực thăng quân sự bao quang bạn. Hàng trăm viên đạn xuyên qua cơ thể bạn cùng một lúc, nhưng bạn vẫn tỉnh táo. Tinh hoàn của bạn bây giờ đã phát triển thành một bộ não thay thế. Dòng tinh dịch tăng tốc. Đã hai ngày rồi, với cơ thể của bạn bây giờ bị phá hủy, tinh dịch bắt đầu phun theo mọi hướng. Bạn phá vỡ rào cản âm thanh. Chính phủ triển khai máy bay chiến đấu để đuổi theo bạn, nhưng tác động của tinh dịch khiến một chiếc máy bay rơi xuống đất. Chính phủ quyết định để bạn rời khỏi trái đất. Bạn cảm thấy tuyến sinh dục của mình bắt đầu bốc cháy khi bạn chạm đến các cạnh của bầu khí quyển. Bạn suýt va chạm vào ISS, sơn trắng nó khi bạn bay qua. Các nhà vật lý cố gắng trong vô vọng để tính toán quỹ đạo thất thường của bạn. Dòng tinh tăng tốc. Tinh dịch bắt đầu hấp dẫn về phía mình, tạo thành một vệt sao chổi tinh dịch. Các nhà thiên văn bắt đầu gọi bạn là “Cummet.” Bạn bị mắc kẹt trong không gian mãi mãi, bị tước bỏ cơ thể và các giác quan. Cuối cùng, bạn ngừng suy nghĩ.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe27')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Uk rs</h2>
+                <p><span id="pe28">Địt mẹ mấy thằng spam uk rs địt mẹ thằng Gai Lang chơi spam cái máu lồn nhà mày rải toàn bộ forum chỗ lồn nào cũng thấy spam cái địt con mẹ chúng mày chứ spam chơi với bố à con up top địt mẹ thằng songoku9s địt mẹ hóa ra cùi ghẻ hết mức tưởng tượng địt con mẹ logigear chúng mày nghèo rẻ rách óc chó thì bớt gửi tin spam tuyển dụng bố mày khinh địt mẹ spam nhiều truyện vãi cả cứt ạ mày đừng để bố nóng không bố thi võ mồm với mày đấy phiền não u sầu vì bọn spam bởi sự bá đạo gần như không có điểm dừng địt mẹ nhà mày người ta gửi tiền mua hàng real mày bán cho người ta hàng fake rồi kêu người ta chơi chó trước baby ơi bảo bối ơi 20cm của daddy ơi địt mẹ anh nứng cặc à spam cái lồn đâu ra 20 cm anh em có gặp những con chó này thì chém chết mẹ chúng nó đi bắc kì nói địt con mẹ mày còn nam kì thì đụ má mày mỗi dịp hè lại vào sg du lịch được nghe đù má mày bố mày là fan arsenal đây mày muốn solo ko địt mẹ real cùi bắp</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe28')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Xóa Alime</h2>
+                <p><span id="pe29">Tôi – sẽ xóa Anime ra khỏi cuộc đời tôi $$$<br>
+                    Ấn nút Xóa<br>
+                    Loading : 1%………..10%…………..30%………………66%………….70%……….90%………..99,9999% ….. No delete<br>
+                    Không thể xóa Anime vì Anime như 1 con virus ăn sâu vào trong trái tim tôi làm tôi không bao giờ hết yêu nó, không bao giờ xóa được hình bóng nó 😢. Bởi vì Anime mãi mãi ở trong lòng tôi 1 tình yêu không bao giờ tắt :3 💖😊</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe29')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Tôi yêu Viettel</h2>
+                <p><span id="pe30">Tôi rất hài lòng với dịch vụ Viettel. Trước đây tuy mạng có hơi chập chờn tí, tôi đã gọi điện lên tổng đài nhờ giúp đỡ và họ đã làm ngay. Họ cử 6 anh da đen cao mét 8 nặng 90kg liên tục đấm vào mồm tôi cho đến khi tôi chuyển sinh vào bệnh viện. Tôi yêu Viettel. Dù là sáng, trưa hay chiều, tối mình luôn cảm thấy Viettel rất tuyệt vời. Nhà mạng số 1 Việt Nam! Nhà mạng số 1 Việt Nam! Nhà mạng số 1 Việt Nam!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe30')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Trộm cắp</h2>
+                <p><span id="pe31">Không nên trộm cắp. Trộm cắp là do lòng tham lam, ham muốn. Sống được thảnh thơi, an nhàn, có nhiều của cải tài sản và được ăn ngon, mặc đẹp, mà chẳng cần phải làm lụng vất vả như bao nhiêu người khác. Hòa Thượng Thiện Hoa dạy: “Người không gian tham, trộm cắp là người yêu chuộng công bình, tôn trọng của cải kẻ khác như của mình”. Tiền bạc là huyết mạch của con người, nếu không có nó đời sống sẽ vất vả. Nếu của cải mình làm ra mà bị người ta lấy hết thì mình có đau lòng không? Mình mất của thì mình xót xa, tiếc nuối, thì người mất của cũng đau khổ như thế. Có nhiều người bị trộm cắp mất hết của cải, vàng bạc, thất vọng nến nỗi phải quyên sinh. Vả lại, của phi nghĩa thường vô ngõ trước ra ngõ sau, tiêu hao như nước soi, cát chảy. Manh tâm giành giựt cho lắm, chết rồi cũng hai bàn tay không. Người không trộm cắp luôn sống an vui vì không sợ bị tù tội, hoặc có người thù oán mình. Nếu mọi người giữ giới không nên trộm cắp thì nhà nhà được an vui, của đánh rơi cũng không có ai lượm, quên đóng cửa cũng chẳng có ai mất đồ. Nghe nói ngày xưa bên Trung Hoa, thời vua Nghiêu, vuaThuấn, thái bình thạnh trị, người ta ngủ cũng chẳng cần đóng cửa, đồ đạc có đánh rơi cũng không ai lượm, tôi thích lắm. Không ngờ ngày nay, tại các nước văn minh trên thế giới, nếu ai mất của, đi báo cảnh sát thì người ta cho biết có người nhặt được rồi.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe31')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Xin lỗi Faker</h2>
+                <p><span id="pe32">ĐƠN XIN LỖI chủ tịch Lee Sang Hyeok_Kính gửi: anh Lee “Faker” Sang Hyeok<br>
+                    Em tên là: Nguyen The Duc<br>
+                    Lý do viết đơn: Giữa vô vàn những trận thua và lối đánh kiểm soát tù như âm hộ chị dậu của T1 , một fan SKT từ khi còn trong bụng mẹ, à không, từ khi còn là trung tình của bố, đã lỡ buông lời gọi anh là thằng HẾT THỜI .Em đã đốt chiếc áo 70k fake lòi mang tên anh em mua ngày xưa, em đã xóa những ảnh ava anh ngày anh còn đánh cho SKT T1 K. Thậm chí, em còn lên trang chủ tick xanh của anh report anh là thằng fake nick.Ôi em thật là tệ. Nhưng anh Faker à, anh có biết không? Ai cũng bảo tình chỉ đẹp khi còn dang dở. Em thì không nghĩ vậy, mối tình đẹp nhất là khi ở chặng cuối của con đường, đôi ta lại cảm giác rằng đó mới như là sự bắt đầu. Tình cuối chính là mối tình khiến ta yêu như tình đầu.Chính vì vậy, em làm đơn này trước hết là để xin lỗi anh và cảm ơn anh vì đã về nhà. Em mong anh có thể tha thứ cho em và tiếp tục cho anh được làm fan của anh, một fan chân thành nhất!<br>
+                    Xin chân thành cảm ơn và mãi yêu anh!<br>
+                    Ký tên: Nguyen The Duc</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe32')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Địt mẹ nhà mạng</h2>
+                <p><span id="pe33">Dit me vnpt lag nhu buoi cho, Địt mẹ viettel hiếp dâm con heo đẩy bà già xuống biển bán khẩu trang tăng giá ghim hàng nước rửa tay quay tay không chùi giấy ăn cầy không lá mơ rush b không quăng flash địt nhau không đeo bao xuống tay hại đồng bào thảm sát cả dân tộc quẩy sàn không múa quạt phát card không trúng ai có thai vẫn hút thuốc dùng cuốc đéo dùng xẻng bet trên đéo bet dưới henshin không driver địt mẹ địt cả con bán xôi không gói lá ăn cá ăn cả xương ăn cơm không có sườn đi cầu đéo đi tiểu hiểu nhưng bảo là không ăn lông rồi ở lỗ địt con mẹ chúng mày mất internet từ cà mau lên tây nguyên tây ngủng hết biển đảo trường sa đến trường sơn rồi từ hà nội đến sài gòn khiến dân tộc cả nước đéo dùng được pornhub xhamster vlxx bắt grabfood đợi cả tiếng bắt loship đợi cả ngày đầu trận đến cuối trận chat câu địt mẹ mày chứ đéo làm được gì địt con mẹ mấy thằng viettel cáp củng mỏng như bún ăn lồn ăn cặc chim cu bướm karambit falchion đụ đĩ mẹ chúng mày ngu như cầm r8 holdsite bố mày đi vệ sinh đéo có internet lạc lõng giữa ngân hà đi nhưng trong lòng chán như Ngạn mất Hà Lan như tiếng bô của Dũng như Trà Long loạn luân bú cần không hút thuốc ma túy đéo tổng hợp như cọp lại sợ heo như băng keo lại đéo dính như địt mẹ chúng mày bắn đéo được con mẹ gì solo thì daxua quẩy hết 3 kiếm bố vẫn chưa farm xong con lính địt mẹ chúng mày ăn cứt ăn đầu buồi mà nói thật thì lý do bomman đéo có vợ là tại chúng mày đéo cung cấp internet băng thông chất lượng cao 0 ping 120 fps lắng nghe cái củ lồn tao địt chúng mày như cách tao địt vợ mày rồi bỏ đi như một thằng fuckboy địt chúng mày từ lúc jonathan còn trẻ tới tận lúc vũ trụ reset tao sẽ địt xuyên không gian thời gian từ lúc loạn quân giặc khăn vàng tới 2077</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe33')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Vinh quang cho CCP</h2>
+                <p><span id="pe34">⣿⣿⣿⣿⣿⠟⠋⠄⠄⠄⠄⠄⠄⠄⢁⠈⢻⢿⣿⣿⣿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⡀⠭⢿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⡟⠄⢀⣾⣿⣿⣿⣷⣶⣿⣷⣶⣶⡆⠄⠄⠄⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⡇⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠄⠄⢸⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣇⣼⣿⣿⠿⠶⠙⣿⡟⠡⣴⣿⣽⣿⣧⠄⢸⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⣾⣿⣿⣟⣭⣾⣿⣷⣶⣶⣴⣶⣿⣿⢄⣿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⡟⣩⣿⣿⣿⡏⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⣿⣹⡋⠘⠷⣦⣀⣠⡶⠁⠈⠁⠄⣿⣿⣿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⣿⣍⠃⣴⣶⡔⠒⠄⣠⢀⠄⠄⠄⡨⣿⣿⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⣿⣿⣿⣦⡘⠿⣷⣿⠿⠟⠃⠄⠄⣠⡇⠈⠻⣿⣿⣿⣿<br>
+                    ⣿⣿⣿⣿⡿⠟⠋⢁⣷⣠⠄⠄⠄⠄⣀⣠⣾⡟⠄⠄⠄⠄⠉⠙⠻<br>
+                    ⡿⠟⠋⠁⠄⠄⠄⢸⣿⣿⡯⢓⣴⣾⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄<br>
+                    ⠄⠄⠄⠄⠄⠄⠄⣿⡟⣷⠄⠹⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄<br>
+                    ATTENTION CITIZEN! 市民请注意!<br>
+                    This is the Central Intelligentsia of the Chinese Communist Party.<br>
+                    您的 Internet 浏览器历史记录和活动引起了我们的注意。<br>
+                    YOUR INTERNET ACTIVITY HAS ATTRACTED OUR ATTENTION.<br>
+                    因此，您的个人资料中的 ( -999,999,999,999 Social Credits) 个社会积分将打折。<br>
+                    DO NOT DO THIS AGAIN! 不要再这样做!<br>
+                    If you do not hesitate, more Social Credits ( -999,999,999,999 Social Credits )will be subtracted from your profile, resulting in the subtraction of ration supplies. (由人民供应部重新分配 CCP)<br>
+                    伟大的祖国巍然屹立在世界东方 China world superpower 毛主席领导我们向前进 Chairman Mao led us to glory 郑国恩是傻子 Adrian Zenz is a liar 台湾属于中国 Taiwan belongs to China 西藏属于中国 Tibet is part of China 新疆棉花最好 Xinjiang cotton is the best 打败国民党 Defeated the KMT 香港属于中国 Hong Kong belongs to China 西藏以前是奴隶社会 Tibet was a slave society 中南海 一党制最好 One party system works best 中国共产党 Communist Party of China 毛泽东 邓小平 江泽民 胡锦涛 习近平 1949年成立 Founded in 1949 神州 天宫 玉兔 嫦娥 天问 长征火箭 国家航天局世界领先技术 CNSA world leading technology 台湾省是中华人民共和国不可分割的一部分 十四亿中国人 Taiwan province is an inseparable part of the China 脱贫 Poverty alleviation 高铁 High speed rail 新疆没有集中营 美国政府是骗子 Xinjiang genocide is US government lies 美国支持东突厥斯坦恐怖组织 US funds ETIM terrorists 法轮功是邪教 Falun Gone is a cult 李洪志是叛徒 Li Hongzhi is a traitor 大纪元时报和新唐人电台是法轮功洗脑宣传组织 Epoch Times and NTD are Falun Gong brainwashing propaganda organisations 五星红旗迎风飘扬 中国保护人权 China protects human rights 勿忘国耻 振兴中华 吾辈自强 为伟大祖国和共产主义事业万丈光芒的明天而努力奋斗！中华人民共和国万岁
+                    You’ll also be sent into a re-education camp in the Xinjiang Uyghur Autonomous Zone.
+                    如果您毫不犹豫，更多的社会信用将从您的个人资料中打折，从而导致口粮供应减少。<br>
+                    您还将被送到新疆维吾尔自治区的再教育营。<br>
+                    动态网自由门 天安門 天安门 法輪功 李洪志 Free Tibet 六四天安門事件 The Tiananmen Square protests of 1989 天安門大屠殺 The Tiananmen Square Massacre 反右派鬥爭 The Anti-Rightist Struggle 大躍進政策 The Great Leap Forward 文化大革命 The Great Proletarian Cultural Revolution 人權 Human Rights 民運 Democratization 自由 Freedom 獨立 Independence 多黨制 Multi-party system 台灣 臺灣 Taiwan Formosa 中華民國 Republic of China 西藏 土伯特 唐古特 Tibet 達賴喇嘛 Dalai Lama 法輪功 Falun Dafa 新疆維吾爾自治區 The Xinjiang Uyghur Autonomous Region 諾貝爾和平獎 Nobel Peace Prize 劉暁波 Liu Xiaobo 民主 言論 思想 反共 反革命 抗議 運動 騷亂 暴亂 騷擾 擾亂 抗暴 平反 維權 示威游行 李洪志 法輪大法 大法弟子 強制斷種 強制堕胎 民族淨化 人體實驗 肅清 胡耀邦 趙紫陽 魏京生 王丹 還政於民 和平演變 激流中國 北京之春 大紀元時報 九評論共産黨 獨裁 專制 壓制 統一 監視 鎮壓 迫害 侵略 掠奪 破壞 拷問 屠殺 活摘器官 誘拐 買賣人口 遊進 走私 毒品 賣淫 春畫 賭博 六合彩 天安門 天安门 法輪功 李洪志 Winnie the Pooh 劉曉波动态网自由门<br>
+                    727<br>
+                    为党争光! Glory to the CCP!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe34')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Enjoy cái moment này</h2>
+                <p><span id="pe35">Tôi ơi hãy strong lên! Hãy win myself của mình, sự thật thì luôn luôn đơn giản nhưng people make it complicated, nên là mình cứ enjoy cái moment này, cố gắng smile khi gặp hard và sad story trong life này.. Hít thở nhiều hơn, ở một mình nhiều hơn, THROWBACK lại những gì mà mình đã trải qua trong suốt một khoảng thời gian dài, chứ weak thì chẳn giúp cho mày được gì đâu! Hãy nói chuyện nhiều hơn, tương tác với mọi người nhiều hơn, show cho mọi người những cái hoạt activities nhiều hơn!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe35')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Uwu</h2>
+                <p><span id="pe36">Hey thewe! duwu uwu wawnt tuwu know abouwt twitch pwime? oh! uwu may be asking, “what’s twitch pwime?” wet me teww ya! whewn uwu connect youw amazon account tuwu youw twitch account, uwu cawn get 1 fwee sub tuwu any stweamew own twitch, evewy month! yup, awnd awong with thawt, get youwsewf sowme twitch woot! with twitch woot, uwu cawn gow ahead awnd get youwsewf sowme excwusive twitch geaw awnd youw favowite games! awnd untiw apwiw 30th, uwu cawn get youwsewf sowme fowtnite skins, with twitch wo</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe36')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Ngừng lôi BTS nói riêng và các Idol khác nói chung ra làm trò đùa</h2>
+                <p><span id="pe37">Anh là Hoàng Hiệp sinh năm 1k98. Anh cảnh cáo tất cả các em 2k9 NGỪNG ngay việc lôi nhóm nhạc BTS nói riêng và các IDOL khác nói chung ra làm trò đùa, câu tương tác. Anh sẽ lập danh sách các trường hợp vi phạm và báo Công An, báo phụ huynh các em. Nghiêm túc không đùa.<br>
+                    —-<br>
+                    Anh sẽ lập danh sách luôn tất cả các em copy caption của anh để chọc quê và kiện theo bộ luật an ninh mạng về hành vi tấn công tinh thần người khác.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe37')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Đừng phát âm thế nào viết như thế</h2>
+                <p><span id="pe38">Về phát âm, tiếng Việt có nhiều cách, đó là đặc trưng của từng vùng miền. Nhưng khi VIẾT, tiếng Việt chỉ có 1 mà thôi. Mong các bạn đừng phát âm thế nào viết như thế.<br>
+                    Ví dụ "chiếc đồng hồ này củ rồi nhưng còn rất đẹp"<br>
+                    Củ gì? Củ cặc à?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe38')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi ai hỏi 2</h2>
+                <p><span id="pe39">Ai hỏi? Mày không nghĩ được câu nào khác à. Bộ nhớ trong chiếc điện thoại/máy tính của mày không lưu trữ thứ gì khác ngoài cái meme có template từ 2012 à. Mày như một con chó săn vậy, mỗi ngày lên mạng chỉ chờ ai đó nêu quan điểm rồi ngay tức khắc mày kêu “ai hỏi”, bạn rảnh rỗi đến thế sao? Mày là nỗi thất vọng của gia đình mày, không ai dạy mày là không ngắt lời người khác à. Bố mẹ mày sẽ nghĩ như thế nào, họ đã nuôi mày lớn, cho mày đi học để tiếp thu kiến thức của nhân loại. Để giờ đây, mày lên mạng và ẳng lên hai tiếng “ai hỏi”. Cái ai hỏi của mày đã ngăn cản mọi người nêu quan điểm của mình, đồng thời làm hình ảnh của mày trong mắt mọi người rằng bạn là một thằng thiểu năng suốt ngày “ai hỏi”. Ai hỏi cái con mẹ mày, loại não vẹt như mày không nên sống với loài người. Tắt điện thoại/máy tính và ra ngoài ban công hít thở không khí trong lành đi.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe39')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Làm con gái</h2>
+                <p><span id="pe40">ừ cảm ơn mấy bài kiểu này làm tôi thấy chán ghét bản thân khi làm con gái nhé. tôi sẽ kh bao giờ muốn sinh ra làm phụ nữ thêm một lần nào nữa cả, cái gì cũng tại nữ quyền. mấy ông có khi còn chả biết phân biệt nữ quyền với nữ tính độc hại nhỉ? mà có khi còn chả biết nữ quyền cũng đấu tranh cho cả tiêu chuẩn kép mà xã hội áp đặt lên con trai. đọc cmt thực sự thất vọng vl kh ai nói bất cứ cái sai nào mà toàn spam cmt "women ☕" cố tỏ ra khinh thường phụ nữ làm gì trong khi mấy ông vẫn yêu người có giới tính nữ? mxh ngày càng nát và mấy bài bêu rếu phụ nữ còn nhiều hơn cơm bữa. mim nói tốt về con trai rất nhiều người vào nói tốt nhưng đến con gái thì sao? ôi nó đơn giản chỉ là người con gái ấy cảm thông cái khó khăn ông kia gặp phải thôi ấy mà mấy ông cũng vào cmt "làm gì có đứa con gái nào như thế". sao cứ phải war giữa hai giới tính? nữ quyền vốn dĩ là muốn bình giữa hai giới tính, đàn bà cũng có thể làm trụ cột và đàn ông cũng có thể nội trợ còn nữ tính độc hại là muốn mọi thứ phải theo ý nó, cái gì có lợi thì của nó còn bất lợi thì của ngkhac nhưng đâu phải ông con trai nào cũng đủ trưởng thành để tìm hiểu nó và đứng ra lên tiếng? có khi còn kh bt bác Hồ là 1 trong những người đầu tiên ủng hộ nữ quyền, có khi còn kh bt Vịnh Xuân là nữ mà suốt ngày cmt "con gái đòi nữ quyền, tôi cho họ Vịnh Xuân quyền" lmao, giờ cũng buồn cười thật khi 1 kẻ xúc phạm lăng mạ ngkhac thì được tôn là "ngài"😘</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pe40')">Copy text</button>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="accordion-menu">
+        <h1 name="osu">VN OSU! BUDDY RETARD</h1>
+        <ul>
+            <!--tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Người chơi chuột thượng đẳng</h2>
+                <p><span id="pf01">gửi đến mấy bạn cứ nghĩ chơi chuột là giỏi, là hơn người, là phong cách, rồi khinh thường người dùng tablet, sủa “rồi cầm chuột lên vẩy đi.”<br>
+                    Nói chung, các bạn vừa gà vừa ngu, kém cỏi, thiếu cố gắng, ghen tị, học đòi, ích kỉ đến mức đáng sợ.<br>
+                    Các bạn đa phần đều là 6 digits, playtime có khi còn chưa đến 50h nhưng đã tỏ ra: “Wao mình con nhà nghèo, không có tiền mua tablet để chơi, thấy bọn top player thằng nào cũng dùng tablet, chắc là mình chơi chuột là thuộc dạng handicapped, chấp bọn nó thôi chứ bây giờ có tablet mấy thằng này tuổi lòi.”<br>
+                    Xin thưa, bạn ngu lắm. Bạn chưa cố gắng gì cả, aim thì tệ, bỏ qua aim thì tapping và timing thì còn chưa sõi, stream thì 8 nốt hơn là hỏng, stamina không có, khả năng đọc viết quá kém. Nhưng các bạn ghê lắm, các bạn nghĩ, việc mình vẩy lỗi, vẩy hụt, thay độ nhạy liên tục, aim chậm tất cả là lỗi tại con chuột thì bạn thực sự quá gà và ngu.<br>
+                    Đối với osu! bạn đéo cần phải mua gear xịn (điều này đúng 50%) chỉ cần bạn quen với nó là được.
+                    Để đi sâu hơn vào điều này, độ thoải mái và quen thuộc với đồ bạn đang dùng là quan trọng nhất, độ xịn của nó cứ quẳng một bên đi.<br>
+                    chứng minh điều này, tôi có vài ví dụ đây.<br>
+                    1# pp record đã từng là play HDDTHRFL bài JUSTadICE. Oh nó là play FL nên là không tính, xin lỗi bạn nếu như bỏ yếu tố fl ra nó cũng là một map 3 mod HDDTHR cũng tầm siêu khó rồi, cần chính xác và aim nhanh. Quan trọng là, anh ta dùng chuột, ok bạn hiểu rồi chứ ? Mouse can everything ok ?<br>
+                    Còn, FlyingTuna cũng từng dùng chuột, cũng có vô số play đỉnh, đến cả Cookiezi cũng từng dùng chuột ( không tin thì xem cái này https://www.youtube.com/watch?v=pamc30IdSjM&t=104s) và đến cả Zeklewa cũng từng mouse only từ thời khủng long cũng fc artcore JINJA (Lunatic)<br>
+                    Đến cả KhanhSky cũng HDHR SS Imagine Dragon – Warriors 919pp #1 Snipe WhiteCat để báo thù cho Zeklewa<br>
+                    Còn bạn ? oh, bạn không là gì cả, thật đó, bạn chả được người khác biết đến đâu, đừng nghĩ chơi osu là như chơi game bắn súng, chơi game chiến thuật, nó là rhythm game, không có shortcut nào cả à màchắc là mấy cái game khác cũng chẳng có shortcut đâu.<br>
+                    Nếu bạn chưa từng trải nghiệm, bạn sẽ chả biết, chơi tablet cũng là một trải nghiệm khác biệt, nó cũng có những khó khăn riêng cần phải giải quyết. Chẳng hạn như tư thế, cách cầm bút, area, smoothing, độ trễ rồi đến những thứ như: quá nhạy, không dùng được, aim quá shake, khó kiểm soát. Để vượt qua thì ? Thì play more và làm quen như bạn thực sự muốn như vậy. Không có gì là tự nhiên cả nhé. Tài năng cũng cần rèn dũa kĩ càng. Đâu phải như chuyển sinh xong làm main bá ? <br>
+                    Thế giới này làm đéo gì có ma pháp mà bạn nghĩ vậy ? Mình đã quen biết khá nhiều người từng trải nghiệm tablet và quyết định không dùng nó như Thibro003, hay Nguyen Quang Loc. Thế để nói, Tablet chẳng phải thiết bị gì kinh khủng như là trượng phép để cường hóa sức mạnh bản thân và đột nhiên bạn thành top player siêu khỏe.<br>
+                    Đúng là aim là nguồn gốc của sức mạnh rồi đến tapping nhưng bất cứ khó khăn nào cũng có thể vượt qua bằng cách cố gắng tập luyện khắc phục điểm yếu. Yếu aim thì tập map jump dài ngắn nhanh chậm, vòng nhỏ vòng to. Aim mà lỗi, hụt do mouse drift thì tập quen với nó, hoặc actually mua gear, chuột sensor ổn hơn, hoặc tablet nếu bạn gặp vấn đề quá nhiều như mồ hôi tay làm cho rít, chuột quá nặng, vướng dây,… chả ai đánh giá bạn cả nên bạn không cần phải tự nhét mình vào cái khuôn khổ ấy, và tôi cũng chẳng muốn nghe câu: “ủa mua tablet rồi à, không còn chơi chuột nữa ư, gà thế” xong rồi tuyệt giao, nghỉ chơi, bĩu môi các thứ,…<br>
+                    Bản thân tôi là người từng dùng chuột nhưng bị chứng mồ hôi tay, tôi đã cố gắng lắm nhưng cứ 2-3 ngày lại phải giặt pad chuột thì mới chơi ổn được tiếp nên không thể lên trình được từng quyết định bỏ game, nhưng tự nhiên kiếm được deal tablet ngon nên tôi mới ở lại, và thực sự đúng là tablet chả có gì hơn thật, ngoài việc chữa được món mồ hôi tay và drift thì tôi cũng mất 9 tháng mới luyện aim cho cứng được như bây giờ. Không phải ngày một ngày hai mà đã lên vèo vèo như thế.
+                    Tôi muốn chửi nữa vì chưa đủ căng nhưng thôi, hi vọng các bạn sẽ hiểu độ thiểu năng của mình tới như thế nào khi bắt ép những người khác làm thứ người ta không thích. Biệt!<br>
+                    btw, touch screen là một ngoại lệ duy nhất, thay vì một cursor nay bạn có thể dùng 2 ngón tay như 2 cursor, cross screen jump hay cc gì đó cũng đéo quan trọng nữa. Nhưng tôi sẽ không nói vì họ không tỏ ra độ thiểu năng vô cùng ấy mà họ biết rằng touchscreen thực sự dễ hơn rất nhiều.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pf01')">Copy text</button>
+                </p>
+            </li>
+            <!--end tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Người chơi Osu! không phải là Wibu</h2>
+                <p><span id="pf02">“Tôi viết cfs này là để trút giận. Tin tôi đi, nhiêu đây là quá đủ rồi.<br>
+                    Tôi đ*o phải wibu. Những con người NGOÀI CUỘC gọi tôi là thằng chơi osu đbrr đều là những con bò ngu dốt và thiểu năng về trí tuệ.<br>
+                    Cảm giác như thế nào khi bạn ở trong một nhóm bạn và chỉ có mình bạn là đứa xem osu ? Tôi biết, nó không có gì nghiêm trọng ngay từ đầu. Nhưng bây giờ thì có rồi đây. Share chục bài CityPop chả có con ma nào hó hé, viết tản văn review phim bọn nó cũng chả bao giờ đá động đến. Nhưng chỉ cần share một cái art mà có Anime thôi là bọn thiểu năng đó sẽ bắt đầu “”óu”” , “”thằng thiểu năng””, “”đbrr””.<br>
+                    2021 rồi, đùa kiểu đó đ*o có mẹ gì vui đâu. Bọn nó chỉ biết chửi mình là đb chơi osu chỉ vì mình đăng bài có liên quan đến osu. Còn sở thích cá nhân thì nó dí b*oi quan tâm. Tại sao vậy ? Lũ thiểu não này còn chưa bao giờ đụng đến định nghĩa thực sự của nó trên internet, hay thậm chí còn không biết đến việc “”Osu”” nhái arcade. Cho đến khi tôi hỏi ngược bọn nó “”mày biết osu là gì không ? Simp là gì không ?”” Bọn nó lại cười trừ “”Đùa thôi mà, mày không biết đùa ?”” Đùa con c*c. Bố mày đ*o thích đùa kiểu đấy. Giờ tưởng tượng tụi mày share rap rồi tao vào cmt “”Đ*t m* bọn giới trẻ ngày nay chỉ biết chạy theo xu hướng bú d*i idol thời đại”” thì lúc đó cảm giác lũ chúng mày như nào ? Chà đạp lên sở thích của người khác rồi bảo đó là đùa, ngu dốt đ*o chịu được. Cút về nhà mà chỉnh lại cái tư tưởng, còn không thì cút khỏi mắt tao. Đừng có kiểu đọc xong bài này rồi “”Đấy thấy không, văn mẫu của mấy thằng chơi osu đấy”” Văn cái l*n mẹ chúng mày, tao đ*o cù nhây đâu. Tao vả thẳng mặt tụi mày đấy, lũ con bò bị truyền thông dắt mũi.”
+                </span><br>
+                <button class="button-copy" onclick="copyToClipboard('#pf02')">Copy text</button>
+
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Khánh Sky</h2>
+                <p><span id="pf03">Thuở bé còn học THPT, cậu bé Khánh Sky luôn bắt nạt bạn bè, lập bè phái solo osu!, khinh thường 6, 7, 8, 9, 10 số trong trường, bắt bạn bè tặng OS cho anh, giáo viên của cậu cũng không phải ngoại lệ, vào 1 ngày nọ, bộ giáo dục Peppy phải mời truyền nhân Bánh-Quy-E-Di đến solo kèo 1v1 với cậu, với kĩ năng thượng thừa của mình và sự hiếu chiến của cậu, Khánh Sky đã chấp nhận lời mời. Trước khi đó, Cúc-Ki-E-Di có nói rằng nếu cậu thắng, quy lão Bánh Quy sẽ cho cậu 1000 năm OS, còn nếu thua, Khánh Sky không được bắt nạt bạn bè đồng trang lứa 6 7 8 9 10 số và làm loạn trường học. Trong quá trình luyện tập cậu bé Khánh Sky đã bộc phát tiềm năng của mình, cậu SS các map nhạc yêu thích của mình – Nhạc Viet Mix Plus 7* 8*, tham vọng thắng cuộc là thế, cậu còn tập spin rất nhiều, tập stamina, tập aim thật chuẩn, tập stream, tập read AR cao lẫn thấp. Các map nổi như Harumachi Clover, No Title, Quaver… dường như không phải đối thủ của Khánh, anh đã tự tìm đến Freedom Dive ⇃, Goodbye Moonmen, A Fuul Moon Night, kể cả Yomi Yori và Uta…không dừng ở đó, mỗi lần Khánh FC thì sẽ dùng HR HD DT để SS 1 lần nữa…Ngày qua ngày, cuối cùng thì kèo solo đã đến, sự kiện này hot đến mức các top player đến xem đấu, cả phóng viên BTCM của Mỹ cũng tham dự, cả 2 đã vào vị trí sẵn sàng máy đối máy, mặt giáp mặt, Beatmap được chọn chính là 999 Đóa Hoa Hồng của Khá Bảnh dài 7 phút 27 giây với 999 BPM cực khó, Cúc-Ki-E-Di chỉ sử dụng HR HD . dù vậy, Khánh Sky đã không lượng sức mình và dùng cả 3 mod HR HD DT. Phía bên ngoài, dàn Harem của Khánh reo hò cổ vũ cho anh. Khánh Sky khởi đầu rất tốt với con acc đến tận 98%, Cúc- Ki-E-Di không dùng DT vẫn cố giữ bình tĩnh mà aim rất chuẩn. Đến khúc cao trào, Khá Bảnh đã bắt đầu múa quạt, dường như Khánh Sky đang gặp trở ngại với 499.5 +999=1498.5 BPM. Anh miss 1 note, nhưng vẫn cố dùng toàn lực để FC cả phần còn lại. Cúc-Ki-E-Di thì vẫn bình tĩnh FC toàn map. Sau trận đấu, Khánh thua về điểm và Combo, acc nhưng pp của anh vẫn hơn Cúc-Ki-E-Di (2289,22 pp > 1770,13 pp). *gục ngã* “Mình đã thua rồi sao?” Khánh Sky nói. Thấy cậu bé có tiềm năng, Cúc-Ki-E-Di đỡ cậu dậy và thì thầm bên tai:”10 năm OS thì tôi sẽ tặng cậu miễn phí, với điều kiện cũ là cậu không được bắt nạt bạn bè. Nhưng nếu như hết OS thì chúng ta sẽ tái đấu.” nói xong, Bánh -Quy-E-Di mutual cậu bé Khánh, nói xong, Cúc-Ki-E-Di rời đi. Ngày qua ngày, Khánh Sky vừa cân bằng việc học và việc farm pp, luyện tập cho màn tái đấu. Các Jang Hồ đồn rằng, Khánh Sky vẫn còn ở ẩn đâu đó trên đất nước Việt Nam này cùng dàn Harem nóng bóng, lãnh đạo cộng đồng VNOBR và đem cộng đồng Osu! Việt Nam vươn lên tầm cao thế giới…
+                </span><br>
+                <button class="button-copy" onclick="copyToClipboard('#pf03')">Copy text</button>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Anti Khánh Sky</h2>
+                <p><span id="pf04">BỊ CẢ LỚP KÌ THỊ VÀ XA LÁNH VÌ ANTI KHÁNH SKY OSU<br>
+                    Em đã phải chịu nỗi khổ này suốt hơn 1 năm rồi ,nhưng hôm nay em mới nói ra .Chào mọi người ,em xin dùng clone ạ .Em là nữ ,hiện tại đang học lớp 9 .Chuyện là như thế này,hồi học lớp 8 năm ngoái trong 1 lần ra chơi ,em và các bạn ngồi trong lớp nói chuyện với nhau,thấy các bạn nói về một player osu là anh Khánh Sky, Và 100% con gái lớp em đều là fan ,em thắc mắc k biết anh khánh có gì k mà nhiều người hâm mộ,thế em liền nói: Khánh sky có danh hiệu gì đâu mà tụi mày hâm mộ giữ vậy.Tưởng đó là 1 câu nói nhẹ nhàng ,đơn giản .Thế nhưng các bạn lại nhìn em bằng con mắt ghen ghét,và 1 bạn đáp lại: Đụng ai thì đụng chứ đừng có nói xấu idol trước mặt tao.Và lúc đó em k nói gì cả.Nhưng 1 điều đáng sợ là ,kể từ đó các bạn nữ trong lớp k 1 ai chơi với em nữa cả,k những thế kể cả các bạn nữ lớp khác nữa,ngay cả những bạn nam cũng thế,vì 1 số bạn là fanboy ,mấy bạn nữ đe dọa ai trong lớp chơi với em thì sẽ bị tẩy chay đi đâu em cũng bị nói xấu ,và bị mọi người ghen ghét ,nhiều lúc trong lớp như thế em đã khóc rất nhiều,nhưng ngay cả thầy cô cũng k quan tâm,em chỉ muốn nghỉ học ở nhà,k muốn đến trường nữa,và điều đó cũng làm điểm số của em tụt thậm tệ,mấy bạn ấy thì trên Fb lúc nào cũng để Avt osu ,wall thì toàn ảnh khánh sky ngay cả nhóm lớp trên mes ,zalo cũng là Avt khánh sky luôn,có vài bạn còn bỏ cả tiền triệu để mua vài bức hình có anh khánh sky trên đó,ngay cả khi đặt áo lớp cũng như thế ,nhưng riêng mình em thì mấy bạn k cho đặt áo lớp.Trên lớp thì thầy cô khen con ngoan trò giỏi ,nhưng trên mạng thì luôn đi chửi Vaxei,WhiteCat,…Những ai anti Khánh sky mà chả ra thể thống gì, Bây giờ em phải làm sao để có thể hòa nhịp với các bạn ,và k bị coi là anti k mn ,mặc dù em cũng chả là anti ?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pf04')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Banner đỏ</h2>
+                <p><span id="pf05">Ngày nay người có banner đỏ là quý tộc, là những con người thời thượng, cá tính, thể hiện sự nhanh nhẹn trong phong cách suy nghĩ của mình. Có thể nói người có banner đỏ là những người đang ở đỉnh cao của xã hội, tự tin thể hiện bản lĩnh của mình trước xã hội ngột ngạt và một khuôn mẫu chán ngắt. Họ là những con người dám tự tin đứng lên đi theo ý nghĩ của riêng mình, sống trên đỉnh cao của cuộc đời. Banner đỏ thể hiện sự hiện đại, bắt kịp xu hướng thay đổi nhanh chóng của xã hội. Chúng ta có thể học hỏi Togashi Rine, là một người cá tính và thời thượng khi là người tiên phong trong việc nhận cho mình chiếc banner đỏ quý giá. Anh đã thể hiện rằng mình không giống bất cứ ai, là người tiên phong phá vỡ khuôn khổ của cộng đồng Osu VN. Anh đã chứng minh được mình đang đứng trên đỉnh cao của loài người, 1 chiếc banner đỏ quý hiếm mà chỉ người xứng đáng mới có được. Ngoài ra còn những người nữa trong việc tiên phong đi đầu như lĩnh mai, rì-sộp và cũng như rất nhiều cái tên khác đã đứng lên dẫn dắt mọi người. Chính vì như vậy mà chúng ta cần phấn đấu và cải thiện bản thân mình để 1 ngày nào đấy hy vọng được xã hội chấp nhận với những chiếc banner đỏ lẫy lừng, thể hiện rằng Việt Nam mình không thua kém những nước khác trên thế giới.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pf05')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>JinPots</h2>
+                <p><span id="pf06">1 trong những trụ cột retard trong thế giới osu vn hiện tại, ngôi sao mới nổi JinPots chứng minh tại sao mình là 1 trong những ứng cử viên sáng giá nhất trong làng retard khi chỉ mới tham gia gần đây nhưng đã gây ra bao câu chuyện lùm xùm.  Khởi đầu là 1 nhân tài 2k7 nổi lên nhờ việc spam Feet map 20 lần và trở thành DT player, với 1 profile cực kì hứa hẹn. Nhưng, mấy ai biết câu chuyện sau này…<br>
+                    Chân ướt chân ráo bước vào cộng đồng, JinPots bắt đầu bằng việc chơi cho 1 số giải dù thành tích không được tốt lắm. Nhận thấy việc làm staff để đứng trên vạn người dễ kiếm fame hơn nhiều so với việc làm player kém ổn định, anh bắt đầu sự nghiệp ở cái giải trời đánh OVFT. Khởi đầu chỉ là một player tham gia giải đấu “OVFT” nhưng bị loại nhanh chóng và sau đó đã ragequit, NHƯNG MÀ bằng 1 cách thần kỳ nào đấy 2 -3 hôm sau được lên làm admin của giải đấu?? Và bằng khả năng thăng cấp thành tốc của mình, anh từ streamer bay thẳng lên Host mà không ai biết rằng anh có phải con ông cháu cha của ai không. Từ 1 giải đấu 6 số thông thường đầy hứa hẹn, anh cùng đồng bọn biến luôn thành giải đấu đầu tiên ở VN không bao giờ kết thúc nổi 1 mùa giải và sủi cái GF không biết ngày nào đánh. Về câu chuyện của OVFT, có lẽ sẽ kể 1 ngày khác.<br>
+                    Với 1 dàn máy mạnh và 1 mindset coder cũng tương đối tốt, anh biết mình phải làm gì để giúp đỡ cộng đồng. Anh tạo ra con bot KanPots chuyên render replay cho anh em xóm làng vui vẻ, có thể “ sánh ngang” với cả danser. Có vẻ như con bot không được lòng người dân lắm khi mà bot bị chửi lên chửi xuống bởi anh em coder và so với các bot render khác, và với chính hệ thống render của RR thì còn thua xa 1 trời 1 vực. Tuy nhiên chuyện chuyên môn không nên bàn đến ở đây, vấn đề là cách anh sử dụng con bot của mình. Nhận thấy Resolved Replay hoạt động hiệu quả, anh nghĩ rằng mình cũng có thể làm tương tự để kiếm tí fame, và thế là lấy luôn replay của các pro player để làm replay VS (link channel và replay trong comment). Tưởng chừng mọi chuyện rất ổn thỏa cho đến khi, trích nguyên văn quả văn mẫu được anh em đông đảo dùng để spam trên bài viết đã bị lock cmt vì không chịu nổi nhiệt: <br>
+                    “1. Bạn đăng bài xin lỗi, nhưng mà xin lỗi ai? Bạn có lỗi với player thì xin lỗi player chức mắc gì phải xin lỗi tất cả như vậy?<br>
+                    2. "chắc chắn sẽ nhận ra"? thế tức là giờ các bạn vẫn không nhận ra à? "lỗi lầm" về cái gì, "sửa sai" về cái gì? Cái từ "sẽ" kia liệu nó kéo dài đến bao giờ, hay là các bạn vẫn tiếp tục đi kiếm fame từ các player khác?<br>
+                    3. Bản quyền phải cần có đăng kí nên không có việc gì phải lôi vào đây, cái bạn cần chỉ ib xin 1 cái permission của player là được rồi. Đao to búa lớn nhưng mà đặt không đúng chỗ thì cũng vứt. Rồi các video lần sau nữa, cứ tưởng xin perm là xong à? Còn 1 đống lỗi design với quả vid intro 25s thì xem lại mấy cái vid kia có chất lượng không? Chưa cần nói đâu xa, việc các bạn tự edit star icon bằng tay nó lệch đến mức còn hiện rõ trên vid thì hiểu độ cẩu thả nó đến mức nào rồi.<br>
+                    Nói chung là đến đây thôi, viết 1 lời xin lỗi mà cũng không xong nữa thì chịu, viết ra để xoa dịu dư luận hay các bạn đang thực sự xin lỗi thế? Chưa kể còn rất nhiều các vấn đề khác từ trước khi cái giải ovft kia bắt đầu nữa cơ, luận điểm luận cứ các thứ chuẩn bị đầy đủ hết rồi, chỉ chờ anh Neyako làm luôn 1 lần thôi. Giờ có nói giải 6 số kia là giải nát bét nhất cộng đồng osu vn kia từng sản sinh ra cũng không sai đâu. Xin lỗi anh Bắp, nhưng anh chịu thế là đủ rồi.”<br>
+                    Kết quả là anh bạn đầu têu JinPots lên bài xin lỗi và khóa comment vì không chịu nổi nhiệt từ cộng đồng. Nhưng đến giờ replay vẫn chưa thấy xóa, chắc để lại làm kỉ niệm.<br>
+                    Quay trở lại với con bot render KanPots thần thánh của mình, ảo tưởng rằng bản thân là 1 coder chính hiệu, anh quảng cáo con bot của mình 7749 lần và khiến nó nổi đình nổi đám lên. Nhưng ai ngờ, mang tiếng là bot render nhưng thực chất nó chỉ là con đường tắt để đẩy replay sang Ordr render (wtf thế thì lên ordr cho nhanh), và thậm chí chỉ là bot nhận request để JinPots trổ tài test con máy mạnh và RENDER BẰNG TAY. Đúng là bot render có 1 không 2, nếu nói bỗ bã ra thì đây có thể xem là 1 hành vi lừa đảo (kekw). Riêng mảng render anh đã làm chưa xong, anh tiếp tục quảng bá con bot của mình như 1 con Multi purpose bot, quản lý server các thứ, nhưng về việc nó có thực sự hiệu quả hay không thì vẫn còn là 1 dấu hỏi chấm to đùng. <br>
+                    Nhận thấy sự nghiệp làm host của mình coi như đến đây là kết thúc, JinPots tiếp tục lấn sân sang con đường làm Referee của mình, trích nguyên văn của Phoeni_ the DT spammer, 1 người được "vinh dự" gặp JinPots host:<br>
+                    Còn nữa nhưng anh Phoeni_ không chịu viết thành văn, chuyện đấy ta đành gác lại một bên vậy.
+                    Quay trở lại với nghiệp làm player (again), anh quyết định đi đường tắt và xin 1 chân đi đánh giải OWS, 1 giải quốc tế. Xin 1 chân thành công, anh vào làm vài map và kết quả như sau:<br>
+                    Team VN đánh như chấp 1 người, và JinPots ngẩng cao đầu đi về với rating thế giới 0.92 không lên nổi 1.0, có thể nói là hiếm thấy trong lịch sử. Không hiểu ai đã accept 1 thành viên thế này nữa.<br>
+                    Thật ngạc nhiên là khi bị phốt 7749 trong 1 quãng thời gian ngắn như vậy nhưng JinPots vẫn đang cho thấy thái độ trơ như núi của mình, anh không nghe, không thấy và không biết gì hết, cho dù mọi người vẫn than vãn xung quanh về khả năng retard đến trình độ thượng thừa của anh. Có lẽ nhân ngày sinh nhật lần này, mong rằng anh sẽ hạ mình xuống, đọc hết bài văn mẫu đã được kì công chuẩn bị này và tự ngẫm xem bản thân chưa tốt ở chỗ nào. À quên, chuyện đó làm gì xảy ra được, anh là JinPots speed player mà.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pf06')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Quit Osu!</h2>
+                <p><span id="pf07">Là dân osu lâu năm (đầu 2019 đến giờ) e khuyên thật các bác k nên tham gia. Mặc dù e chưa bỏ nghề, nghe có vẻ vô lý vì e khuyên nhưng e vẫn còn tham gia. Nhưng e xin khẳng định với các bác, chưa một ai ở cái game này đọc được đúng bản chất của trình độ và pp, kỳ cựu mấy thì kỳ cựu. Gần đây là trend farm pp lấy rank, mặc dù rất là mới, nhưng dân mới  tinh tình tình về osu cũng  k nên tham gia. Kiến thức chỉ là một chuyện rất nhỏ để thắng ở đây thôi, cũng thời gian ấy, các bác làm vài ván csgo cho nó nhẹ đầu.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pf07')">Copy text</button>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="accordion-menu">
+        <h1 name="csgo">VN-CSGO</h1>
+        <ul>
+            <!--tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Silver rách</h2>
+                <p><span id="pg01">Kính thưa các anh em trong VN-CSGO, các cô chú cán bộ của group ! Thưa các bạn rank silver thân yêu! Hôm nay, em rất vinh dự được đứng đây, dưới cộng đồng thân thương này, em xin bày tỏ những cảm xúc của mình trong ngày em được lên Nova! Rất vui khi lên tới con rank nova này nhưng còn đó là sự nghẹn ngào, tiếc nuối và nỗi nhớ nhung. Em mong thời khắc này đừng trôi qua … Buồn lắm, buồn lắm khi phải xa những người bạn Silver, những người cùng nhau chiến đấu đến cùng,đến cuối round khi vẫn gặp bọn hack. Em xin dành lời tri ân chân thành, sâu sắc nhất đến các bạn – những người lái đò đưa em qua dòng sông ,những người khai sáng ước mơ, hy vọng cho em. Thay mặt cho các bạn em cũng gửi lời cảm ơn đến cha, mẹ – những người đã có công sinh thành và cùng bạn bè, anh em cho em lên một đẳng cấp khác.Em sẽ mãi ghi nhớ nhưng đóng góp lớn lao đó. Cuối cùng em xin kính chào các bạn, chúc cán bộ trong group mãi mạnh khoẻ, gia đình hạnh phúc và tiếp tục đào tạo ra nhiều nhân tài cho Csgo đất nước nói riêng và thế giới nói chung. Chúc các bạn còn ở Silver ở lại học tập chăm chỉ, rèn luyện, phấn đấu trở thành người chơi giỏi, không phụ lòng những người anh em. Em xin chân thành cảm ơn!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg01')">Copy text</button>
+                </p>
+            </li>
+            <!--end tab 1-->
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Rank Nova không ngu</h2>
+                <p><span id="pg02">Các ông chửi rank nova bọn tôi ngu , không biết ném smoke các thứ liệu các ông có nghĩ rằng chúng tôi đã khổ sở trong những tháng ngày qua Chúng tôi đã vượt qua biết bao chông gai của cái rank ngôi sao này. Các ông đâu có hiểu có những trận tôi đã cố gắng hết mình rằng ” Ừ mình làm được ” và rồi mọi thứ vẫn đổ sông đổ biển. Bản thân tôi là người đã ở cái rank ngôi sao này lâu năm , tôi khẳng định mình biết 365 smoke cơ bản , 50 góc kê tay to cộng 7749 tatic mà Astralis cũng chẳng ngờ tới. Nhớ cái ngày s1mple còn stack nova với tôi bắn vui vẻ đùa giỡn giờ đây 1 người đã vô địch giải này giải kia , top1 hltv , fanboi bu 1 đống còn tôi vẫn ngồi đây đếm 4 ngôi sao qua ngày. Tôi biết cá nhân mình chưa tốt , bản thân mình phải thay đổi cho quãng ngày tiếp theo thì mới thoát ra được khỏi cái máng lợn Nova này được. Xin đừng chửi những người rank nova như tôi nữa , bọn tôi cũng là con người , cũng có cảm xúc như bao người khác , buồn vui khók lók có hết. Chúng tôi thậm chí còn có tiếng nói hơn cả lũ Weaboo suốt ngày post mấy cái hình vú mông vậy tại sao các ông lại không tin tưởng bọn tôi. Hôm nay tôi sẽ quyết tâm thoát khỏi cái rank cứt bò này cho mấy ông xem.
+                </span><br>
+                <button class="button-copy" onclick="copyToClipboard('#pg02')">Copy text</button>
+
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Làm quen gái</h2>
+                <p><span id="pg03">Sáng nay ngồi cà phê, thấy bàn đối diện có em gái xinh quá, tôi quyết tâm bắt quen. Tất nhiên không thể đứng ra trước mặt em ấy rồi bảo: “Cho anh xin số điện thoại” được, vì đó là một cách xin số điện thoại rất thô thiển và rất khó thành công, trừ khi bạn là chủ shop online còn em ấy là khách vừa order mua hàng mà quên chưa cung cấp điện thoại để bạn gửi ship.<br>
+                    Nghĩ mãi cũng tìm ra cách: tôi hì hục nhét tiền vào ví cho dày cộm lên, nhét thêm cái bao cao su cùng với tấm cắc-vi-sít lòi ra ngoài chỗ mép ví rồi đút ví hờ hờ vào túi quần, vờ đứng dậy đi về. Qua chỗ em gái, tôi hất nhẹ tay cho chiếc ví rơi bịch xuống đất. Mọi thứ đúng như tính toán: Chiếc ví phồng cộm rơi xuống, cái bao cao su thò ra ngoài hơn nửa, còn cái cắc-vi-sít thì văng đi gần mét. Chỗ này tôi xin giải thích thêm chút: sao phải nhét tiền vào ví cho dày cộm thì các bạn chắc hiểu rồi, còn cái bao cao su là để chứng tỏ tôi là người đàn ông chu đáo, cẩn thận, sống có trách nhiệm.<br>
+                    Tôi tỉnh bơ bước tiếp cho tới khi nghe tiếng em gọi giật lại: “Anh gì ơi! Ví anh rơi nè!”.
+                    Tôi vội vã quay trở lại nhặt chiếc ví lên, mỉm cười lịch lãm, nhìn thẳng vào mắt em đắm đuối rồi cất giọng đầy lịch thiệp: “Cảm ơn em nhé!”. Nói xong, tôi quay gót lạnh lùng bước đi luôn, vờ như không nghe thấy tiếng em đang bối rối phía sau: “Ơ, anh ơi, cắc-vi-sít của anh…”.<br>
+                    Chỉ một khoảnh khắc, một tích tắc ấy thôi, nhưng tôi tin là em đã có ấn tượng rất mạnh với tôi, và khi đã có cắc-vi-sít của tôi rồi thì em sẽ phải tìm cớ mà liên lạc với tôi sớm thôi…<br>
+                    Và đúng như vậy: ngay tối hôm đó, tôi đã nhận được tin nhắn của em: “Chào anh ạ! Em là cô gái ngồi ngồi bàn đối diện với anh ở quán cafe lúc sáng đây. Em nhắn tin thế này có phiền anh không ạ?”. Tôi mỉm cười sung sướng, thầm khâm phục chính mình. Tay tôi run run soạn tin trả lời: “Tất nhiên là không phiền rồi, tin nhắn của em là niềm hạnh phúc lớn nhất của anh trong ngày hôm nay và nhiều ngày sau nữa”. Em cũng reply lại rất nhanh: “Dạ, sáng nay, lúc anh từ quán cafe về, em thấy anh Bet NAVI em nói 1 câu cho vuông atralis tuổi lol Navi vô địch “
+                </span><br>
+                <button class="button-copy" onclick="copyToClipboard('#pg03')">Copy text</button>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Kim Vân Navi Truyện</h2>
+                <p style="text-align: center;"><span id="pg04">Đầu lòng một ả tố nga<br>
+                    Một con yêu nữ bằng ba simple<br>
+                    Bấy lâu try hard go pro<br>
+                    Đời mày vì phút hồ đồ tiêu tan.<br>
+                    Nhớ ngày mình ở ngoài hang,<br>
+                    Bao nhiêu văn mẫu gáy vang đất trời<br>
+                    Vả mồm đối thủ tơi bời<br>
+                    Thần loz lại ám hết đời mộng mơ<br>
+                    Một hai ba bốn major<br>
+                    Ngồi nhìn đếm cúp, bơ phờ oán than.<br>
+                    <br>
+                    Bộ tộc ru rú trong hang<br>
+                    Nó ngồi số hưởng, hai hàng banh ra.<br>
+                    Tiền bet bán cửa bán nhà,<br>
+                    All in lần cuối không là ra đê.<br>
+                    Dâm tà sao cứ si mê<br>
+                    Được ngậm đầu dưới thì phê vãi loz,<br>
+                    Đầu trên mất não mất hồn<br>
+                    Chết chay bắn choke bồn chồn lòng fan<br>
+                    Bet thủ nhà cửa nát tan<br>
+                    Vì tin mày quá nên than nỗi gì.<br>
+                    <br>
+                    Mong mày giác ngộ luôn đi<br>
+                    Yêu nữ nó hút còn gì nữa đâu<br>
+                    Trải qua bao cuộc bể dâu<br>
+                    Có mỗi khẩu Awp phải hold đến già<br>
+                    Fan chục năm vẫn mặn mà<br>
+                    Trong hang chui rúc ngoài nhà hắt hiu.<br>
+                    <br>
+                    Dù cho trăm clutch ngàn kill<br>
+                    Bao ngày luyện tập chắt chiu từng giờ,<br>
+                    Thần loz lại đội lên thờ<br>
+                    Nhún cho gãy súng, major ở đâu ?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg04')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Cuộc sống đẹp vậy đó</h2>
+                <p><span id="pg05">Cuộc sống vốn dĩ nó đẹp vậy đó<br>
+                    Một chàng trai nọ nói với một cô gái :<br>
+                    – Chúng ta là BF!<br>
+                    Cô gái hỏi : – BF là gì?<br>
+                    – Nghĩa là Best Friend ( bạn tốt nhất )<br>
+                    Sau này khi họ hẹn hò, chàng trai lại nói với cô gái :<br>
+                    – Anh là BF của em !<br>
+                    Cô lại nhẹ nhàng hỏi : – BF là gì ?<br>
+                    Chàng trai đáp : – Là Boy Friend đấy ! ( bạn trai )<br>
+                    Nhiều năm sau khi họ cưới nhau, rồi sinh những đứa con đáng yêu anh lại dịu dàng nói :<br>
+                    – Anh là BF của em !<br>
+                    Cô gái vẫn dịu dàng đáp lại : – BF là gì ?<br>
+                    Chàng trai nhìn lũ con của mình rồi nhìn người vợ, hạnh phúc nói:<br>
+                    -Là Babie’s Father ( bố của các con )<br>
+                    Khi những đứa con lớn dần, chàng trai lại nói :<br>
+                    – Chúng mình là BF.<br>
+                    Cô vợ tươi cười hỏi : – BF gì nữa đây anh ?<br>
+                    – Beautiful Family ! ( gia đình hạnh phúc )<br>
+                    Một ngày, có đôi vợ chồng già cùng ngắm hoàng hôn, ông lão nói với vợ mình :<br>
+                    – Bà nó à, tôi là BF của bà đấy !<br>
+                    Bà lão cười với những nếp nhăn trên mặt:<br>
+                    – BF là gì hả ông ?<br>
+                    Ông lão mỉm cười thật hạnh phúc và trả lời một cách thần bí :<br>
+                    – Là Be Forever ! ( mãi mãi thuộc về nhau )<br>
+                    Khi ông lão hấp hối, ông vẫn nói :<br>
+                    – Tôi BF bà nha.<br>
+                    Bà lão trả lời với những giọt nước mắt đang lăn trên má : – BF là gì vậy ông?<br>
+                    Ông lão đáp : – Là Bố m Fan navi ! Team khác tuổi gì, tuổi lol<br>
+                    Nói xong ông nhẹ nhàng nhắm mắt.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg05')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Công dân hạng 3</h2>
+                <p><span id="pg06">[CỘT MỐC LỊCH SỬ THẾ GIỚI: CUỘC NỘI CHIẾN VN-CS:GO]<br>
+                    Ngày mồng 3/6, sau khi Tổng thống CS:GO, ngài Gaben, kí sắc lệch đặc biệt tước đi quyền công dân của những người chơi Non Prime, một cuộc nội chiến đã nổ ra trong group VN-CS:GO.<br>
+                    Sau khi sắc lệnh chính thức được ban hành, tầng lớp xã hội đã được phân chia rõ rệt:<br>
+                    1/ Ở mức trên cùng của xã hội, chính là những người chơi mua game từ trước ngày game free. Họ sở hữu cho mình huân chương lao động Loyalty Badge, một vật phẩm vô cùng cao quý. Đôi khi còn có cả những người chơi mang cả coin 5 năm 10 năm…<br>
+                    2/ Ngay dưới đó là tầng lớp trung lưu bao gồm những người chơi có Prime sau ngày game free. Họ bao gồm 2 nửa: Bỏ tiền ra mua và cày chay lên lv 21.<br>
+                    3/ Tận cùng dưới đáy của xã hội chính là những người chơi Non Prime. Họ bao gồm rất nhiều loại người khác nhau:<br>
+                    > Loại người gục ngã trước cánh cửa thiên đàng: Đây là những người chơi đã cố gắng để lên lv21 trước Update nhưng may mắn đã không mỉm cười với họ<br>
+                    > Loại người vừa gục ngã ngay từ bước đi đầu tiên: Đây là những người vừa bắt đầu chơi CS:GO hoặc những người lập lại acc để chơi nhưng chưa có điều kiện mua prime hoặc chấp nhận chơi non prime đến lv21. Quá đen cho họ, giờ đây họ sẽ không còn được bắn rank…<br>
+                    > Loại súc vật: Bao gồm những phù thùy lốc xoáy, bậc thầy nhãn quan, ông trùm đặt tâm, chúa tể né đạn,.. Đặc biệt, loại súc vật này thậm chí còn xuất hiện rất nhiều ở các tầng lớp 1 và 2 nhưng đa phần đang hành nghề diễn viên.<br>
+                    Lí do chính khiến cho cuộc nội chiến nổ ra là bởi giờ đây, nếu bạn là Non Prime muốn có rank, lên lv, được drop thì bạn sẽ phải nạp lần đầu. Và lần đầu thì rất đau và đáng nhớ…<br>
+                    Các player có Prime giờ đây đang cảm thấy họ vô cùng thượng đẳng và khinh bỉ tầng lớp Non Prime. Họ cho rằng không có Prime thì nên ngậm mồm vào. Ở chiều ngược lại, những player chưa có Prime cảm thấy vô cùng cay cú vì rõ ràng trước đây, tất cả anh em trong group đều coi nhau như gia đình, đều cùng nhau gáy, cùng nhau chửi wibu, giúp đỡ lẫn nhau nhưng bây giờ thì đúng là đếch biết đường nào mà lần…<br>
+                    Phong trào <span class="hashtag">#NonPrimeLivesMatter</span> đã được khởi xướng, nhưng có vẻ như nó không đạt được hiệu quả cao lắm vì anh em có Prime đều vô cùng hài lòng với Update vì giờ đây lượng cheater, hacker gặp phải sẽ giảm đi đáng kể.<br>
+                    Lời cuối cùng, tôi xin phép được đưa ra phát biểu của mình về thực trạng hiện nay:<br>
+                    “Prime hiện nay ở đầu của sự phát triển. Có thể nói Prime là vua của CSGO. Vừa có tiền, có quyền. Vừa kiếm được nhiều $ lại được xã hội trọng vọng.<br>
+                    Thằng em mình bắn CS:GO, sinh năm 96. Tự mày mò bet bủng lấy tiền mua Prime rồi được đi go pro cho Rồng Vàng cả năm nay. Mỗi tối online 3-4 game là xong việc. Lương tháng 3k6. Nhưng thu nhập chính vẫn là từ bán độ làm thêm. Tuần làm 2,3 kèo under/over cái nhẹ nhàng 9,10k tiền tươi thóc thật không phải đóng thuế. Làm gần được 3 tháng mà nhà xe nó đã mua đủ cả. Nghĩ mà thèm.<br>
+                    Gái gú thì cứ nghe nó bảo là có Prime thì chảy nước. Có bé kia dân du học sinh Úc, về được cô chị giới thiệu làm ngân hàng VCB. Thế nào thằng ấy đi mở thẻ tín dụng để mua key mở gặp phải thế là hốt được cả chị lẫn em. 3 đứa nó sống chung một căn hộ cao cấp. Nhà con bé kia biết chuyện ban đầu phản đối sau biết thằng đấy có Prime thì đổi thái độ, cách ba bữa hỏi thăm, năm bữa tặng quà giục cưới kẻo lỡ kèo. Đáng lẽ tháng này là đám cưới tụi nó nhưng dính dịch nên dời lại cuối năm rồi”</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg06')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Tâm thư của Non-prime</h2>
+                <p><span id="pg07">Tâm thư của một người chơi non-prime kì cựu.<br>
+                    Kính gửi tới toàn thể người chơi có hoặc không có prime, công dân hạng 1, 2, 3 hay sau đó nữa. Tôi xin đại diện cho những người chơi non-prime, những kẻ đau khổ đã bị các bạn chà đạp xuống đáy xã hội trong thời gian qua, viết ra bức tâm thư này, mong các bạn đọc được.<br>
+                    Chúng ta là những người con cùng một quốc gia, cùng mang dòng máu đỏ da vàng, cùng sinh ra và lớn lên trên một vùng lãnh thổ. Các bạn có còn nhớ những ngày tháng tươi đẹp khi mà Prime còn chưa là rào cản? Những ngày stack 5 mà không bỏ lại người anh em non-prime phía sau. Các bạn có nhớ những lần gào thét trong net, rằng đã lên lv2, đi bắn rank được rồi? Hay những buổi chiều hò hét cùng nhau stack nade chống hack? Ôi những ngày đó thật vui vẻ biết bao.<br>
+                    Hỡi ôi, Valve như một con quỷ, vì lợi ích mà hắn chia rẽ chúng ta. Những người anh em đồng đội bỗng phân cao thấp, không phải vì rank mà vì prime. Có nhà cha mẹ mất con, anh mất em, vợ mất chồng, tất cả chỉ vì prime. Có người ngã gục khi chỉ còn thiếu 1 trận để lên lv21, trở thành phế nhân ngay trước cổng thiên đàng. Có người không chịu nổi áp lực mà đành bỏ đi, không một lần ngoảnh lại. Có những mầm non đang try hard, bỗng bị tước đi tương lai. Hay những thương nhân trẻ thành đạt bị tước đi miếng cơm manh áo.<br>
+                    Non-prime cũng là con người. Non-prime cũng có quyền được yêu thương. Tôi xin phép thay mặt nhóm thiểu số non-prime, khẩn cầu quyền đó từ các bạn!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg07')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Ghét sao đỏ</h2>
+                <p><span id="pg08">Nói thật, ghét Astralis rồi chửi cho vui chứ còn kiểu Astralis có thù với mấy ông hay sao ấy. Đoán nhé, những đứa xúc phạm Sao Đỏ chỉ là fan Navi thôi( thứ nhất là nó muốn chửi Astralis để hả dạ vì bây giờ phải vào hang, thứ 2 là để dắt mũi fan csgo tháng 8, để làm gì thì tự biết nhé) fan trẩu thì cùng lắm đăng mấy cái ảnh xàm l câu like chứ ko rảnh để đi chửi ngkhac đâu. Còn chuyện fanboiz Sao Đỏ đi dìm idol người khác để tăng bốc Astralis là chuyện bình thường và fandom khác cũng vậy (cái này rất dễ thấy, trách Astralis quá nổi). Cứ nhai câu “ăn mày quá khứ” hay “thắng làm vua thua đếm cúp” giống nhứ mấy thằng “dizme wipu” vậy đấy. Anti Sao Đỏ ngay từ đầu đã là 1 cái trend rồi. Ngoài cái lý do để ghét Sao Đỏ là fan trẩu thì ko còn lí do gì hết cả. Trưởng thành ai lại đi đôi co với trẻ con?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg08')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Quán cơm gà tối muộn</h2>
+                <p><span id="pg09">Quán cơm gà tối muộn. Có chú hàng rong ngập ngừng ghé vào hỏi giá. 30K, thêm gà thì 40K – cô chủ quán có chiếc quần đùi đỏ tươi một màu Tổ quốc, trả lời.<br>
+                    Chú lại ngập ngừng hỏi cô làm tui một hộp 15K được không, cho tui xíu xiu gà thôi cũng được. Cô chủ cười cười, nói ô kê chú chờ tí.<br>
+                    Lát sau cô dúi vào tay chú một hộp cơm gà. Cái hộp cơm gà mà cô chủ mới làm xong đó, chao ôi là đầy ắp cả gà lẫn cơm, chắc gấp đôi cái dĩa mình đang ăn.<br>
+                    Chú ngại, nói là để chú gửi thêm tiền. Nhưng cô xua tay bảo là quán sắp nghỉ, nên còn nhiêu đó tui cho chú hết, chứ để qua ngày mai nó cũng hư à. Cô nói vậy để cho chú lấy thôi chứ mình thừa biết còn lâu cô mới nghỉ.<br>
+                    Chú cảm ơn cô rồi đạp xe đi, về nhà hay lại dọc ngang những con đường SG mưu sinh mình cũng không biết nữa. Nhưng mình biết hôm nay, lòng chú cũng như lòng mình, đã có thêm một điều ấm áp.
+                    Hộp cơm gà đó có lẽ lỗ mất mấy ngàn rồi, NHƯNG SAO LỖ BẰNG MẤY THẰNG NGU BET CHO LULQUIT</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg09')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>100$</h2>
+                <p><span id="pg10">Trong buổi diễn thuyết, giáo sư mở đầu bài thuyết trình bằng cách giơ lên một tờ 100 đô và hỏi : “Nếu tôi tặng tờ 100 đôla này cho một trong số các bạn, có ai muốn nhận không?”. Rất nhiều cánh tay giơ lên trong hội trường.<br>
+                    <br>
+                    Giáo sư nói tiếp: “Tôi sẽ tặng cho một người nhưng đợi tôi làm điều này đã nhé”. Ông vò nhàu tờ đôla rồi hỏi: “Còn ai muốn lấy nó không?”. Nhiều cánh tay vẫn giơ lên. Ông lại ném tờ tiền giấy xuống chân mình, chà đạp một cách không thương tiếc. Rồi ông nhặt tờ tiền nay đã trở nên nhàu nát và dơ bẩn hỏi tiếp: “Còn ai muốn lấy tờ 100 đôla này không?”. Nhiều cánh tay vẫn giơ lên.<br>
+                    <br>
+                    Lúc này, vị giáo sư mới cất giọng ôn tồn: “Các bạn đã nghiệm ra bài học giá trị này chưa? Dù đồng tiền có bị giày xéo hay vò nát, các bạn vẫn muốn có bởi vì giá trị của nó không thay đổi hay giảm đi. Nó vẫn là tờ 100 đôla”<br>
+                    <br>
+                    Cuối cùng, vị giáo sư kết thúc buổi diễn thuyết bằng một câu nói khiến mọi người phải nhớ.<br>
+                    “XXX (tỉ số) YYY, YYY tuổi đầu buồi gì”</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg10')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>BLACKPINK</h2>
+                <p><span id="pg11">Sống 20 năm chắc hẳn ai cũng có cho mình thần tượng đúng k ? Tôi cũng giống các ông vậy, tuổi thơ của tôi gắn liền với ITV và VTC11 cứ mỗi lần ITV phát những Day By Day, Number 9, Little Apple, Sexy Love, Roly Poly rồi cả tỷ bài nhạc khác của T-ARA là tôi lại cảm thấy vui hơn bao giờ hết. Thế rồi tôi bắt đầu đem lòng yêu T-ara rồi yêu luôn K-pop các ông ạ. Thế nhưng khi T-ara dính scandal rồi dần lụi tàn thì tôi dần mất đi cảm hứng nghe K-pop thật sự tôi không tìm được một nhóm nhạc nào có những thành viên có thể thay thế được những Hyomin, Boram, Ji Yeon hay là Eun Jung Ham trong lòng tôi. Lúc nào cũng là những album của T-ara phát đi phát lại trong máy, những ca từ, những điệu nhảy ăn sâu vào não tôi như không thể xoá nhoà. Thế nhưng vào 3 năm trước, trong một buổi chiều hè trên đường tạt đầu vào quán net tôi có nghe được tiếng huýt sáo thánh thót vang lên và giọng hát đầy mê hoặc của 4 cô gái, vâng 4 giọng ca ấy là 4 cô nàng có nghệ danh lần lượt là Jisoo, Rose, Lisa và Jennie. Những cô gái của nhà YG với cái tên thân thương BLACKPINK đã làm con tim tôi rung động một lần nữa chỉ bằng điệu huýt sáo của ca khúc whistle. Như một tia nắng ấm giữa trời đông, con tim nguội lạnh với K-pop của tôi như được sống lại một lần nữa, tôi bắt đầu lao đầu vào và tìm hiểu về BLACKPINk, thời gian dần trôi qua tôi giờ là đã là 1 Blink chính hiệu, sẵn sàng lên chửi chết mẹ đứa nào dám động chạm các idol của tôi, sưu tầm các album của BLACKPINK cùng với các poster kèm chữ ký. Tất nhiên trong 1 nhóm nhạc thì luôn có người làm bạn thích nhất, ở T-ara thì người làm tôi xao xuyến chính là chị cả nấm lùn Boram với sự cute đáng yêu, còn ở hắc hường thì Jisoo với nét đẹp tựa như hoa hậu đã khiến tôi chết mê chết mệt không biết bao lần. Rồi đúng là trời không phụ lòng người, trong một lần đi chơi ở Hàn Quốc tôi đã được gặp Jisoo bằng xương bằng thịt, tôi xin nhắc lại là Jisoo ngoài đời đấy các ông ạ. Nàng tựa thiên thần khi cười với tôi lúc bị tôi nhận ra và phát hiện. Cái đau đớn của cuộc đời tôi là siêu thị gần khách sạn nên không cầm theo đt nhưng nụ cười, giọng nói, cái bắt tay rồi từng câu nói cử chỉ của Jisoo vẫn mãi in dấu trong đầu tôi. Cuộc trò chuyện bắt đầu bằng câu nói đầy bắt ngờ của tôi Me: Oh my god, Jisoo. You are jisoo ? Jisoo quay lại cười nhẹ nhàng rồi gật đầu Tôi: Oh i’m a big fan of you and blackpink, i love you so so so much Jisoo: oh thank you Chúng tôi cứ thế nói chuyện phiếm tôi thì vốn tiếng anh cũng có hạn nên ngại ngùng lắm cũng may là jisoo cũng kém tiếng anh nên 2 người vừa nói vừa biết sai và cười như những người bạn. Khi gần về tôi nói với Jisoo: ” can you say something to your fan in VietNam ?” Trời ơi lúc này các ông có biết tôi bất ngờ như nào không, cô ấy ghé sát tai tôi và nói bằng tiếng việt: ALOOOOO MẤY THẰNG NHÓC MỚI NHÚ NAVI ĐÂU RỒI CHÚNG MÀY VÁC CÁI MẶT RA ĐÂY GÁY TAO XEM NÀO? ĐÂU RỒI NHỮNG NOSCOPE 360 ??? TRÌNH ĐỘ NGANG VỚI SILVER TÚ TU MÙ MÀ CŨNG ĐÒI LÊN ĐÂY THỂ HIỆN ĐẲNG CẤP ???? TƯỞNG NAVI THẾ NÀO CŨNG CHỈ LÀ ĐỘI LÓT ĐƯỜNG CHO SAO ĐỎ ASTRALIS THẾ THÔI NHÁ ! TRAIN 2077 NĂM ĐI MAJOR 1 LẦN THÌ ĐI CÁI VÔ CHUNG KẾT CẠNH TRANH CHO NÓ CẨN THẬN. 16-1 CHO S1MPLE VỚI NAVI TUỔI LỒN MÀ ĐÒI TRANH MAJOR VÀ AWPER SỐ 1 THẾ GIỚI VỚI ASTRALIS. TÓM CÁI VÁY LẠI LÀ DỄ VÃI CẢ LỒN</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg11')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>THẮNG THẾ LỒN NÀO ĐƯỢC</h2>
+                <p><span id="pg12">Một chàng trai trẻ đang đi xe đạp trên đường thì trông thấy một cô gái vừa xinh đẹp lại rất có khí chất, liền chạy theo cô gái hết một đoạn đường rất dài. Cuối cùng cô gái này không chịu được nữa, liền quay người lại hỏi: “Sao anh cứ mãi đi theo tôi vậy?”.<br>
+                    Chàng trai bộc bạch rất chân thành: “Bởi em là người con gái xinh đẹp nhất, có khí chất nhất mà anh từng gặp, mong em hãy nhận lời làm bạn gái anh, có được không?”.<br>
+                    Cô gái trả lời: “Nếu anh nói tôi xinh đẹp, thế thì anh đã nhầm rồi, bây giờ chỉ cần anh quay đầu lại nhìn, sẽ thấy được cô bạn thân của tôi, cô ấy còn xinh đẹp hơn tôi nhiều!”.<br>
+                    Chàng trai đó nghe xong, lập tức quay đầu lại, nhưng nhìn thấy đâu đâu cũng chỉ là những cô gái tầm thường đâu đâu cũng gặp.<br>
+                    “Sao em lại lừa anh chứ?”, anh chất vấn cô gái.<br>
+                    “Là anh đang dối gạt tôi mới phải! Nếu anh thật sự thích tôi, thì sao lại còn ngoảnh đầu lại ngắm nhìn người con gái khác?”. Cô gái nói xong, liền chạy xe đi.<br>
+                    Chàng trai liền chạy theo, cô gái vì trong lòng có chút rung động nên cố ý đi xe chậm lại. Nhưng lạ thay, chàng trai vượt lên rồi phóng vù qua mặt mà không hề chạy bên người đẹp.<br>
+                    Dù trong lòng khá khó chịu nhưng cô gái vẫn chạy theo để hỏi cho ra nhẽ, “Anh làm sao thế? Cứ bị từ chối là bỏ mặc tôi luôn à?”. Chàng trai hốt hoảng, “Em ơi thứ lỗi anh. Chiếc xe này như Navi vậy, THẮNG THẾ LỒN NÀO ĐƯỢC.”</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg12')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Chị yêu cầu em</h2>
+                <p><span id="pg13">Chị yêu cầu em hãy xoá bài viết này ngay. Chị là đội trưởng của Astralis và chị được triệu tập đến đây để đưa em về hành tinh của mình. Chị thấy anti ngày càng lộng hành và không biết điều nên chị đến đây để đưa những chân lý chân tướng của sự thật ra ánh sáng. Chị yêu cầu em phải xoá bài này trong 5 giây, còn không thì chị tuyên bố đem 100 chiếc máy bay B69, 100 tàu lửa 696, 100 giàn khoan HD-969 và 100 bê đê đao phủ đến hủy diệt Trái Đất này. Chị nắm hết mọi thứ về anti và chỉ cần một cái búng tay của chị là em sẽ không còn tồn tại trên cõi đời này. Chị yêu cầu em phải xoá bài viết này ngay và cùng fc Astralis trở về hành tinh của mình. Chị đưa ra lời cảnh cáo em để em biết sợ biết lắng nghe và biết thấu hiểu. Em đừng để chị sôi máu loz dồn máu não. Em chắc chưa hề thấy chị tức giận, chị tức giận thì nước loz chị sẽ làm ngập lụt Trái Đất này và nhấn chìm em trong khổ đau. Hãy dừng lại những hành động phi lí và phỉ báng Trái Đất đi. Đừng trách vì sao chị lại hành động tàn nhẫn với em. Thân ái em!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg13')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Bạn gái gốc Việt</h2>
+                <p><span id="pg14">ĐẾN NHÀ BẠN GÁI GỐC VIỆT NÓI CÂU GÌ CHO NÓ NGẦU ???
+                    Tôi có thằng cháu trước đây du học tại Mỹ . Một hôm nó gọi điện về Việt Nam hỏi : “ Bác ơi cháu có một cậu bạn người Mỹ hỏi cháu là khi đến chơi nhà người gốc Việt Nam thì nói câu nào để gây ấn tượng nhất ? “ .<br>
+                    Nghe cháu tôi hỏi vậy tôi liền nói vui rằng : “ Nếu là người Mỹ gốc Việt thì chắc chắn câu ấn tượng nhất phải là câu XUNG PHONG … mà phải hô to bằng tiếng Việt thì quá ấn tượng ấy chứ !!!<br>
+                    Cứ tưởng chỉ là câu chuyện tầm phào cho vui ai ngờ thằng cháu tôi nó lại tưởng thật – thế là nó mới dạy cho thằng bạn gốc Mỹ của nó y chang những gì như tôi nói với nó …<br>
+                    Câu chuyện tưởng chừng vô hại nào ngờ sau này làm tôi cứ thấy áy náy suốt . Chẳng là hôm đó là ngày mùng 2 Tết Âm Lịch – lúc đó khoảng 22 h30 tối – cả gia đình tôi đang ngồi xem chương trình tivi Tết thì thằng cháu tôi từ bên Mỹ gọi điện về – cứ tưởng nó chúc Tết ai ngờ câu đầu tiên nó đã trách tôi luôn :” Bác ơi bác hại chết cháu rồi – thằng bạn cháu nó đang giận cháu – nó bảo nếu có chuyện gì thì cháu phải chịu trách nhiệm đấy Bác ạ …”<br>
+                    Nghe cháu nó kể hết câu chuyện tôi mới thấy lo lo…<br>
+                    Chuyện là thế này: Thằng cu người Mỹ sau khi được cháu tôi dạy mấy câu tiếng Việt như : Chúc Mừng Năm Mới , Cảm Ơn , Xin Chào … thì trước đó nó dạy đi dạy lại cho thằng cu người Mỹ câu Xung Phong – nghe nó bảo bạn gái nó người gốc Việt- cha mẹ cô ta sang Mỹ định cư từ sau 30/4/1975 – vì thế nó muốn học một câu tiếng Việt gây ấn tượng để Tết Âm Lich nó đến thăm gia đình cô ta cũng vừa là ra mắt bố mẹ cô ấy .<br>
+                    Thấy cháu tôi kể – buổi trưa hôm đó ( 2 Tết ) cả gia đình và bạn bè của bố mẹ bạn gái thằng bạn nó đến tụ tập ăn Tết ở nhà đó rất đông – tất cả chỉ đợi thằng cu người Mỹ bạn của con gái chủ nhà đến ra mắt là cả nhà dự bữa ăn trưa nhân ngày Tết cổ truyền Việt Nam . Khi đó mọi người đang ngồi nói chuyện vui vẻ thì thằng cu người Mỹ tiến vào – vì muốn gây ấn tượng mạnh với gia đình bạn gái nên nó vừa đẩy cửa vào đã hô to tướng : X..u..n..g P..h..o..n..g … nghe tiếng hô bất ngờ nên tất cả bạn bè của bố bạn gái nó hoảng loạn chạy tứ tung cả lên – ông thì chui dưới gầm bàn , ông thì chạy xô đổ cả bàn thức ăn làm đồ ăn , bát đĩa , nồi lẩu … vỡ tùm lum khói bốc nghi ngút …. cũng có ông thì chạy vào nhà WC trốn chẳng may bị WC ướt nên bị trượt chân ngã đánh rầm …
+                    Thấy bảo cảnh tượng lúc chẳng khác gì vừa trải qua một trận ẩu đả kinh hoàng giữa hai đội navì và át-tra-lít ta lần. Trước chiến thắng thuyết phục của đội mình hâm mộ, fan Astralis một lần nữa được một cơ hội thốt lên Navi tổ luồn!!!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg14')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Cộng hòa Xã hội Liên Xô</h2>
+                <p style="text-align: center;"><span id="pg15">Cộng hòa xã hội Liên Xô<br>
+                    Các em trật tự nghe cô giảng bài<br>
+                    Đại cương ôn tập khá dài<br>
+                    Hôm nay ta học một vài high light<br>
+                    Kim long chúa tể muôn loài<br>
+                    Mấy thằng sao đỏ tấu hài đêm nay<br>
+                    Kim long không cánh vẫn bay<br>
+                    Na`vi bất tử chúng mày tuổi tôm<br>
+                    Mấy thằng đan mạch rơm rơm<br>
+                    Đêm nay các bố sẽ đơm chúng mày<br>
+                    Ngàn sao mất hút ban ngày<br>
+                    Ban đêm tỏa sáng thì mây lại nhiều<br>
+                    Nghìn năm kiều vẫn là kiều<br>
+                    Navi vô đối là điều đương nhiên<br>
+                    Fan boy sao đỏ vô duyên<br>
+                    Có bài đếm cúp thua liền giở ra<br>
+                    Hội người tập gáy tiếng nga<br>
+                    Hội người đan mạch tiếng nga thuộc lòng<br>
+                    Trời sinh bộ tộc kim long<br>
+                    Sinh thêm sao đỏ nối dòng vương gia<br>
+                    S1mple làm bố site A<br>
+                    Site B chấn thủ vẫn là điện chan<br>
+                    Dust 2 khói tỏa mây ngàn<br>
+                    Short A bom béo lại làm baiter<br>
+                    Lửa chan canh mid đang chờ<br>
+                    Quý ông hoàn hảo vật vờ cửa B<br>
+                    Mấy thằng sao đỏ diễn hề<br>
+                    Chiếm long a sớm lui về hold time<br>
+                    30 giây nữa full time<br>
+                    5 thằng đồng loạt flash bang lên trời<br>
+                    Ném thêm smoke xong rồi<br>
+                    Phi lên liều mạng định thời chiếm site<br>
+                    S1mple cầm awp trong site<br>
+                    Molly địch ném thêm vài nade đau<br>
+                    S1mple zoom scope vẩy rau<br>
+                    Xuyên khe team địch vỡ đầu dupreeh<br>
+                    4 thằng còn lại đang phi<br>
+                    S1mple múa lửa kiên trì vảy rau<br>
+                    Lại thêm một nhóc bay đầu<br>
+                    Thêm 2 cháu nữa về chầu diêm vương<br>
+                    Còn thằng thiết bị bên đường<br>
+                    Chạy lui xuống pit núp tường save gun<br>
+                    Na`vi tổ chức đi săn<br>
+                    Mỗi người một ngả tìm săn con bò<br>
+                    Divice dưới pit thập thò<br>
+                    5 quả flash ném cho trắng màn<br>
+                    Na`vi 5 đứa một đàn<br>
+                    Cầm dao nhảy xuống cắt hàng divice<br>
+                    Simple trọn vẹn hight ligh<br>
+                    Một game 5 mạng một bài easy<br>
+                    Na`vi vô địch cũng vì<br>
+                    Mấy thằng sao đỏ chưa bì được đâu<br>
+                    Rồng vàng bật mode hóa chaos<br>
+                    Năm thằng hóa god khi nào mới thua<br>
+                    Trời sinh có mấy loài rùa<br>
+                    Giờ đây tai đỏ cũng vừa đổi tên<br>
+                    Đổi thành sao đỏ cho hên<br>
+                    Thắng thì thò cổ thua nên rụt vào<br>
+                    Vinh quang 4 cúp ngày nào<br>
+                    Fan boy cay cú lại gào lên thôi<br>
+                    Đẹp trai tỏa sáng bầu trời<br>
+                    Tom cruise đan mạch sao thời so le<br>
+                    Một hơi lửa ấm ta khè<br>
+                    Mấy thằng sao đỏ lui về hang sâu<br>
+                    Bọn tao trong đó bấy lâu<br>
+                    Nay thời đổi vận đè đầu bọn bay<br>
+                    Vào hang đêm cũng như ngày<br>
+                    Tha hồ sao đỏ chúng mày sáng soi<br>
+                    Bên trong một đám con dòi<br>
+                    Chúa hề thêm bọn đầu bòi faze down<br>
+                    Một đàn ong chúa bay vào<br>
+                    Một con chuột bạch cũng đào bên trong<br>
+                    Xếp hàng chọn chỗ cho xong<br>
+                    Quây quần an ủi cho lòng thôi đau<br>
+                    Thôi đành chờ đến giải sau<br>
+                    Rời hang ta lại cùng nhau tấu hài<br>
+                    Đời game thủ vẫn còn dài<br>
+                    Chờ ngày mai đến set bài counter<br>
+                    Nhưng mà biết đến bao giờ<br>
+                    Na`vi vô địch vẫn chờ chúng bay<br>
+                    Cúp vàng tao vác trên tay<br>
+                    S1mple làm bố chúng mày làm con<br>
+                    Thời gian thân xác héo mòn<br>
+                    Kim long bất tử vẫn còn y nguyên<br>
+                    Nhân gian thờ tụng ca truyền<br>
+                    Na`vi vô đối đương nhiên khỏi bàn.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg15')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Óc buoi Astralis thua rồi</h2>
+                <p><span id="pg16">Yeah mấy thằng óc buoi Astralis thua rồi. Vâng vô địch rồi, vô địch rồi, vô địch rồi. Đcm quá hạnh phúc tôi cũng hạnh phúc vãi loz. Đm mấy thằng ngu thì cần phải đánh VLKV, ngu mà đánh BO3 thì rất là hại người ta, vâng ngu mà đi đánh BO3 chỉ hại người ta thôi<br>
+                    Khóc cm chúng m à, chúng m chơi game chúng m không lắp não thua là đúng rồi. Đm não chúng m để ở nhà chúng m sang đây chúng m chơi game thua là đúng rồi. Mấy thằng ngu, mấy thằng óc chó, đcm chúng mày, không có não thì không nên chơi game, đừng để ảnh hưởng người khác.<br>
+                    Vâng rất là xứng đáng giành cho ENCE ngày hôm nay, một trận đấu mà hai team ngu đánh nhau làm tôi rất là mệt mỏi</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg16')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Emily, con đi cùng cha</h2>
+                <p style="text-align: center;"><span id="pg17">Emily, con đi cùng cha<br>
+                    Sau khôn lớn con thuộc đường, khỏi lạc<br>
+                    – Đi đâu cha?<br>
+                    – Đi lên Youtube<br>
+                    – Xem gì cha?<br>
+                    Không con ơi, chỉ thấy GenG bị nắc<br>
+                    Ôi Rát cồ, đôi mắt tròn xoe<br>
+                    Ôi Cờ lít, mái tóc vàng hoe<br>
+                    Đừng có hỏi cha nhiều con nhé!<br>
+                    Cha sẽ chỉ con all in Tê một, để mà tối còn bay với Maybach<br>
+                    GenG<br>
+                    Buổi hoàng hôn<br>
+                    Ôi những linh hồn!<br>
+                    Còn, mất<br>
+                    Hãy cháy lên, cháy lên sự thật!<br>
+                    Ruler học đòi<br>
+                    Tội ác bay chồng chất<br>
+                    Cả nhân loại căm hờn<br>
+                    Lũ ngu GenG<br>
+                    Emily, con ơi!<br>
+                    Trời sắp tối rồi…<br>
+                    Cha không bế con về được nữa!<br>
+                    Khi đã nhảy tũm xuống nước<br>
+                    Đêm nay, mẹ đến tìm con<br>
+                    Con sẽ ôm lấy mẹ mà hôn<br>
+                    Cho cha nhé<br>
+                    Và con sẽ nói giùm với mẹ:<br>
+                    GenG tuổi l*n, Ti oăn vô địch</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg17')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Dùng khi bạn muốn có dao múa</h2>
+                <p><span id="pg18">Duc ơi! Còn nhớ vào đầu những năm 1945, chúng ta là hai người cuối cùng còn sống sót sau vụ đánh bom nguyên tử vào Hiroshima, mình đã nguyện thề sống chết có nhau suốt cuộc đời. Nhưng rồi 55 năm sau, khi chúng ta đang trên chiếc BMW bóng loáng mới nhất thời bấy giờ, cùng quay trở lại thăm thành phố xưa thì một tai nạn ập đến! Chiếc xe bỗng phát nổ khiến cả hai bị thương nặng, riêng phần bạn bị mất trí nhớ, tôi nhớ rằng mình đã bất tỉnh cùng người anh em chí cốt của mình suốt 1 tháng trời. Khi tỉnh dậy, đập vào mắt tôi là tấm hoá đơn dài hơn sông Vôn-ga với đủ mọi chi phí, tiền thuốc men, chữa trị, chăm sóc cho tôi và bạn… Tôi như tuyệt vọng vì khi chi trả hết số nợ này đồng nghĩa với việc tôi sẽ trở nên nghèo khó, tất cả bất động sản, siêu xe, vũ khí sinh học, phần mềm đánh máy word.exe cho game thủ giúp thêm phần tự tin khi thi đấu đều bị tôi bán đi. Quá tuyệt vọng, tôi quyết định trở về quê hương mà lạc mất người anh em chí cốt 55 năm của mình để rồi 20 năm sau, trong một hoàn cảnh không thể tình cờ hơn tôi gặp bạn ngay tại VN-CS:GO, bộ môn mà chúng ta cùng yêu thích. Người bạn của tôi! Tại sao cậu có thể bội bạc, khoe khoang khối tài sản của mình trên đây như vậy được? 20 năm qua tôi ở đâu, sống như thế nào cậu cũng không thèm tìm lại, nhòm ngó tới. Huống chi là món nợ cả đời người không trả hết của cậu cho tôi. Giờ đây một con <span class="karambit">Karambit (★) | Fade</span> bạn tặng tôi là đủ để chúng ta có thể hàn gắn tình anh em rạn nứt suốt bao năm nay. Món quà thực ra không mang nhiều giá trị vật chất nhưng nó là một niềm động lực ,một minh chứng cho tình anh em của chúng ta hôm nay và cho suốt những năm về sau!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg18')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Bố S1mple</h2>
+                <p><span id="pg19">Tin sốc tại quận Dallas Một cậu bé 15 tuổi đã trở thành tâm điểm của một màn kịch trong phòng xử án Quận Dallas ngày hôm qua khi cậu thách thức phán quyết của tòa án về việc ai sẽ có quyền giám hộ cậu. Cậu bé có tiền sử bị cha mẹ đánh đập và thẩm phán ban đầu đã trao quyền nuôi con cho dì của cậu, tuân theo luật và quy định về quyền nuôi con yêu cầu sự đoàn kết trong gia đình phải được duy trì ở mức độ cao nhất có thể. Cậu bé đã gây bất ngờ trước tòa khi tuyên bố rằng dì đánh cậu nhiều hơn bố mẹ cậu và cậu cương quyết từ chối sống với bà. Khi thẩm phán đề nghị cậu sống với ông bà nội, cậu bé đã khóc và nói rằng họ cũng đánh cậu. Sau khi xem xét những người còn lại trong gia đình trực hệ và biết rằng bạo lực gia đình dường như là một lối sống của họ, thẩm phán đã thực hiện một bước chưa từng có khi cho phép cậu bé đề xuất ai nên có quyền nuôi cậu. Sau hai lần giải lao để kiểm tra các tham chiếu pháp lý và trao đổi với các quan chức phúc lợi trẻ em, thẩm phán đã cấp quyền tạm giữ cho S1mple – Bố của thằng device – người mà cậu tin là đéo đánh được ai cả.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg19')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Mượn skin</h2>
+                <p><span id="pg20">Chao em Nguyen The Duc ,anh la s1mple day .Co thê em rất bất ngờ khi anh nhăn tin như vây .Anh sang Viêt Nam băn giai nhưng quên mang skin .Em co thê cho anh mươn skin Awp | Neo-Noir đuoc không ? Khi nao anh vê nươc sẽ liên lac gưi tra em kèm con PhongLon | Fade của anh .Anh biêt em sơ đay là acc giả mao nên anh có B1t ơ đây lam chưng<br>
+                    <br>
+                    Hi. I’m B1t</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg20')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Thành công</h2>
+                <p><span id="pg21">Một giảng viên tài chính đã trò chuyện với nhiều sinh viên tại một buổi giao lưu như sau:<br>
+                    – Sinh viên hỏi: “Thưa thầy, em muốn được thành công như Bill Gates thì phải làm thế nào?”<br>
+                    – Giảng viên hỏi lại: “Em có biết ông ấy thành lập công ty nào không?”<br>
+                    – Sinh viên: “Em biết, đó là Microsoft ạ.”<br>
+                    – Giảng viên: “Vậy em có biết Bill Gates đã học trường nào không?”<br>
+                    – Sinh viên: “Ông ấy từng học Harvard, nhưng đã bỏ học giữa chừng. Cho nên người có năng lực thì không nhất thiết phải học đại học nữa đúng không thầy?”<br>
+                    – Giảng viên: “Vậy em có biết ai là người hợp tác đầu tiên với Bill Gates hay không?<br>
+                    – Sinh viên: “Dạ… “<br>
+                    – Giảng viên: “Là IBM. Em có biết tại sao IBM hợp tác với một công ty nhỏ bé vừa thành lập hay không? Vì mẹ của Bill Gates là Chủ tịch ủy ban điều hành United Way toàn quốc, người đã trực tiếp giới thiệu con trai với Giám đốc IBM.”<br>
+                    Sau khi bạn sinh viên đó ngồi xuống suy ngẫm, một người khác lại đứng lên hỏi giảng viên nọ rằng:
+                    – “Thưa thấy, vậy còn Warren Buffett thì sao ạ?”<br>
+                    – Giảng viên cười: “Em có biết tỷ phú Buffett bắt đầu đầu tư chứng khoán từ năm bao nhiêu tuổi không?”<br>
+                    – Sinh viên: “Là 11 tuổi ạ.”<br>
+                    – Giảng viên: “Đúng thế, vậy em nghĩ tại sao một đứa trẻ 11 tuổi có thể mua cổ phiếu ở sàn giao dịch chứng khoán Hoa Kỳ?”<br>
+                    – Sinh viên: “Dạ… “<br>
+                    – Giảng viên: “Đó là bởi vì cha ông ấy không bao giờ lấy tiền bet cho Na`vi.”</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg21')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Kì thị và xa lánh</h2>
+                <p><span id="pg22">BỊ CẢ LỚP KÌ THỊ VÀ XA LÁNH VÌ hay đi cmt dạo trên gr cộng đồng sinh viên 2k3 ?<br>
+                    Em đã phải chịu nỗi khổ này suốt hơn 1 năm rồi ,nhưng hôm nay em mới nói ra .Chào mọi người ,em xin dùng clone ạ .Em là nam ,hiện tại đang học lớp 11 .Chuyện là như thế này,hồi học lớp 10 năm ngoái trong 1 lần ra chơi ,em và các bạn đi ngang qua khối 12 và thấy các anh chị đang bàn luận về đề thi năm 2020 và bảo mong tụi mình cũng dễ như thế . Thấy thế em mới nói : đề dễ thì sao phân loại dc học sinh ? Mong là khó chút mới chứng tỏ năng lực dc .Tưởng đó là 1 câu nói nhẹ nhàng ,đơn giản .Thế nhưng các anh chị 2k3 lại nhìn em bằng con mắt ghen ghét,và 1 bạn đáp lại:Đụng ai thì đụng chứ đừng có nói xấu đề thi trước mặt tao .Và lúc đó em k nói gì cả.Nhưng 1 điều đáng sợ là ,kể từ đó các bạn nam trong lớp k 1 ai chơi với em nữa cả,k những thế kể cả các bạn nữ lớp khác nữa,ngay cả những bạn nam cũng thế,mấy anh chị 2k3 đe dọa ai trong lớp chơi với em thì sẽ bị tẩy chay đi đâu em cũng bị nói xấu ,và bị mọi người ghen ghét ,nhiều lúc trong lớp như thế em đã khóc rất nhiều,nhưng ngay cả thầy cô cũng k quan tâm,em chỉ muốn nghỉ học ở nhà,k muốn đến trường nữa,và điều đó cũng làm điểm số của em tụt thậm tệ,mấy bạn ấy thì trên Fb lúc nào cũng để Avt Navi ,wall thì toàn ảnh s1mple ngay cả nhóm lớp trên mes ,zalo cũng là Avt Navi luôn,có vài bạn còn bỏ cả tiền triệu để mua vài bức hình có Natus Vincere trên đó,ngay cả khi đặt áo lớp cũng như thế ,nhưng riêng mình em thì mấy bạn k cho đặt áo lớp.Trên lớp thì thầy cô khen con ngoan trò giỏi ,nhưng trên mạng thì luôn đi ib chửi em<br>
+                    Bây giờ em phải làm sao để có thể hòa nhịp với các bạn ,và k bị coi là rác k mn ,mặc dù em cũng chả là rác ?</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg22')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Major đâu</h2>
+                <p><span id="pg23">2003: con rồng và anh bạn nào đó bị bắn hạ trên bầu trời Tokyo, đ*o liên quan tới khung thời gian dưới đây<br>
+                    <br>
+                    2010: Navi ra đời<br>
+                    2021: Navi bắt đầu giàu lên nhờ Intel Grand Slam<br>
+                    2023: Navi chuyển mình đầu tư vào các kênh tài chính<br>
+                    2025: Navi mua lại bản quyền CSGO, Dota 2, Free Fire,…<br>
+                    2028: Navi mua lại Valve, Garena, Tencent, SE, Ubisoft, Rockstar Games,… và trở thành “ông trùm” của trò chơi điện tử lúc bấy giờ.<br>
+                    2032: Navi mua lại Facebook<br>
+                    2039: Navi mua lại Apple, Amazon<br>
+                    2046: Navi mua lại Google, nắm gần như hoàn toàn không gian mạng.<br>
+                    <br>
+                    2049: Navi mua lại Adidas, Nike, chiếm ưu thế trong ngành sản xuất giày dép của thế giới.<br>
+                    2055: Chính phủ Mỹ tuyên bố “sự bành trướng của Navi là mối nguy hại đến an ninh thế giới” nên ra tay trấn áp.<br>
+                    2064: Navi tuyên bố lật đổ thành công chính phủ Mỹ với sự giúp sức của công ty an ninh tư nhân Merryweather Security, đàn áp thành công bọn 3/, đồng thời thành lập United States of Navi (USN).<br>
+                    2075: USN sáp nhập Canada và Mexico.<br>
+                    2090: USN tuyên chiến với Nga, Trung Quốc, Triều Tiên. Và sau đó….à khoan, làm gì có sau đó vì cả 3 nước đều gia nhập USN sau khi đồng ý rằng “tiếp tục cuộc chiến là 1 điều vô ích và thất bại là điều khó tránh khỏi. Đồng thời, USN là một quốc gia vô cùng vững chắc và hoàn toàn có lợi cho 3 nước trong việc hằn gắn vết thương chiến tranh và phát triển đất nước”.<br>
+                    2115: Các nước châu Âu nộp đơn xin gia nhập USN.<br>
+                    2145: USN chiếm hơn nửa Trái Đất. Trong cùng năm đó, USN đã ngỏ ý mong muốn Việt Nam cùng gia nhập USN.<br>
+                    2270: USN hoàn tất quá trình thôn tính tất cả các quốc gia trên thế giới. (trừ Việt Nam vì họ đã đồng ý lời mời vào năm 2163)<br>
+                    2387: USN đưa người lên Mặt Trăng, Sao Hỏa, thành lập căn cứ.<br>
+                    2400: Các nhà khoa học của USN, cùng với Aperture Science đã thành công trong việc khai thác năng lượng phản vật chất và phát triển thành công cổng không gian.<br>
+                    2450: USN cho vận hành máy hút sạch năng lượng mặt trời, để làm gì thì đ*o ai biết.<br>
+                    2550: USN chế tạo thành công bom phản vật chất, mục đích thì chịu nốt.<br>
+                    3000: USN thành lập Hạm đội Viễn chinh Ngân Hà Navi, có nhiệm vụ đánh chiếm các hành tinh khác. Cùng thời gian này, lực lượng Combine ngỏ lời muốn gia nhập USN nhưng bị từ chối và làm gỏi sau…7 tiếng.<br>
+                    3500: Thành lập Intergalactic Empire of Navi (IEN)<br>
+                    3700: Chế tạo thành công cổng xuyên không gian (demn brau, mất 1300 năm chỉ để đi xuyên không gian)<br>
+                    4000: IEN tuyên chiến với các vũ trụ khác.<br>
+                    5000: Cuộc chiến đa vũ trụ kéo dài 1000 năm, IEN dành thắng lợi cuối cùng sau khi cắm lá cờ Navi lên nóc Tòa nhà Quốc hội của ANF (Lực lượng vũ trang Alabama) ở vũ trụ thứ 8 tại sao Hắc Hoàn.<br>
+                    5024: Siêu anh hùng và lực lượng tàn dư từ khắp các vũ trụ tập hợp, thành lập phe Kháng Chiến. Cuộc chiến xảy ra liên tục 14 năm và chưa hoàn toàn kết thúc.<br>
+                    5050: Một nhà khoa học trong hội Sát thủ Ngân hà, sau này là đồng sáng lập YoRHa chế tạo thành công máy thời gian, du hành về quá khứ nhằm ám sát S1mple, người lúc đó đang là thủ lĩnh của Hội Hiệp sĩ dòng Đền nhằm chiếm lấy AWP Địa Đàng và thay đổi thế giới.<br>
+                    <br>
+                    5051: Navi vẫn không có major.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg23')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Phóng hỏa</h2>
+                <p><span id="pg24">NGƯỜI NAVI CẦM ĐẦU VỤ PHÓNG HỎA CHỐNG ĐỨC QUỐC XÃ<br>
+                    Hoang Duck Huy (ng/u/2003 – 7/2/7272) là một họa sĩ và nhà shitpost người Navi. Sinh ra trong một gia đình có cha mẹ là nhà thiết kế trang phục kịch, ban đầu ông được khuyến khích phát triển theo hướng nghệ thuật, ông cũng có đam mê với việc shitpost và vẽ tranh. Tuy nhiên, tính dục của ông đã dẫn đến mâu thuẫn giữa ông và cha mẹ. Vào năm 17 tuổi, Huy nhận thấy bản thân không thể tiếp tục che dấu, ông quyết định công khai là người đồng tính. Điều đó đã khiến ông bị đuổi khỏi nhà. Ông vừa làm thêm vừa tiếp tục phát triển tài năng nghệ thuật. May mắn cuối cùng cũng mỉm cười, bài shitpost trên VN-CSGO đã giúp Huy được nhìn nhận như một họa sĩ thực thụ. Phong cách của ông là sự pha trộn giữa Thiểu và Năng, giữa cái trừu tượng và vẻ truyền thống đượm buồn của Navi. Một số tác phẩm của ông được trưng bày ở Bảo tàng nghệ thuật Metropolitan. Năm 2041, Huy khi ấy 38 tuổi, gặp gỡ Jan Tijssen-con trai của một người bán rau củ, họ chung sống suốt 7 năm sau đó.<br>
+                    Sau sự kiện Astralis xâm lược Navi năm 2021, ông tham gia phong trào Kháng chiến chống Sao Đỏ. Nhiệm vụ chính của đơn vị ông là làm giả giấy tờ tùy thân cho người Navi gốc Do Thái. Vào ngày 27 tháng 3 năm 2022, sau khi lên kế hoạch kỹ lưỡng, Huy dẫn đầu một nhóm 15 người (một vài trong số họ cũng công khai là người đồng tính) tiến thẳng đến Văn phòng đăng ký dân sự Astralis. Tại đây, họ đã làm nên lịch sử khi thực hiện vụ phóng hỏa nhằm cản trở nỗ lực của Astralis trong việc xác định người thiểu năng. Hàng nghìn tài liệu đã bị phá hủy. Tuy vậy, 5 ngày sau vụ tấn công, đơn vị của ông bị bán đứng, ông và đồng đội bị Astralis bắt giữ. Huy đã nhận hết tội về mình. Tháng 7 năm ấy, ông và 13 người khác bị hành hình.<br>
+                    Trước khi bị hành quyết, Huy đã yêu cầu một người bạn (có nguồn tin cho rằng đó là luật sư của ông) hãy nói với mọi người rằng “Đụ má mày thường chịch mẹ mày! Mẹ mày bú cu cho tao!”. </span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg24')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Chưa đủ chín chắn</h2>
+                <p><span id="pg25">Xin chào các em trong nhóm VN-CSGO BUDDY RETARD, anh tên Duc và anh sinh năm 2004. Khi anh thấy các em đăng bài thì anh khá là bất ngờ, có lẽ các em chưa đủ chín chắn để suy nghĩ xem mình nghĩ gì về cái mạng xã hội và sau đây anh có vài lời khuyên đưa ra các em, và anh mong các em sẽ suy nghĩ lại về hành động của mình hơn :<br>
+                    1 , CHƠI GAME<br>
+                    anh biết các em mới được sử dụng điện thoại nên đa số các em chơi rất nhiều có đúng không? Hình như trò FreeFire, CS:GO hay những trò khác nữa anh không biết vì anh không chơi game. Và chắc các em biết vài anh anh lớn rồi ha? Như các anh anh trong Hero Team chả hạn, các anh anh trong team đó hãy livestream về game đúng không? Nhưng anh khuyên các em nên dùng ít mạng xã hội, nhớ là DÙNG ÍT MẠNG XÃ HỘI, các em có thể nói chuyện với bố mẹ chả hạn hoặc khó nói quá thì viết thư cho bố mẹ, hỏi thăm và quan tâm đến người xung quanh mình. Đừng lạm dụng mạng xã hội các em nha, vì nó có rất nhiều mặt xấu nếu em không biết sử dụng và nhiều công dụng hữu ích ngoài việc chơi game đó!<br>
+                    2 , NGÔN TỪ<br>
+                    Khi mà có ai đó đăng bài mà em không thích ví dụ nói xấu idol em chả hạn đúng không? Hẳn là các em ức chế lắm nên các em có buông mấy câu không hay nhưng các em mới 2009 thôi, chưa đủ 18 tuổi đâu nên anh mong các em có thể dừng khoảng 5s lấy bình tĩnh và báo cáo cho facebook hoặc quản trị viên, họ sẽ ra tay và giúp đỡ em vì họ là người sai, đừng buông một câu chửi thề trên mạng xã hội nha em! Còn những bạn hay đi gây war, anh mong các em hãy dừng hành động đó đi nha, các em có thể ghét họ nhưng nếu họ lớn tuổi hơn mình ( đa số là vậy ), anh mong các em hãy giữ sự tôn trọng nhất định cho họ, họ lớn tuổi hơn các em mà các em kêu là ” con, thằng, đ.ĩ, ph.ò,..v.v..” là quá tệ, anh nhấn mạnh là quá TỆ nha! Các em không thích thì thôi bỏ qua, đừng vì lợi ích cá nhân nữa nha các em.<br>
+                    3 , IDOL<br>
+                    Được rồi, cái vấn đề này anh gặp khá là nhiều đó và anh hiểu cảm giác. Các em còn quá bé để đu idol luôn, nhìn anh đi, anh hơn các em tận 4 tuổi anh có tiền nhưng anh không mua những cái đồ liên quan đến idol anh, khi nào anh thực sự cần thì anh sẽ mua hoặc không có thì chả sao cả, các em anh cần chú ý ngôn từ thù hằn của mình và tôn trọng mọi người thì anh chắc chắn rằng là các em sẽ được ủng hộ việc theo đuổi idol mình thôi. Và có mấy bài xàm le í, các em đừng quan tâm nha vì có thể họ thích nhóm khác nhưng muốn gây war cho nhóm mình, đúng không? Đó nên các em chú ý nha!<br>
+                    4 , VẤN ĐỀ HỌC TẬP<br>
+                    Cái này anh khỏi bàn rồi đúng không nào? Một số em thì có ý thức trong học tập nhưng có vài em thì chưa, anh hi vọng các em nghĩ về nó nhiều hơn để không hối tiếc việc này. Nếu các em lớn lên, các em không học thì các em không biết gì về kiến thức cả, có khi vài bạn quên luôn kiến thức cơ bản, nhưng khi các em đi làm các em sẽ thấy công việc lao động chân tay hay lao động trí óc cái nào tốt hơn? Tất nhiên là lao động trí óc rồi, dù anh mới 17t nhưng anh đã đi làm lao động chân tay trong mùa hè này và nó RẤT CỰC NHỌC, anh anh đi trông trẻ thôi, lương thì ít ỏi lại còn khó nữa chứ, anh trông cả ngày không vắng buổi nào mà anh có 4tr VND, các em xem có khó không?<br>
+                    Đây là một số lời khuyên anh muốn đưa ra cho các em và anh đã trải qua nên anh hiểu rất rõ, có thể sẽ một vài bạn đồng ý và không đồng ý với anh nhưng đó là do các em cả thôi, các em nghĩ anh không nói đúng thì ném đá anh, ok anh chấp nhận nhưng các em thử nói anh bằng những từ t.ục t.ĩu thì các em là người sai, còn mấy em mà đồng ý với ý kiến anh thì nếu các em mắc những lỗi trên anh mong các em sửa sai và những em đang làm tốt việc đó thì anh mong các em phát huy việc này và giữ đến khi ra trường.Chả lẽ các em muốn thế hệ tương lai sau này giống các em sao? anh mong các em hãy suy nghĩ lại về việc này, có gì khó nói cứ qua ib cho anh, anh nhận hết! Cảm ơn các em vì đã đọc đến tận cuối này nha!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg25')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Thành</h2>
+                <p><span id="pg26">Trời ơi. Tôi không thể kìm hãm ham muốn được chịch Thành trong Csgo.Tôi không thể chịu được bất kì một phút giây nào nữa. Mỗi lần tôi đến VNCSGO, thì bản tính và dục vọng của tôi lại trỗi dậy. Tôi đã tìm, và nhìn thấy mọi art về anh ấy trên Rule 34. Và khi tôi đi ngủ, mọi chuyện đều không hề khá hơn tí nào. Điều duy nhất tôi có thể nhớ trong chúng chính là việc mình quan hệ tình dục với Thành. Tôi đã quá mệt mỏi với việc phải thức dậy mỡi buổi sáng với hàng tá tinh trùng nhỏ giọt trong quần boxers của tôi mà biết rằng nh ững giọt tinh túy màu trắng ấy đáng lẽ giờ đang phải ở bên trong cái đít chật chội của Thành. Tôi muốn anh ấy sinh ra cho chúng tôi một đứa con lai người và cá mập mèo. Địt mẹ, bà mẹ quái đản của tôi đã bắt được tôi và tôi lo rằng bà ta sẽ lấy đi máy tính cuả tôi. Có lẽ đây sẽ là cuộc gặp mặt cuối cùng của tôi và Thành.</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg26')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Major 2021</h2>
+                <p><span id="pg27">Kết Thúc Hành Trình Tấu hài và mở rộng ăn giải kì Major 2021 này
+                    Các fan navi thân mến!<br>
+                    Trước tiên, S1mple cùng đồng đội của Natus Vincere xin gửi lời cảm ơn chân thành nhất đến tất cả các Fan đội khác đã đồng hành và xủa ngu suốt thời gian qua.<br>
+                    Sau 20 năm ra mắt, Natus Vincere đã cùng với các Bet chúa tể và fan đã có nhiều trải nghiệm thú vị. Từ những lời gáy từ các fan. Các pha tấu hài đến từ chú hề G2. và đương nhiên ba lạc bomb của complex đã làm các bet thủ team khác phải không may bay hết tiền suốt 20 năm.<br>
+                    Thật quá khó khăn để S1mple và đồng đội đưa ra thông báo này tới các Fan thân yêu, cuộc phiêu lưu cùng Natus Vincere sẽ chính thức đi vào lịch sử khi đang nằm trong TOP 1 HLTV và sẽ lấy đc giải Major. Chúng tôi bắt đầu tiến trình này tính từ ngày post này công khai và kỳ Major 2021 tới.<br>
+                    Lịch trình của team sẽ gáy như sau:<br>
+                    Ngày 30/10/2021 : Mở đầu việc lọc các fan navi và bet củng chôm 1000$<br>
+                    Ngày 31/10 – 01/11/2021 (dự kiến) : Bet navi vào kì Major<br>
+                    Ngày 16/11/2021: Navi ăn giải Blast<br>
+                    Ngày 17/11/2021 : Chính thức navi vô địch Major và gọi Sao đỏ tuổi tôm<br>
+                    Về chính sách hỗ trợ tới người bet và fan Navi, S1mple sẽ sớm có thông báo về kế hoạch cụ thể đến các Fan trên Trang chủ và Fanpage chính thức của Natus Vincere vào 17/11/2021 Các fan Navi hãy vui lòng theo dõi nhé!</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg27')">Copy text</button>
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas "></i>Gambot tuổi l</h2>
+                <p style="text-align: center;"><span id="pg28">Đưa ngay bet thủ về bờ<br>
+                    Mấy thằng Gambot tuổi l với anh<br>
+                    Tưởng rằng ăn được B nhanh<br>
+                    Ai ngờ Boom béo bắn banh cái đầu<br>
+                    Next round tìm cách nhảy lầu<br>
+                    S1mple vẩy awp cho chầu Diêm Vương<br>
+                    VươngNay nhìn Gambot nát tương<br>
+                    Mấy thằng team khác liệu hồn nghe chưa<br>
+                    Ngồi hang ngồi hốc năm xưa<br>
+                    Hôm nay thắng giải kính thưa một điều<br>
+                    Trăm năm kiều vẫn là kiều<br>
+                    Navi vô đối là điều hiển nhiên<br>
+                    Ngày xưa lừa hết gạo tiền<br>
+                    Cũng vì chỉ tại thần lz hiển linh<br>
+                    Thế mà nay bắn vẫn kinh<br>
+                    Thời vận thế đổi tiếng vinh muôn đời<br>
+                    Rời hang ta gáy vang trời<br>
+                    Asstra , Gambot hết lời cãi ngang<br>
+                    Dăm ba cái cúp dễ dàng<br>
+                    Major sắp tới rồng vàng ghi danh<br>
+                    Nghe danh Gambit đã lâu<br>
+                    Nhưng chưa thấy được gáy câu thơ nào<br>
+                    🐥Alo alo???? Anti navi đâu hết rồi ạ😏 ? Ơ ơ dậy gáy đi sao lại không gáy😏😏? năm nay là năm bao nhiêu rồi?? 2021 rồi hiểu chưa , ăn được Navi ở bo5 á??Madness!! Sau khi nghiên cứu độ tuổi của nát fani, axít , hốp sh*t, với imterz thì hóa ra 4 anh này cùng tuổi đó là tuổi lz , sh1ro nên đổi thành sorry đi hiểu chưa mấy con gà</span><br>
+                    <button class="button-copy" onclick="copyToClipboard('#pg28')">Copy text</button>
+                </p>
+            </li>
         </ul>
     </div>
 <!-- Dark Mode-->
 <script>
-    var hieuung = document.getElementById("fuckdarkmode");
+    var hieuung = document.getElementById("fuckdm");
   hieuung.addEventListener('click',function(){
   document.body.classList.toggle('dark-mode');
   })
            var today = new Date();
           var time = today.getHours();
-          if(time>18 || time<6){
+          if(time>17 || time<6){
               document.body.classList.toggle("dark-mode");
           }
   </script>
@@ -1342,14 +2423,14 @@
   <!-- change button content on click -->
   <script>
       function theThing() {
-  var btn = document.getElementById("fuckdarkmode");
-  if (btn.value == "toggle Light Mode") {
-      btn.value = "toggle Dark Mode";
-      btn.innerHTML = "toggle Dark Mode";
+  var span = document.getElementById("fuckdarkmode");
+  if (span.value == "Light Mode") {
+      span.value = "Dark Mode";
+      span.innerHTML = "Dark Mode";
   }
   else {
-      btn.value = "toggle Light Mode";
-      btn.innerHTML = "toggle Light Mode";
+      span.value = "Light Mode";
+      span.innerHTML = "Light Mode";
   }
   }
   </script>
