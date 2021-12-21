@@ -1,5 +1,5 @@
 # DitMeNavi
-My copypasta website, next big update for ditmenavi.xyz
+My copypasta website, next big update for [**ditmenavi.xyz**](https://ditmenavi.xyz)<br>
 Current changelog:
    - Added menu floating button
    - More copypasta, ofc
