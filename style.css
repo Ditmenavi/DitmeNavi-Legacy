@@ -2,6 +2,13 @@
 	--background: #f8f8f8;
 	--text: #333333;
 	--accordion: #ffffff;
+	--color-wibu:#44e4a3;
+	--color-chuinhau: #44cde4;
+	--color-khochiu:  #e45344;
+	--color-vanhoc: #8725cf;
+	--color-postnay: #ef8d31;
+	--color-osu: #f497d8;
+	--color-csgo: #50cbff;
 }
 .dark-mode{
 	--background: #202020;
@@ -64,7 +71,7 @@ h2 {
 }
 p {
 	color: var(--text);
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 16px;
 	letter-spacing: 1px;
 	position: relative;
@@ -72,15 +79,15 @@ p {
 	opacity: 1;
 	transform: translate(0, 0);
 	margin-top: 24px;
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: 45px;
+	margin-left: 45px;
 	z-index: 2;
 	font-family: MontserratLight;
 }
 ul {
 	list-style: none;
 	perspective: 900;
-	padding: 0 20px 10px;
+	padding: 0 40px 10px;
     margin: 0;
     background-color: var(--accordion);
 	border-radius: 15px;
@@ -186,7 +193,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	color: var(--text);
 	margin: 0 auto;
 	display: block;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 	font-family: MontserratRegular;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
@@ -247,7 +254,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .montserrat-extra-bold{
 	font-family: MontserratExtraBold;
 }
-/*colors*/
+/*colors
 .color-wibu {
 	background-color: #44e4a3;
   }
@@ -268,7 +275,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   .color-csgo {
 	background-color: #50cbff;
-  }
+  }*/
 .button-dark-mode{
 	border-radius: 10px;
 	background-color: var(--accordion);
@@ -293,6 +300,10 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .hashtag{
 	color: #50cbff;
+}
+.karambit{
+	color: #8725cf;
+	font-family: MontserratSemiBold;
 }
 /*new changes*/
   .menu-text{
@@ -522,4 +533,17 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  color: var(--text);
 	  text-decoration: none;
 	  font-size: 14px;
+  }
+  /*scrollbar*/
+  ::-webkit-scrollbar{
+	  width: 12px;
+	  margin-right: 5px;
+  }
+  ::-webkit-scrollbar-track{
+	  background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb{
+	  background: var(--text);
+	  border-radius: 6px;
+	  border: 3px solid var(--background);
   }
