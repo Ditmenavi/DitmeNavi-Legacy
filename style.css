@@ -14,7 +14,13 @@
 	--background: #202020;
 	--text: #ffffff;
 	--accordion: #333333;
-	transition: 300ms;
+	--color-wibu:#44e4a3;
+	--color-chuinhau: #44cde4;
+	--color-khochiu:  #e45344;
+	--color-vanhoc: #8725cf;
+	--color-postnay: #ef8d31;
+	--color-osu: #f497d8;
+	--color-csgo: #50cbff;
 }
 body {
 	width: 100%;
@@ -25,6 +31,7 @@ body {
 	background-color: var(--background);
 	font-family: "Titillium Web", sans-serif;
 	color: rgba(48, 69, 92, 0.8);
+	transition: background-color 300ms;
 }
 .accordion-menu {
 	display: inline-block;
@@ -56,6 +63,10 @@ h1{
 	padding-bottom: 50px;
 	text-align: center;
 	padding-top: 60px;
+	transition: color 300ms;
+}
+a{
+	transition: color 300ms;
 }
 h2 {
 	font-size: 18px;
@@ -68,6 +79,7 @@ h2 {
     color: var(--text);
 	margin-right: 0px;
 	font-family: MontserratBold;
+	transition: color 300ms;
 }
 p {
 	color: var(--text);
@@ -93,6 +105,7 @@ ul {
 	border-radius: 15px;
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.2), 
 	0 2px 2px 0 rgba(255, 255, 255, 0.19);
+	transition: background-color 300ms;
 }
 ul li {
 	position: relative;
@@ -100,7 +113,6 @@ ul li {
 	margin: 0;
 	padding-bottom: 0px;
 	padding-top: 18px;
-    border-top: 1px dotted var(--accordion);
 }
 
 /*ul li:nth-child(1){ border:none; }
@@ -197,7 +209,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	margin-bottom: 10px;
 	font-family: MontserratRegular;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
-	transition: 300ms;
+	transition:letter-spacing 300ms;
+	transition: background-color 300ms, color 300ms, letter-spacing 300ms;
 }
 .button-copy:hover{
 	background-color: var(--accordion);
@@ -205,13 +218,13 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
 	font-family: MontserratSemiBold;
 	letter-spacing: 1px;
-	transition: 300ms;	
+	transition: letter-spacing 300ms;	
 }
 .button-copy:focus{
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
 	font-family: MontserratExtraBold;
 	letter-spacing: 3px;
-	transition: 100ms;
+	transition: letter-spacing 200ms;
 }
 /*Montserrat*/
 @font-face {
@@ -373,11 +386,12 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	height: 58px;
 	box-shadow: 0px 0px 15px -1px rgba(0,0,0,.25);
 	border-radius: 60px;
-	transition: height .3s;
+	transition: height 300ms;
 	z-index:3 ;
 }
 .full-menu {
 	height: 530px;
+	transition: background 300ms, height 300ms;
 }
 
 .wrapper {
@@ -473,7 +487,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   text-shadow: 1px 1px 0px rgba(0,0,0,.3);
 	opacity: 0;
 	margin-left: 40px;
-	transition: margin .3s, opacity .3s, transform .3s;
+	transition: margin .3s, opacity .3s, transform .3s, background-color 300ms, color 300ms;
 }
 
 /*Menu*/
@@ -514,26 +528,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .menu a:nth-child(6) span.icon { transition: all .3s .35s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(7) span.icon { transition: all .3s .4s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(8) span.icon { transition: all .3s .45s, opacity .3s 0s, transform .3s 0s; }
-/*context menu*/
-.contextmenu {
-	display: none;
-	position: absolute;
-	width: 200px;
-	margin: 0px;
-	padding-bottom: 18px;
-	background: var(--accordion);
-	border-radius: 10px;
-	list-style: none;
-	box-shadow: 0 15px 35px rgba(50,50,90,0.1),  0 5px 15px rgba(0,0,0,0.07);
-	overflow: hidden;
-	z-index: 999999;
-  }
-  .contextmenu li a{
-	  font-family: MontserratSemiBold;
-	  color: var(--text);
-	  text-decoration: none;
-	  font-size: 14px;
-  }
   /*scrollbar*/
   ::-webkit-scrollbar{
 	  width: 12px;
