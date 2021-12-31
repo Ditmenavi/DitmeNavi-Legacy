@@ -318,6 +318,9 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	color: #8725cf;
 	font-family: MontserratSemiBold;
 }
+.hidden{
+	display: none;
+}
 /*new changes*/
   .menu-text{
 	display:none;
@@ -645,7 +648,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   
   .input:focus ~ .placeholder {
-    color: #2fdc71;
+    color: #55ff90;
   }
   
   .submit {
@@ -665,7 +668,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   
   .submit:hover {
-    background-color: #2fdc71;
+    background-color: #55ff90;
 	color: #fff;
 	transition: 300ms;
   }

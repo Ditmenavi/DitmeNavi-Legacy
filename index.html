@@ -42,7 +42,7 @@
             <a href="#postnay" class="smoothScroll"><span class="icon fas fa-bed"></span><span class="text">Post này khiến tôi muốn</span></a>
             <a href="#osu" class="smoothScroll"><span class="icon fas fa-dot-circle"></span><span class="text">VN Osu! buddy retard</span></a>
             <a href="#csgo" class="smoothScroll"><span class="icon fas fa-hat-wizard"></span><span class="text">VN-CSGO</span></a>
-            <a><span class="icon fas fa-paper-plane submitvanmau"></span><span class="text submitvanmautext">Gửi văn mẫu</span></a>
+            <a><span class="icon fas fa-paper-plane submitvanmau" id="form"></span><span class="text submitvanmautext">Gửi văn mẫu</span></a>
 		</div>
 	</div>
     <h2 style="text-align: center;">Khu vực thử nghiệm cho <a href="https://ditmenavi.xyz" style="text-decoration: none; color: var(--text);">Địt mẹ Navi</a></h2>
@@ -2416,6 +2416,37 @@
             </li>
         </ul>
     </div>
+    <!--form-->
+    <div class="form" id="theform">
+        <form>
+          <div class="title">Welcome</div>
+          <div class="subtitle">Let's create your account!</div>
+          <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">First name</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Last name</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</>
+          </div>
+          <button type="text" class="submit">submit</button>
+          </form>
+        </div>
+    <!--end form-->
+    <script>
+        var theform = document.getElementById("theform")
+        var form = document.getElementById("form");
+        form.addEventListener("click", () => {
+            theform.classList.toggle("hidden");
+        })
+    </script>
 <!-- Dark Mode-->
 <script>
     var hieuung = document.getElementById("fuckdm");
