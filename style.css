@@ -390,7 +390,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	z-index:3 ;
 }
 .full-menu {
-	height: 530px;
+	height: 585px;
 	transition: background 300ms, height 300ms;
 }
 
@@ -483,8 +483,14 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	text-align: center;
 	transition: transform .2s;
 }
+.menu a span.submitvanmau{
+	color:#44e4a3;
+}
+.menu a span.submitvanmautext{
+	color:#44e4a3;
+	font-family: MontserratBold;
+}
 .menu a span.text {
-  text-shadow: 1px 1px 0px rgba(0,0,0,.3);
 	opacity: 0;
 	margin-left: 40px;
 	transition: margin .3s, opacity .3s, transform .3s, background-color 300ms, color 300ms;
@@ -528,6 +534,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .menu a:nth-child(6) span.icon { transition: all .3s .35s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(7) span.icon { transition: all .3s .4s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(8) span.icon { transition: all .3s .45s, opacity .3s 0s, transform .3s 0s; }
+.menu a:nth-child(9) span.icon { transition: all .3s .5s, opacity .3s 0s, transform .3s 0s; }
   /*scrollbar*/
   ::-webkit-scrollbar{
 	  width: 12px;
@@ -540,4 +547,125 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  background: var(--text);
 	  border-radius: 6px;
 	  border: 3px solid var(--background);
+  }
+  /*form*/
+  .form {
+    background-color: var(--accordion);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+	align-content: center;
+  }
+  
+  .title {
+    color: var(--text);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: var(--text);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: var(--background);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: var(--accordion);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: var(--text);
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #2fdc71;
+  }
+  
+  .submit {
+    background-color: var(--background);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+	transition: background-color 300ms, color 300ms;
+  }
+  
+  .submit:hover {
+    background-color: #2fdc71;
+	color: #fff;
+	transition: 300ms;
   }
