@@ -487,10 +487,10 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	transition: transform .2s;
 }
 .menu a span.submitvanmau{
-	color:#44e4a3;
+	color:#55ff90;
 }
 .menu a span.submitvanmautext{
-	color:#44e4a3;
+	color:#55ff90;
 	font-family: MontserratBold;
 }
 .menu a span.text {
@@ -564,7 +564,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   
   .title {
     color: var(--text);
-    font-family: sans-serif;
+    font-family: MontserratBold;
+	text-align: center;
     font-size: 36px;
     font-weight: 600;
     margin-top: 30px;
@@ -572,7 +573,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   
   .subtitle {
     color: var(--text);
-    font-family: sans-serif;
+    font-family: MontserratSemiBold;
+	text-align: center;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
@@ -603,6 +605,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     outline: 0;
     padding: 4px 20px 0;
     width: 100%;
+	font-family: MontserratLight;
   }
   
   .cut {
@@ -628,7 +631,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   
   .placeholder {
     color: var(--text);
-    font-family: sans-serif;
+    font-family: MontserratRegular;
     left: 20px;
     line-height: 14px;
     pointer-events: none;
@@ -640,7 +643,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   
   .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
+    transform: translateY(-30px) translateX(10px) scale(0.65);
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
@@ -665,6 +668,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     text-align: center;
     width: 100%;
 	transition: background-color 300ms, color 300ms;
+	font-family: MontserratSemiBold;
   }
   
   .submit:hover {
