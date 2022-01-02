@@ -8,5 +8,5 @@ Current changelog:
    - Audo change to dark mode/light mode based on local time
    - Overall Design remake
    - More optimized for pc, not yet for mobile
-   - Form submission
+   - Form submission <br>
    And much more coming up...
