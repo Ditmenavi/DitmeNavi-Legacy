@@ -19,7 +19,6 @@
     <script src="jquery-min.js"></script>
     <!-- End copy text code -->
     <script src="smoothscroll.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
@@ -1023,7 +1022,7 @@
                     <button class="button-copy" onclick="copyToClipboard('#pd33')">Copy text</button>
                 </p>
             </li>
-            <li>
+            <!--<li>
                 <input type="checkbox" checked>
                 <i class="arrow"></i>
                 <h2><i class="fas "></i>Dùng khi bạn ngu tiếng Anh</h2>
@@ -1337,7 +1336,7 @@
                     WEEK tuần MONTH tháng, WHAT TIME mấy giờ?</span><br>
                     <button class="button-copy" onclick="copyToClipboard('#pd34')">Copy text</button>
                 </p>
-            </li>
+            </li>-->
             <li>
                 <input type="checkbox" checked>
                 <i class="arrow"></i>
@@ -2417,28 +2416,34 @@
         </ul>
     </div>
     <!--form-->
-    <div class="form" id="theform">
-        <form>
-          <div class="title">Welcome</div>
-          <div class="subtitle">Let's create your account!</div>
+    <div class="wp hidden" id="theform">
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
+            window.location='https://youtu.be/dQw4w9WgXcQ';
+            }"></iframe>
+      <div class="form" id="theform">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9W1nbxZcGmOvuSu89pEhj9gcmO7iAzDxf6yhptFzDeLkOHQ/formResponse" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-draft-response="%.@.&quot;&quot;,1640969755194,1640969758300,null,&quot;3445583765207073793&quot;,null,[[null,null,[&quot;ac&quot;],false,null,null,253354242]]]" data-shuffle-seed="3445583765207073793" data-response="%.@.[]]" data-first-entry="0" data-last-entry="2" data-is-first-page="true" target="hidden_iframe" onsubmit="submitted=true">
+          <div class="title">Chao mung den Thanh Hoa</div>
+          <div class="subtitle">Gui van mau tai day</div>
           <div class="input-container ic1">
-            <input id="firstname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">First name</label>
+            <input id="firstname" class="input" type="text" placeholder=" " name="entry.253354242" autocomplete="off"/>
+            <div class="cut cut-2"></div>
+            <label for="firstname" class="placeholder">Ten</label>
           </div>
           <div class="input-container ic2">
-            <input id="lastname" class="input" type="text" placeholder=" " />
+            <textarea id="lastname" class="tarea" type="text" placeholder=" " name="entry.1429777806" autocomplete="off"></textarea>
             <div class="cut"></div>
-            <label for="lastname" class="placeholder">Last name</label>
+            <label for="lastname" class="placeholder">Van mau</label>
           </div>
-          <div class="input-container ic2">
-            <input id="email" class="input" type="text" placeholder=" " />
+          <!--<div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " name="entry.511898919" />
             <div class="cut cut-short"></div>
-            <label for="email" class="placeholder">Email</>
-          </div>
-          <button type="text" class="submit">Submit</button>
+            <label for="email" class="placeholder">Email</label>
+          </div>-->
+          <button type="submit" class="submit">Submit</button>
           </form>
         </div>
+    </div>
     <!--end form-->
     <script>
         var theform = document.getElementById("theform")
@@ -2446,6 +2451,11 @@
         form.addEventListener("click", () => {
             theform.classList.toggle("hidden");
         })
+    </script>
+    <script>
+        if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
     </script>
 <!-- Dark Mode-->
 <script>

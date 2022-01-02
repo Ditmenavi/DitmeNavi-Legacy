@@ -40,7 +40,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 250px;
 	transform: translate(-50%, 0);
-	max-width: 750px;
+	max-width: 60vw;
     padding: 10px 20px 20px 20px;
 	border-radius: 5px;
 }
@@ -59,7 +59,8 @@ h1{
 	margin: 0px;
     color: var(--text);
 	margin-right: 0px;
-	font-family: MontserratExtraBold;
+	font-family: "Montserrat";
+	font-weight: 800;
 	padding-bottom: 50px;
 	text-align: center;
 	padding-top: 60px;
@@ -78,7 +79,8 @@ h2 {
     cursor: pointer;
     color: var(--text);
 	margin-right: 0px;
-	font-family: MontserratBold;
+	font-family: "Montserrat";
+	font-weight: 700;
 	transition: color 300ms;
 }
 p {
@@ -207,7 +209,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	display: block;
 	margin-top: 30px;
 	margin-bottom: 10px;
-	font-family: MontserratRegular;
+	font-family: "Montserrat";
+	font-weight: 400;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
 	transition:letter-spacing 300ms;
 	transition: background-color 300ms, color 300ms, letter-spacing 300ms;
@@ -216,58 +219,66 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background-color: var(--accordion);
 	color: var(--text);
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: MontserratSemiBold;
+	font-family: "Montserrat";
+	font-weight: 600;
 	letter-spacing: 1px;
 	transition: letter-spacing 300ms;	
 }
 .button-copy:focus{
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: MontserratExtraBold;
+	font-family: "Montserrat";
+	font-weight: 800;
 	letter-spacing: 3px;
 	transition: letter-spacing 200ms;
 }
 /*Montserrat*/
-@font-face {
-    font-family: MontserratRegular;
-    src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
-    font-weight: 400;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
 .montserrat{
     font-family: MontserratRegular;
 }
-@font-face {
-    font-family: MontserratBold;
-    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
 .montserrat-bold{
     font-family: MontserratBold;
+}
+.montserrat-light{
+    font-family: MontserratLight;
+}
+.montserrat-semi-bold{
+	font-family: MontserratSemiBold
+}
+.montserrat-extra-bold{
+	font-family: MontserratExtraBold;
 }
 @font-face {
     font-family: MontserratLight;
     src: url(Assets/Montserrat/Montserrat-Light.ttf) format('truetype');
     font-weight: 300;
 }
-.montserrat-light{
-    font-family: MontserratLight;
+/*@font-face {
+    font-family: MontserratRegular;
+    src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+
 @font-face {
 	font-family: MontserratSemiBold;
 	src: url(Assets/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
 	font-weight: 600;
 }
-.montserrat-semi-bold{
-	font-family: MontserratSemiBold
-}
+
 @font-face {
 	font-family: MontserratExtraBold;
 	src: url(Assets/Montserrat/Montserrat-ExtraBold.ttf) format('truetype');
 	font-weight: 800;
-}
-.montserrat-extra-bold{
-	font-family: MontserratExtraBold;
-}
-/*colors
+}*/
+
+/*colors*/
 .color-wibu {
 	background-color: #44e4a3;
   }
@@ -299,7 +310,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	display: block;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-family: MontserratRegular;
+	font-family: "Montserrat";
+	font-weight: 400;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
 	transition: 300ms;
 }
@@ -307,7 +319,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background-color: var(--accordion);
 	color: var(--text);
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: MontserratSemiBold;
+	font-family: "Montserrat";
+	font-weight: 600;
 	letter-spacing: 1px;
 	transition: 300ms;	
 }
@@ -316,7 +329,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .karambit{
 	color: #8725cf;
-	font-family: MontserratSemiBold;
+	font-family: "Montserrat";
+	font-weight: 600;
 }
 .hidden{
 	display: none;
@@ -370,11 +384,13 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  display: block;
 	  margin: 0 0.5em;
 	  color: #555;
-	  font-family: MontserratRegular;
+	  font-family: "Montserrat";
+	  font-weight: 400;
 	}
    .floating-menu a:hover{
 	color:var(--text);
-	font-family: MontserratBold;
+	font-family: "Montserrat";
+	font-weight: 700;
 	letter-spacing: 0.2px;
 	transition: 0.2s;
   }
@@ -491,7 +507,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .menu a span.submitvanmautext{
 	color:#55ff90;
-	font-family: MontserratBold;
+	font-family: "Montserrat";
+	font-weight: 700;
 }
 .menu a span.text {
 	opacity: 0;
@@ -556,28 +573,46 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     background-color: var(--accordion);
     border-radius: 20px;
     box-sizing: border-box;
-    height: 500px;
+    height: 550px;
     padding: 20px;
-    width: 320px;
+    width: 80vw;
+	max-width: 500px;
 	align-content: center;
+	position: fixed;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	transition: background-color 300ms;
   }
-  
+  .wp{
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0, 0, 0, 0.39);
+	  position: fixed;
+	  left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+  }
   .title {
     color: var(--text);
-    font-family: MontserratBold;
+	font-family: "Montserrat";
+	font-weight: 700;
 	text-align: center;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: 600;
     margin-top: 30px;
+	transition: color 300ms;
   }
   
   .subtitle {
     color: var(--text);
-    font-family: MontserratSemiBold;
+	font-family: "Montserrat";
+	font-weight: 600;
 	text-align: center;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+	transition: color 300ms;
   }
   
   .input-container {
@@ -606,8 +641,36 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     padding: 4px 20px 0;
     width: 100%;
 	font-family: MontserratLight;
+	transition: background-color 300ms;
   }
-  
+  .input:focus{
+	  border: #55ff90;
+	  border-width: 2px;
+	  border-style: solid;
+	  transition: 100ms;
+  }
+  .tarea {
+    background-color: var(--background);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    font-size: 18px;
+    height: 300%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+	overflow: hidden;
+	resize: none;
+	font-family: MontserratLight;
+	transition: background-color 300ms;
+  }
+  .tarea:focus{
+	  border: #55ff90;
+	  border-width: 2px;
+	  border-style: solid;
+	  transition: 100ms;
+  }
   .cut {
     background-color: var(--accordion);
     border-radius: 10px;
@@ -617,7 +680,11 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     top: -20px;
     transform: translateY(0);
     transition: transform 200ms;
-    width: 76px;
+    width: 66px;
+	transition: background-color 300ms;
+  }
+  .cut-2{
+	  width: 40px;
   }
   
   .cut-short {
@@ -628,10 +695,14 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   .input:not(:placeholder-shown) ~ .cut {
     transform: translateY(8px);
   }
+  .tarea:focus ~ .cut,
+  .tarea:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
   
   .placeholder {
     color: var(--text);
-    font-family: MontserratRegular;
+	font-family: MontserratLight;
     left: 20px;
     line-height: 14px;
     pointer-events: none;
@@ -639,18 +710,29 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     transform-origin: 0 50%;
     transition: transform 200ms, color 200ms;
     top: 20px;
+	text-align: center;
   }
   
   .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
     transform: translateY(-30px) translateX(10px) scale(0.65);
   }
+  .tarea:focus ~ .placeholder,
+  .tarea:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.65);
+  }
   
   .input:not(:placeholder-shown) ~ .placeholder {
-    color: #808097;
+    color: var(--text);
+  }
+  .tarea:not(:placeholder-shown) ~ .placeholder {
+    color: var(--text);
   }
   
   .input:focus ~ .placeholder {
+    color: #55ff90;
+  }
+  .tarea:focus ~ .placeholder {
     color: #55ff90;
   }
   
@@ -663,12 +745,13 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     cursor: pointer;
     font-size: 18px;
     height: 50px;
-    margin-top: 38px;
+    margin-top: 143px;
     outline: 0;
     text-align: center;
     width: 100%;
 	transition: background-color 300ms, color 300ms;
-	font-family: MontserratSemiBold;
+	font-family: "Montserrat";
+	font-weight: 600;
   }
   
   .submit:hover {
