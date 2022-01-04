@@ -253,17 +253,18 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     src: url(Assets/Montserrat/Montserrat-Light.ttf) format('truetype');
     font-weight: 300;
 }
+@font-face {
+    font-family: MontserratBold;
+    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
 /*@font-face {
     font-family: MontserratRegular;
     src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
     font-weight: 400;
 }
 
-@font-face {
-    font-family: MontserratBold;
-    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
+
 
 
 @font-face {
@@ -595,8 +596,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   .title {
     color: var(--text);
-	font-family: "Montserrat";
-	font-weight: 700;
+	font-family: MontserratBold;
 	text-align: center;
     font-size: 35px;
     font-weight: 600;
@@ -758,4 +758,33 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     background-color: #55ff90;
 	color: #fff;
 	transition: 300ms;
+  }
+  .submit-failed {
+    background-color: #f6483b;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 143px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+	transition: background-color 300ms, color 300ms;
+	font-family: "Montserrat";
+	font-weight: 600;
+  }
+  
+  .submit-failed:hover {
+    background-color: #f6483b;
+	color: #fff;
+	transition: 300ms;
+  }
+  .tarea-failed{
+	border: #f6483b;
+	border-width: 3px;
+	border-style: solid;
+	transition: 100ms;
   }
