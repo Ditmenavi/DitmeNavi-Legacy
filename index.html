@@ -23,9 +23,9 @@
 
 <body>
     <!--navbar 2-->
-    <div class="box-menu">
+    <div class="box-menu" id="menu">
 		<div class="wrapper">
-			<div class="hamburger">
+			<div class="hamburger" id="menubutton">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -2433,12 +2433,13 @@
     </div>
     <!--form-->
     <div class="wp hidden" id="theform">
-        <!--<script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
             window.location='https://youtu.be/dQw4w9WgXcQ';
-            }"></iframe>-->
+            }"></iframe>
       <div class="form" id="theform">
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9W1nbxZcGmOvuSu89pEhj9gcmO7iAzDxf6yhptFzDeLkOHQ/formResponse" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-draft-response="%.@.&quot;&quot;,1640969755194,1640969758300,null,&quot;3445583765207073793&quot;,null,[[null,null,[&quot;ac&quot;],false,null,null,253354242]]]" data-shuffle-seed="3445583765207073793" data-response="%.@.[]]" data-first-entry="0" data-last-entry="2" data-is-first-page="true" target="hidden_iframe" onsubmit="submitted=true">
+          <div class="theform-close fas fa-times hidden" id="theform-close" onclick="menuclose()"></div> 
           <div class="title">Chao mung den Thanh Hoa</div>
           <div class="subtitle">Gui van mau tai day</div>
           <div class="input-container ic1">
@@ -2470,6 +2471,11 @@
         var checkform = $("#lastname").val();
         if (checkform.length != 0){
             console.log("727");
+            $("#submit").attr("type","submit");
+            submit.innerHTML ="Gửi thành công";
+            setTimeout(function(){
+                submit.innerHTML ="Gửi thành công";
+            }, 1500)
         }else{
             console.log("no");
             submit.classList.toggle("submit-failed");
@@ -2484,10 +2490,24 @@
     </script>
         <script>
             // show/hide form
-            var theform = document.getElementById("theform")
+            var theform = document.getElementById("theform");
             var form = document.getElementById("form");
             form.addEventListener("click", () => {
                 theform.classList.toggle("hidden");
+            })
+        </script>
+        <script>
+            var closeForm = document.getElementById("theform-close");
+            var theform = document.getElementById("theform");
+            var form = document.getElementById("form");
+            var menuclose = document.getElementById("menu");
+            var menubutton = document.getElementById("menubutton");
+            closeForm.addEventListener("click", () => {
+                theform.classList.toggle("hidden");
+            });
+            form.addEventListener("click", () => {
+                menuclose.classList.toggle("full-menu");
+                menubutton.classList.toggle("active")
             })
         </script>
     <script>

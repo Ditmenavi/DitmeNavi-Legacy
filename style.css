@@ -300,7 +300,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   .color-csgo {
 	background-color: #50cbff;
-  }*/
+  }
 .button-dark-mode{
 	border-radius: 10px;
 	background-color: var(--accordion);
@@ -787,4 +787,12 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	border-width: 3px;
 	border-style: solid;
 	transition: 100ms;
+  }
+  .theform-close{
+	color: var(--text);
+	transition: color 300ms;
+	position: absolute;
+	top: 4%;
+	right: 5%;
+	cursor: pointer;
   }
