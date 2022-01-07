@@ -31,7 +31,7 @@ body {
 	background-color: var(--background);
 	font-family: "Titillium Web", sans-serif;
 	color: rgba(48, 69, 92, 0.8);
-	transition: background-color 300ms;
+	transition: background-color 150ms;
 }
 .accordion-menu {
 	display: inline-block;
@@ -64,10 +64,10 @@ h1{
 	padding-bottom: 50px;
 	text-align: center;
 	padding-top: 60px;
-	transition: color 300ms;
+	transition: color 150ms;
 }
 a{
-	transition: color 300ms;
+	transition: color 150ms;
 }
 h2 {
 	font-size: 18px;
@@ -81,7 +81,7 @@ h2 {
 	margin-right: 0px;
 	font-family: "Montserrat";
 	font-weight: 700;
-	transition: color 300ms;
+	transition: color 150ms;
 }
 p {
 	color: var(--text);
@@ -105,9 +105,8 @@ ul {
     margin: 0;
     background-color: var(--accordion);
 	border-radius: 15px;
-	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.2), 
-	0 2px 2px 0 rgba(255, 255, 255, 0.19);
-	transition: background-color 300ms;
+	transition: background-color 150ms;
+	box-shadow: 0 0 25px -12px #333333;
 }
 ul li {
 	position: relative;
@@ -212,8 +211,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: "Montserrat";
 	font-weight: 400;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
-	transition:letter-spacing 300ms;
-	transition: background-color 300ms, color 300ms, letter-spacing 300ms;
+	transition:letter-spacing 150ms;
+	transition: background-color 150ms, color 150ms, letter-spacing 150ms;
 }
 .button-copy:hover{
 	background-color: var(--accordion);
@@ -222,7 +221,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: "Montserrat";
 	font-weight: 600;
 	letter-spacing: 1px;
-	transition: letter-spacing 300ms;	
+	transition: letter-spacing 150ms;	
 }
 .button-copy:focus{
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
@@ -281,25 +280,25 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 
 /*colors*/
 .color-wibu {
-	background-color: #44e4a3;
+	color: #44e4a3 !important;
   }
   .color-chuinhau {
-	background-color: #44cde4;
+	color: #44cde4 !important;
   }
   .color-khochiu {
-	background-color: #e45344;
+	color: #e45344 !important;
   }
   .color-vanhoc {
-	background-color: #8725cf;
+	color: #c36fff !important;
   }
   .color-postnay {
-	background-color: #ef8d31;
+	color: #ef8d31 !important;
   }
   .color-osu {
-	background-color: #f497d8;
+	color: #f497d8 !important;
   }
   .color-csgo {
-	background-color: #50cbff;
+	color: #50cbff !important;
   }
 .button-dark-mode{
 	border-radius: 10px;
@@ -314,7 +313,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: "Montserrat";
 	font-weight: 400;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
-	transition: 300ms;
+	transition: 150ms;
 }
 .button-dark-mode:hover{
 	background-color: var(--accordion);
@@ -323,7 +322,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: "Montserrat";
 	font-weight: 600;
 	letter-spacing: 1px;
-	transition: 300ms;	
+	transition: 150ms;	
 }
 .hashtag{
 	color: #50cbff;
@@ -406,12 +405,12 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	height: 58px;
 	box-shadow: 0px 0px 15px -1px rgba(0,0,0,.25);
 	border-radius: 60px;
-	transition: height 300ms;
+	transition: height 150ms;
 	z-index:3 ;
 }
 .full-menu {
 	height: 585px;
-	transition: background 300ms, height 300ms;
+	transition: background 150ms, height 150ms;
 }
 
 .wrapper {
@@ -514,7 +513,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .menu a span.text {
 	opacity: 0;
 	margin-left: 40px;
-	transition: margin .3s, opacity .3s, transform .3s, background-color 300ms, color 300ms;
+	transition: margin .3s, opacity .3s, transform .3s, background-color 150ms, color 150ms;
 }
 
 /*Menu*/
@@ -583,7 +582,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-	transition: background-color 300ms;
+	transition: background-color 150ms;
   }
   .wp{
 	  width: 100%;
@@ -601,7 +600,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     font-size: 35px;
     font-weight: 600;
     margin-top: 30px;
-	transition: color 300ms;
+	transition: color 150ms;
   }
   
   .subtitle {
@@ -612,7 +611,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
-	transition: color 300ms;
+	transition: color 150ms;
   }
   
   .input-container {
@@ -641,7 +640,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     padding: 4px 20px 0;
     width: 100%;
 	font-family: MontserratLight;
-	transition: background-color 300ms;
+	transition: background-color 150ms;
   }
   .input:focus{
 	  border: #55ff90;
@@ -663,7 +662,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	overflow: hidden;
 	resize: none;
 	font-family: MontserratLight;
-	transition: background-color 300ms;
+	transition: background-color 150ms;
   }
   .tarea:focus{
 	  border: #55ff90;
@@ -681,7 +680,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     transform: translateY(0);
     transition: transform 200ms;
     width: 66px;
-	transition: background-color 300ms;
+	transition: background-color 150ms;
   }
   .cut-2{
 	  width: 40px;
@@ -749,7 +748,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     outline: 0;
     text-align: center;
     width: 100%;
-	transition: background-color 300ms, color 300ms;
+	transition: background-color 150ms, color 150ms;
 	font-family: "Montserrat";
 	font-weight: 600;
   }
@@ -757,7 +756,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   .submit:hover {
     background-color: #55ff90;
 	color: #fff;
-	transition: 300ms;
+	transition: 150ms;
   }
   .submit-failed {
     background-color: #f6483b;
@@ -772,7 +771,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     outline: 0;
     text-align: center;
     width: 100%;
-	transition: background-color 300ms, color 300ms;
+	transition: background-color 150ms, color 150ms;
 	font-family: "Montserrat";
 	font-weight: 600;
   }
@@ -780,7 +779,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   .submit-failed:hover {
     background-color: #f6483b;
 	color: #fff;
-	transition: 300ms;
+	transition: 150ms;
   }
   .tarea-failed{
 	border: #f6483b;
@@ -790,9 +789,17 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   }
   .theform-close{
 	color: var(--text);
-	transition: color 300ms;
+	transition: color 150ms;
 	position: absolute;
 	top: 4%;
 	right: 5%;
 	cursor: pointer;
+  }
+  .footer{
+	  font-family: MontserratLight;
+	  font-size: 14px;
+	  text-align: center;
+	  color: var(--text);
+	  transition: color 150ms;
+	  padding-bottom: 5px;
   }
