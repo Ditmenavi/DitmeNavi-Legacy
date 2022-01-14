@@ -59,8 +59,7 @@ h1{
 	margin: 0px;
     color: var(--text);
 	margin-right: 0px;
-	font-family: "Montserrat";
-	font-weight: 800;
+	font-family: MontserratExtraBold;
 	padding-bottom: 50px;
 	text-align: center;
 	padding-top: 60px;
@@ -79,8 +78,7 @@ h2 {
     cursor: pointer;
     color: var(--text);
 	margin-right: 0px;
-	font-family: "Montserrat";
-	font-weight: 700;
+	font-family: MontserratBold;
 	transition: color 150ms;
 }
 p {
@@ -209,8 +207,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	display: block;
 	margin-top: 30px;
 	margin-bottom: 10px;
-	font-family: "Montserrat";
-	font-weight: 400;
+	font-family: MontserratRegular;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
 	transition:letter-spacing 150ms;
 	transition: background-color 150ms, color 150ms, letter-spacing 150ms;
@@ -219,15 +216,13 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background-color: var(--accordion);
 	color: var(--text);
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: "Montserrat";
-	font-weight: 600;
+	font-family: MontserratSemiBold;
 	letter-spacing: 1px;
 	transition: letter-spacing 150ms;	
 }
 .button-copy:focus{
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: "Montserrat";
-	font-weight: 800;
+	font-family: MontserratExtraBold;
 	letter-spacing: 3px;
 	transition: letter-spacing 200ms;
 }
@@ -258,7 +253,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
     font-weight: 700;
 }
-/*@font-face {
+@font-face {
     font-family: MontserratRegular;
     src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
     font-weight: 400;
@@ -277,7 +272,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: MontserratExtraBold;
 	src: url(Assets/Montserrat/Montserrat-ExtraBold.ttf) format('truetype');
 	font-weight: 800;
-}*/
+}
 
 /*colors*/
 .color-wibu {
@@ -330,8 +325,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .karambit{
 	color: #8725cf;
-	font-family: "Montserrat";
-	font-weight: 600;
+	font-family: MontserratSemiBold;
 }
 .hidden{
 	display: none;
@@ -385,13 +379,11 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  display: block;
 	  margin: 0 0.5em;
 	  color: #555;
-	  font-family: "Montserrat";
-	  font-weight: 400;
+	  font-family: MontserratRegular;
 	}
    .floating-menu a:hover{
 	color:var(--text);
-	font-family: "Montserrat";
-	font-weight: 700;
+	font-family: MontserratBold;
 	letter-spacing: 0.2px;
 	transition: 0.2s;
   }
@@ -508,8 +500,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .menu a span.submitvanmautext{
 	color:#55ff90;
-	font-family: "Montserrat";
-	font-weight: 700;
+	font-family: MontserratBold;
 }
 .menu a span.text {
 	opacity: 0;
@@ -606,8 +597,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   
   .subtitle {
     color: var(--text);
-	font-family: "Montserrat";
-	font-weight: 600;
+	font-family: MontserratSemiBold;
 	text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -750,8 +740,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     text-align: center;
     width: 100%;
 	transition: background-color 150ms, color 150ms;
-	font-family: "Montserrat";
-	font-weight: 600;
+	font-family: MontserratBold;
   }
   
   .submit:hover {
@@ -773,8 +762,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     text-align: center;
     width: 100%;
 	transition: background-color 150ms, color 150ms;
-	font-family: "Montserrat";
-	font-weight: 600;
+	font-family: MontserratBold;
   }
   
   .submit-failed:hover {
@@ -803,4 +791,33 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  color: var(--text);
 	  transition: color 150ms;
 	  padding-bottom: 5px;
+  }
+  footer{
+	background-color: var(--accordion);
+	padding: 1px 10px;
+	margin: 15px;
+	transition: background-color 150ms;
+	border-radius: 15px;
+	box-shadow: 0 0 25px -12px #333333;
+  }
+  .column1{
+	  flex: 50%;
+	  font-family: MontserratRegular;
+	  color: var(--text);
+	  transition: color 150ms;
+	  font-size: 13px;
+	  padding: 15px;
+  }
+  .column2{
+	  flex: 50%;
+	  text-align: right;
+	  padding: 15px;
+	  letter-spacing: 5px;
+  }
+  .social-icon{
+	  cursor: pointer;
+	  color: var(--text);
+	  transition: color 150ms;
+	  padding-bottom: 10px;
+	  font-size: 13px;;
   }

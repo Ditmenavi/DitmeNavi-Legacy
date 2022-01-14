@@ -1,5 +1,12 @@
 <html lang="en">
 <head>
+    <meta property="og:url" content="https://ditmehamilton.xyz">
+    <meta property="og:title" content="Javascript buoi cho'">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Ok ok bạn là nhất, nhất bạn luôn Bạn luôn đúng, tôi mới là người sai Bạn thắng mình thua được chưa ? Bạn xứng đáng là kẻ nắm giữ đáp án chính xác của nhân loại Bạn mà đã nói là không thể sai được. Bạn nói chí phải, không ai làm lại bạn được luôn.">
+    <meta property="og:locale" content="vi_vn">
+    <meta property="og:image" content="https://ditmehamilton.xyz/chetme.jpg"/>
+    <link rel="icon" type="image/x-icon" href="https://ditmehamilton.xyz/chetme.jpg">
     <meta charset="UTF-8">
     <meta title="TESTING ZONE VER 2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2688,7 +2695,38 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
         <p class="footer">
             🅭🅯🄏🄎 2022 NeekOwO. Tác phẩm này sử dụng giấy phép Creative Commons 4.0 International (CC BY-NC-SA 4.0), Mọi quyền được bảo lưu.
         </p>
+        <div style="display: flex;">
+            <div class="column1">
+                <!--idk what to put here-->
+                <div>Bạn load trang này vào lúc
+                <span id="noti" style="font-family: MontserratSemiBold;"></span>
+                <span id="message"></span>
+                </div>
+            </div>
+            <div class="column2">
+                <!--social icon-->
+                <a class="fab fa-facebook social-icon" href="https://facebook.com/nekovnshq" style="text-decoration: none;"></a>
+                <a class="fab fa-youtube social-icon" href="https://www.youtube.com/channel/UCJCZJwjO37WvIoEWY332s8Q" style="text-decoration: none;"></a>
+                <a class="fab fa-steam social-icon" href="https://steamcommunity.com/id/deonodiachidolamsaoditmemay/" style="text-decoration: none;"></a>
+            </div>
+        </div>
     </footer>
+    <script>
+        var noti = document.getElementById("noti");
+        var message = document.getElementById("message");
+        var d = new Date();
+        var n = d.toLocaleTimeString();
+        noti.innerHTML = n ;
+        if (d > 22 || d < 4) {
+            message.innerHTML = ", đi ngủ đi địt con mẹ mày."
+        } else {
+            if (d > 5 || d < 9) {
+                message.innerHTML = ", chào buổi sáng."
+            } else {
+                mesage.innerHTML = "."
+            }
+        }
+    </script>
     <script>
         //if form submission failed
         function check(){
