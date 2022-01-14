@@ -575,6 +575,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     top: 50%;
     transform: translate(-50%,-50%);
 	transition: background-color 150ms;
+	z-index: 10000;
   }
   .wp{
 	  width: 100%;
@@ -791,6 +792,10 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  color: var(--text);
 	  transition: color 150ms;
 	  padding-bottom: 5px;
+	  margin-top: 24px;
+	  margin-right: 45px;
+	  margin-left: 45px;
+	  line-height: 16px;
   }
   footer{
 	background-color: var(--accordion);
