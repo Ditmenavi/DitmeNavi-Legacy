@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta property="og:url" content="https://ditmehamilton.xyz">
@@ -2698,7 +2699,7 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
         <div style="display: flex;">
             <div class="column1">
                 <!--idk what to put here-->
-                <div>Bạn load trang này vào lúc
+                <div>Bạn đã load trang này vào lúc
                 <span id="noti" style="font-family: MontserratSemiBold;"></span>
                 <span id="message"></span>
                 </div>
@@ -2714,18 +2715,19 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
     <script>
         var noti = document.getElementById("noti");
         var message = document.getElementById("message");
-        var d = new Date();
-        var n = d.toLocaleTimeString();
-        noti.innerHTML = n ;
-        if (d > 22 || d < 4) {
+        var times = new Date();
+        var timeString = times.toLocaleTimeString();
+        var hourString = times.getHours();
+        noti.innerHTML = timeString;
+        if (hourString > 22 || hourString < 4) {
             message.innerHTML = ", đi ngủ đi địt con mẹ mày."
-        } else {
-            if (d > 5 || d < 9) {
-                message.innerHTML = ", chào buổi sáng."
-            } else {
-                mesage.innerHTML = "."
             }
-        }
+        if (4 > hourString > 9) {
+                message.innerHTML = ", chào buổi sáng."
+            }
+        if (9 < hourString < 22) {
+                message.innerHTML = "."
+            }
     </script>
     <script>
         //if form submission failed
