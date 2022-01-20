@@ -52,7 +52,11 @@
             <a><span class="icon fas fa-paper-plane submitvanmau" id="form"></span><span class="text submitvanmautext">Gửi văn mẫu</span></a>
 		</div>
 	</div>
-    <h2 style="text-align: center;">Khu vực thử nghiệm cho <a href="https://ditmenavi.xyz" style="text-decoration: none; color: var(--text);">Địt mẹ Navi</a></h2>
+    <h2 style="text-align: center;">Khu vực thử nghiệm cho <a href="https://ditmenavi.xyz" style="text-decoration: none; color: var(--text);">Địt mẹ Navi</a><br></h2>
+    <div style="text-align: center; font-family: MontserratLight; color: var(--text)">Bạn đã load trang này vào lúc
+        <span id="noti" style="font-family: MontserratBold;"></span>
+        <span id="message"></span>
+        </div>
     <!--<button class="button-dark-mode" id="fuckdarkmode" onclick="theThing()" value="toggle Light Mode">toggle Light Mode</button>-->
     <!--accordion 1-->
     <div class="accordion-menu">
@@ -2677,12 +2681,12 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
           <div class="input-container ic1">
             <input id="firstname" class="input" type="text" placeholder=" " name="entry.253354242" autocomplete="off"/>
             <div class="cut cut-2"></div>
-            <label for="firstname" class="placeholder">Ten</label>
+            <label for="firstname" class="placeholder">Tên</label>
           </div>
           <div class="input-container ic2">
             <textarea id="lastname" class="tarea" type="text" placeholder=" " name="entry.1429777806" autocomplete="off" required></textarea>
             <div class="cut"></div>
-            <label for="lastname" class="placeholder" >Van mau</label>
+            <label for="lastname" class="placeholder" >Văn mẫu</label>
           </div>
           <button type="button" class="submit" onclick="check()" id="submit">Submit</button>
           </form>
@@ -2699,10 +2703,6 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
         <div style="display: flex;">
             <div class="column1">
                 <!--idk what to put here-->
-                <div>Bạn đã load trang này vào lúc
-                <span id="noti" style="font-family: MontserratSemiBold;"></span>
-                <span id="message"></span>
-                </div>
             </div>
             <div class="column2">
                 <!--social icon-->
@@ -2718,16 +2718,17 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
         var times = new Date();
         var timeString = times.toLocaleTimeString();
         var hourString = times.getHours();
+        console.log("hourString: ", hourString);
         noti.innerHTML = timeString;
-        if (hourString > 22 || hourString < 4) {
+        if (hourString >= 21 || hourString < 4) {
             message.innerHTML = ", đi ngủ đi địt con mẹ mày."
-            }
-        if (4 > hourString > 9) {
+            } else {
+        if (4 <= hourString < 9) {
                 message.innerHTML = ", chào buổi sáng."
             }
-        if (9 < hourString < 22) {
+        else {
                 message.innerHTML = "."
-            }
+            }}
     </script>
     <script>
         //if form submission failed
