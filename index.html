@@ -2722,12 +2722,14 @@ Tạm bịk🥱 tkế dới,tạmm🤗 bịk tấk cãk,tạm bịk kụt
         noti.innerHTML = timeString;
         if (hourString >= 21 || hourString < 4) {
             message.innerHTML = ", đi ngủ đi địt con mẹ mày."
+            console.log("night")
             } else {
-        if (4 <= hourString < 9) {
+        if (4 <= hourString || hourString < 9) {
                 message.innerHTML = ", chào buổi sáng."
-            }
-        else {
+                console.log("morning")
+            } if (9 < hourString < 21) {
                 message.innerHTML = "."
+                console.log("normal")
             }}
     </script>
     <script>
