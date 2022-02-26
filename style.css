@@ -22,6 +22,9 @@
 	--color-osu: #f497d8;
 	--color-csgo: #50cbff;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	width: 100%;
 	height: 100%;
@@ -207,7 +210,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	display: block;
 	margin-top: 30px;
 	margin-bottom: 10px;
-	font-family: MontserratRegular;
+	font-family: MontserratSemiBold;
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
 	transition:letter-spacing 150ms;
 	transition: background-color 150ms, color 150ms, letter-spacing 150ms;
@@ -216,7 +219,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background-color: var(--accordion);
 	color: var(--text);
 	box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-	font-family: MontserratSemiBold;
+	font-family: MontserratBold;
 	letter-spacing: 1px;
 	transition: letter-spacing 150ms;	
 }
@@ -258,20 +261,20 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
     src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
     font-weight: 400;
 }
-
-
-
-
 @font-face {
 	font-family: MontserratSemiBold;
 	src: url(Assets/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
 	font-weight: 600;
 }
-
 @font-face {
 	font-family: MontserratExtraBold;
 	src: url(Assets/Montserrat/Montserrat-ExtraBold.ttf) format('truetype');
 	font-weight: 800;
+}
+@font-face {
+	font-family: MontserratExtraLight;
+	src: url(Assets/Montserrat/Montserrat-ExtraLight.ttf) format('truetype');
+	font-weight: 200;
 }
 
 /*colors*/
@@ -836,4 +839,77 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  transition: color 150ms;
 	  padding-bottom: 10px;
 	  font-size: 13px;;
+  }
+  .supporter-form {
+    background-color: var(--accordion);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 550px;
+    padding: 20px;
+    width: 80vw;
+	max-width: 800px;
+	align-content: center;
+	position: fixed;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	transition: background-color 150ms;
+	z-index: 727;
+  }
+  .supporter-title{
+	  margin: 0px;
+	  padding: 0px;
+  }
+  .supporter-form h2{
+	  font-family: MontserratLight;
+	  font-size: 16px;
+	  text-align: center;
+	  padding-top: 8px;
+	  cursor: default;
+  }
+  .supporter-form h1 {
+	font-size: 35px;
+	line-height: 34px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	display: block;
+	margin: 0px 50px 0px;
+    color: var(--text);
+	font-family: MontserratExtraBold;
+	padding-bottom: 10px;
+	text-align: center;
+	padding-top: 10px;
+	transition: color 150ms;
+  }
+  .supporter-column1{
+	  flex: 50%;
+	  justify-content: center;
+	  text-align: center;
+  }
+  .supporter-column2{
+	  flex:50%;
+	  justify-content: center;
+	  text-align: center;
+  }
+  .supporter-button{
+	  padding: 8px 35px;
+	  background: var(--background);
+	  border-radius: 15px;
+	  border: none;
+	  color: var(--text);
+	  font-family: MontserratBold;
+	  font-size: 14px;
+	  padding-bottom: 10px;
+	  transition: 150ms;
+	  background-size: 300% 100%;
+	  box-sizing: border-box;
+	  cursor: pointer;
+  }
+  .supporter-button:hover{
+	transition: all 150ms ;
+	background-image: linear-gradient(to right, var(--background), var(--background), #b4ddff, #43c0ff);
+	filter:drop-shadow(0 0 10px #43c0ff);
+	background-position: 100% 0;
+	content: ' ';
+	color: #fff;
   }
