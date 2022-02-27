@@ -3,10 +3,10 @@ My copypasta website, next big update for [**ditmenavi.xyz**](https://ditmenavi.
 Current changelog:
    - Added menu floating button
    - More copypasta, ofc
-   - Copy text button
+   - Copy text
    - Dark mode
    - Audo change to dark mode/light mode based on local time
    - Overall Design remake
    - More optimized for pc, not yet for mobile
    - Form submission <br>
-   And much more coming up...
+   And much more coming up...(It's dead currently, You can still use Github Pages in order to access the website)
