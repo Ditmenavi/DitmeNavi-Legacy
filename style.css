@@ -913,3 +913,31 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	content: ' ';
 	color: #fff;
   }
+  .search-box{
+	  background-color: var(--accordion);
+	  border: none;
+	  border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  min-height: 35px;
+	  min-width: 300px;
+	  font-family: MontserratLight;
+	  color: var(--text);
+	  display: flex;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: 20px;
+	  padding: 10px;
+	  transition: all 150ms;
+	  box-shadow: 0 0 15px -10px #333333;
+  }
+  .search-box::placeholder{
+	font-family: MontserratLight;
+	color: var(--text);
+	transition: color 150ms;
+  }
+  .search-box:focus{
+	  outline: none;
+	  border: 3px solid #55ff90;
+	  box-shadow: 0 0 15px -2px #55ff90;
+	  transition: all 150ms;
+  }
