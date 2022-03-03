@@ -5,7 +5,7 @@ Current changelog:
    - More copypasta, ofc
    - Copy text
    - Dark mode
-   - Audo change to dark mode/light mode based on local time
+   - Auto change to dark mode/light mode based on local time
    - Overall Design remake
    - More optimized for pc, not yet for mobile
    - Form submission <br>
