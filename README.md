@@ -1,4 +1,4 @@
-# DitMeNavi(Testing stuffs will be uploaded to this branch, usable but unstable)
+# DitMeNavi
 My copypasta website, next big update for [**ditmenavi.xyz**](https://ditmenavi.xyz)<br>
 Current changelog:
    - Added menu floating button
@@ -9,4 +9,4 @@ Current changelog:
    - Overall Design remake
    - More optimized for pc, not yet for mobile
    - Form submission <br>
-   And much more coming up...(It's dead currently, You can still use Github Pages in order to access the website)
+   And much more coming up...
