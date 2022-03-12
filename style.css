@@ -557,6 +557,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .menu a:nth-child(7) span.icon { transition: all .3s .4s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(8) span.icon { transition: all .3s .45s, opacity .3s 0s, transform .3s 0s; }
 .menu a:nth-child(9) span.icon { transition: all .3s .5s, opacity .3s 0s, transform .3s 0s; }
+.menu a:nth-child(10) span.icon { transition: all .3s .55s, opacity .3s 0s, transform .3s 0s; }
   /*scrollbar*/
   ::-webkit-scrollbar{
 	  width: 12px;
