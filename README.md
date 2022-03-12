@@ -8,5 +8,6 @@ Current changelog:
    - Auto change to dark mode/light mode based on local time
    - Overall Design remake
    - More optimized for pc, not yet for mobile
-   - Form submission <br>
+   - Form submission
+   - Emoji Copypasta(EmojiPasta) generator <br>
    And much more coming up...
