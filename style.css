@@ -946,3 +946,48 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  box-shadow: 0 0 15px -2px #55ff90;
 	  transition: all 150ms;
   }
+  .momo{
+	  color: rgba(244, 151, 216, 1);
+	  font-size: 25px;
+	  border-radius: 50%;
+  }
+  .paypal{
+	color: rgba(22, 155, 215, 1);
+	font-size: 25px;
+	border-radius: 50%;
+}
+  .momo-btn:hover .momo{
+	animation: momo-pulse 0.5s ease forwards;
+  }
+  .paypal-btn:hover .paypal{
+	animation: paypal-pulse 0.5s ease forwards;
+  }
+  .donate-text{
+	font-family: MontserratBold;
+	color: var(--text);
+	text-decoration: none;
+	font-size: 25px;
+	transition: color 150ms;
+  }
+  @keyframes momo-pulse{
+	  0%{
+		box-shadow: 0 0 0 0 rgba(244, 151, 216, 0);
+	  }
+	  70%{
+		box-shadow: 0 0 0 30px rgba(244, 151, 216, 0.4);
+	  }
+	  100%{
+		box-shadow: 0 0 0 40px rgba(244, 151, 216, 0);
+	  }
+  }
+  @keyframes paypal-pulse{
+	0%{
+	  box-shadow: 0 0 0 0 rgba(22, 155, 215, 0);
+	}
+	70%{
+	  box-shadow: 0 0 0 30px rgba(22, 155, 215, 0.4);
+	}
+	100%{
+	  box-shadow: 0 0 0 40px rgba(22, 155, 215, 0);
+	}
+}
