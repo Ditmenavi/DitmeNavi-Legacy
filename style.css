@@ -905,18 +905,16 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  font-family: MontserratBold;
 	  font-size: 14px;
 	  padding-bottom: 10px;
-	  transition: 150ms;
+	  transition: all 150ms;
 	  background-size: 300% 100%;
 	  box-sizing: border-box;
 	  cursor: pointer;
   }
   .supporter-button:hover{
-	transition: all 150ms ;
-	background-image: linear-gradient(to right, var(--background), var(--background), #b4ddff, #43c0ff);
-	filter:drop-shadow(0 0 10px #43c0ff);
-	background-position: 100% 0;
-	content: ' ';
+	background-color: #55ff90;
+	box-shadow: 0 0 15px 0px #55ff90;
 	color: #fff;
+	transition: all 150ms;
   }
   .search-box{
 	  background-color: var(--accordion);
