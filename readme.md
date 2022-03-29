@@ -1,5 +1,5 @@
 <div style="width: 64px; height: 64px; margin: 0 auto;">
-    <img src="https://ditmenavi.xyz/30-43-64.png"></img>
+    <img src="https://ditmenavi.xyz/30-43-256.png"></img>
 </div>
 
 <div>
