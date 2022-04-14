@@ -103,7 +103,7 @@ ul {
     margin: 0;
     background-color: var(--accordion);
 	border-radius: 15px;
-	transition: background-color 150ms;
+	transition: all 150ms;
 	box-shadow: 0 0 25px -12px #333333;
 }
 ul li {
@@ -905,18 +905,16 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  font-family: MontserratBold;
 	  font-size: 14px;
 	  padding-bottom: 10px;
-	  transition: 150ms;
+	  transition: all 150ms;
 	  background-size: 300% 100%;
 	  box-sizing: border-box;
 	  cursor: pointer;
   }
   .supporter-button:hover{
-	transition: all 150ms ;
-	background-image: linear-gradient(to right, var(--background), var(--background), #b4ddff, #43c0ff);
-	filter:drop-shadow(0 0 10px #43c0ff);
-	background-position: 100% 0;
-	content: ' ';
+	background-color: #55ff90;
+	box-shadow: 0 0 15px 0px #55ff90;
 	color: #fff;
+	transition: all 150ms;
   }
   .search-box{
 	  background-color: var(--accordion);
@@ -946,3 +944,52 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  box-shadow: 0 0 15px -2px #55ff90;
 	  transition: all 150ms;
   }
+  .momo{
+	  color: rgba(244, 151, 216, 1);
+	  font-size: 25px;
+	  border-radius: 50%;
+  }
+  .paypal{
+	color: rgba(22, 155, 215, 1);
+	font-size: 25px;
+	border-radius: 50%;
+}
+  .momo-btn:hover .momo{
+	animation: momo-pulse 0.5s ease forwards;
+  }
+  .paypal-btn:hover .paypal{
+	animation: paypal-pulse 0.5s ease forwards;
+  }
+  .donate-text{
+	font-family: MontserratBold;
+	color: var(--text);
+	text-decoration: none;
+	font-size: 25px;
+	transition: color 150ms;
+  }
+  @keyframes momo-pulse{
+	  0%{
+		box-shadow: 0 0 0 0 rgba(244, 151, 216, 0);
+	  }
+	  70%{
+		box-shadow: 0 0 0 30px rgba(244, 151, 216, 0.4);
+	  }
+	  100%{
+		box-shadow: 0 0 0 40px rgba(244, 151, 216, 0);
+	  }
+  }
+  @keyframes paypal-pulse{
+	0%{
+	  box-shadow: 0 0 0 0 rgba(22, 155, 215, 0);
+	}
+	70%{
+	  box-shadow: 0 0 0 30px rgba(22, 155, 215, 0.4);
+	}
+	100%{
+	  box-shadow: 0 0 0 40px rgba(22, 155, 215, 0);
+	}
+}
+.wibuacc{
+	box-shadow: 0px 0px 30px -5px var(--color-wibu);
+	transition: all 150ms;
+}
