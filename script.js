@@ -8,5 +8,3 @@ $(function(){
 		$(this).addClass('active');
 	});
 });
-
-
