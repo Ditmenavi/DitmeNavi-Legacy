@@ -47,3 +47,10 @@ for (let i = 0; i < g.length; i++) {
       m.toggleClass("color-csgo")
     };
 }
+let h = document.getElementsByClassName("hdh");
+for (let i = 0; i < g.length; i++) {
+    h[i].onclick = function() {
+      var m =$(h[i]).closest('li').find("h2")
+      m.toggleClass("color-hdh")
+    };
+}

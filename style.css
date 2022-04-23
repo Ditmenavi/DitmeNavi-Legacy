@@ -9,18 +9,12 @@
 	--color-postnay: #ef8d31;
 	--color-osu: #f497d8;
 	--color-csgo: #50cbff;
+	--color-hdh: #ff7535;
 }
 .dark-mode{
 	--background: #202020;
 	--text: #ffffff;
 	--accordion: #333333;
-	--color-wibu:#44e4a3;
-	--color-chuinhau: #44cde4;
-	--color-khochiu:  #e45344;
-	--color-vanhoc: #8725cf;
-	--color-postnay: #ef8d31;
-	--color-osu: #f497d8;
-	--color-csgo: #50cbff;
 }
 body {
 	width: 100%;
@@ -276,25 +270,28 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 
 /*colors*/
 .color-wibu {
-	color: #44e4a3 !important;
+	color: var(--color-wibu) !important;
   }
   .color-chuinhau {
-	color: #44cde4 !important;
+	color: var(--color-chuinhau) !important;
   }
   .color-khochiu {
-	color: #e45344 !important;
+	color: var(--color-khochiu) !important;
   }
   .color-vanhoc {
-	color: #c36fff !important;
+	color: var(--color-vanhoc) !important;
   }
   .color-postnay {
-	color: #ef8d31 !important;
+	color: var(--color-postnay) !important;
   }
   .color-osu {
-	color: #f497d8 !important;
+	color: var(--color-osu) !important;
   }
   .color-csgo {
-	color: #50cbff !important;
+	color: var(--color-csgo) !important;
+  }
+  .color-hdh{
+	color: var(--color-hdh) !important;
   }
 .button-dark-mode{
 	border-radius: 10px;
@@ -402,7 +399,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	z-index:3 ;
 }
 .full-menu {
-	height: 637px;
+	height: 700px;
 	transition: background 150ms, height 150ms;
 }
 
