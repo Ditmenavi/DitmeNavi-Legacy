@@ -194,7 +194,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .button-copy{
 	border-radius: 10px;
 	background-color: var(--accordion);
-	border: #f6483b;
 	padding: 8px;
 	color: var(--text);
 	margin: 0 auto;
@@ -205,6 +204,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	box-shadow: 0px 3px 13px -7px rgba(0, 0, 0, 0.6);
 	transition:letter-spacing 150ms;
 	transition: background-color 150ms, color 150ms, letter-spacing 150ms;
+	border: none;
 }
 .button-copy:hover{
 	background-color: var(--accordion);
@@ -985,8 +985,4 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	100%{
 	  box-shadow: 0 0 0 40px rgba(22, 155, 215, 0);
 	}
-}
-.wibuacc{
-	box-shadow: 0px 0px 30px -5px var(--color-wibu);
-	transition: all 150ms;
 }
