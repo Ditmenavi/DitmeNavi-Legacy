@@ -3,6 +3,22 @@
 	--event-background: linear-gradient(180deg, rgba(255,106,150,1) 50%, rgba(108,179,255,1) 50%) fixed;
 	--text: #333333;
 	--accordion: #ffffff;
+	--color-wibu:#00c073;
+	--color-chuinhau: #34bad1;
+	--color-khochiu:  #e45344;
+	--color-vanhoc: #8725cf;
+	--color-postnay: #ef8d31;
+	--color-osu: #dd6dbc;
+	--color-csgo: #44b2e0;
+	--color-hdh: #ff7535;
+	--shadow: rgba(0, 0, 0, 0.6);
+	--shadow2: rgba(0, 0, 0, 0.2);
+}
+.dark-mode{
+	--background: #202020;
+	--event-background: #202020;
+	--text: #ffffff;
+	--accordion: #333333;
 	--color-wibu:#44e4a3;
 	--color-chuinhau: #44cde4;
 	--color-khochiu:  #e45344;
@@ -13,12 +29,6 @@
 	--color-hdh: #ff7535;
 	--shadow: rgba(0, 0, 0, 0.6);
 	--shadow2: rgba(0, 0, 0, 0.2);
-}
-.dark-mode{
-	--background: #202020;
-	--event-background: #202020;
-	--text: #ffffff;
-	--accordion: #333333;
 }
 body {
 	width: 100%;
@@ -46,6 +56,9 @@ body {
 	/* For mobile phones: */
 	[class*="accordion-menu"] {
 	  max-width: 90vmin;
+	}
+	.thprqg{
+		font-size: 1rem;
 	}
   }
 h1{
@@ -955,3 +968,106 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .no-u{
 	pointer-events: none;
 }
+.thptqg{
+	background: linear-gradient(170deg, rgba(85,255,144,1) 0%, rgba(61,180,102,1) 100%);
+	width: 90vw;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: calc(10vw / 2);
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: MontserratBold;
+	color: #fff;
+	font-size: 1.4rem;
+}
+.thptqg img{
+	position: absolute;
+	z-index: 0;
+	top: calc(5vw + 118px);
+	right: calc(5vw + 10vw);
+}
+.thptqg div{
+	z-index: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: default;
+}
+
+  .loader-wrapper{
+	min-width:100vw;
+	min-height:100vh;
+	position:fixed;
+	top: 0;
+	left: 0;
+	  background: var(--background);
+	  margin: 0;
+	  padding: 0;
+	  z-index: 728;
+	transition: all 1000ms;
+  }
+  .loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(2);
+  }
+  .loading svg polyline {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+  }
+  .loading svg polyline#back {
+	stroke: rgba(110, 242, 165, 0.3);
+  }
+  .loading svg polyline#front {
+	stroke: #6ef296;
+	stroke-dasharray: 12, 36;
+	stroke-dashoffset: 48;
+	animation: dash 1s linear infinite;
+  }
+  @-moz-keyframes dash {
+	62.5% {
+	  opacity: 0;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+  @-webkit-keyframes dash {
+	62.5% {
+	  opacity: 0;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+  @-o-keyframes dash {
+	62.5% {
+	  opacity: 0;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+  @keyframes dash {
+	62.5% {
+	  opacity: 0;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+  .loader-wrapper h3{
+	  text-align: center;
+	  position: relative;
+	  top: 55vh;
+	  color: var(--text);
+	  font-family: MontserratBold;
+	  opacity: 0;
+	  transition: opacity 500ms;
+	  cursor: default;
+  }
