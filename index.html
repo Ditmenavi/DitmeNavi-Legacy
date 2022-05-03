@@ -55,6 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="jquery-min.js"></script>
     <!-- End copy text code -->
     <script src="smoothscroll.js"></script>
+    <script src="./dark-mode.js"></script>
 </head>
 
 <body>
@@ -62,6 +63,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWZLMS2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div class="loader-wrapper" id="loaderWrapper">
+    <div class="loading"> 
+        <svg width="16px" height="12px">
+          <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+        </svg>
+    </div>
+    <h3 id="loaderText">Dit me Viettel</h3>
+</div>
     <!--navbar 2-->
     <div class="box-menu" id="menu">
 		<div class="wrapper">
@@ -90,6 +100,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--<div>
         <input type="text" placeholder="Tìm văn mẫu...(Chưa dùng được)" class="search-box" id="searchBox">
     </div>-->
+    <div id="thptqg" class="thptqg">
+        <div>Còn <span id="ngay"></span> ngày <span id="gio"></span> giờ <span id="phut"></span> phút <span id="giay"></span> giây nữa</div>
+        <div>Là tới kì thi tốt nghiệp THPTQG</div>
+        <img src="./Assets/tap.gif" alt="" style="width: 100px;">
+    </div>
     <!--accordion 1-->
     <div class="accordion-menu">
         <h1 name="wibu">VĂN MẪU WIBU</h1>
@@ -3613,12 +3628,19 @@ Giống như dân da đen, tao vui quá nên kêu chúng nó là mọi cho thân
     var hieuung = document.getElementById("fuckdm");
   hieuung.addEventListener('click',function(){
   document.body.classList.toggle('dark-mode');
-  })
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("mode", "dark-theme");
+  } else {
+    localStorage.setItem("mode", "light-theme");
+  }
+  });
+
            var today = new Date();
           var time = today.getHours();
           if(time>17 || time<6){
               document.body.classList.toggle("dark-mode");
-          }
+          };
+
   </script>
   <!-- End Dark Mode -->
   <!-- change button content on click -->
@@ -3644,6 +3666,15 @@ Giống như dân da đen, tao vui quá nên kêu chúng nó là mọi cho thân
     }
     window.onload = function() {
         setTimeout(openMenuOnLoad, 1000);
+        setTimeout(function() {
+		$("#loaderWrapper").css("opacity", 0);	
+	}, 1000);
+	setTimeout(function() {
+		$("#loaderWrapper").addClass("hidden")
+	}, 2000)
+    setTimeout(function() {
+        $("#loaderText").css("opacity", 100);
+    }, 5000)
     }
   </script>
   <!-- end change button content on click -->
