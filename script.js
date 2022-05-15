@@ -37,4 +37,22 @@ function getTimeRemaining(endtime){
 	document.getElementById("gio").innerHTML = getTimeRemaining(deadline).hours;
 	document.getElementById("ngay").innerHTML = getTimeRemaining(deadline).days;
   }
+
+  $(document).ready(function() {
+	//check for localStorage, add as browser preference if missing
+	if (!localStorage.getItem("mode")) {
+	  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		localStorage.setItem("mode", "dark-theme");
+	  } else {
+		localStorage.setItem("mode", "light-theme");
+	  }
+	}
+  
+	//set interface to match localStorage
+	if (localStorage.getItem("mode") == "dark-theme") {
+		$("body").addClass("dark-mode");
+	} else {
+	  $("body").removeClass("dark-mode");
+	}
+  });
   

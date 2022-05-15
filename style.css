@@ -22,7 +22,7 @@
 	--color-wibu:#44e4a3;
 	--color-chuinhau: #44cde4;
 	--color-khochiu:  #e45344;
-	--color-vanhoc: #8725cf;
+	--color-vanhoc: #b85ef8;
 	--color-postnay: #ef8d31;
 	--color-osu: #f497d8;
 	--color-csgo: #50cbff;
@@ -36,6 +36,7 @@ body {
 	margin:0;
 	perspective: 900;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	font-family: "Titillium Web", sans-serif;
 	color: rgba(48, 69, 92, 0.8);
 	transition: background 150ms;
@@ -56,9 +57,6 @@ body {
 	/* For mobile phones: */
 	[class*="accordion-menu"] {
 	  max-width: 90vmin;
-	}
-	.thprqg{
-		font-size: 1rem;
 	}
   }
 h1{
@@ -359,7 +357,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	z-index:3 ;
 }
 .full-menu {
-	height: 700px;
+	height: 640px;
 	transition: background 150ms, height 150ms;
 }
 
@@ -557,6 +555,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
+	  z-index:9999;
   }
   .title {
     color: var(--text);
@@ -970,7 +969,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 }
 .thptqg{
 	background: linear-gradient(170deg, rgba(85,255,144,1) 0%, rgba(61,180,102,1) 100%);
-	width: 90vw;
+	width: 60vw;
 	height: 200px;
 	margin: 0 auto;
 	margin-top: calc(10vw / 2);
@@ -982,12 +981,13 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: MontserratBold;
 	color: #fff;
 	font-size: 1.4rem;
+	user-select: none;
 }
 .thptqg img{
 	position: absolute;
 	z-index: 0;
 	top: calc(5vw + 118px);
-	right: calc(5vw + 10vw);
+	right: calc(5vw + 15vw);
 }
 .thptqg div{
 	z-index: 0;
@@ -1070,4 +1070,89 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  opacity: 0;
 	  transition: opacity 500ms;
 	  cursor: default;
+  }
+  .emjpdm{
+	  display: flex;
+	  width: 60vw;
+	  min-height: 100px;
+	  font-family: MontserratBold;
+	  justify-content: center;
+	  margin-top: 25px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  gap: 25px;
+	  color: #fff;
+	  font-size: 1rem;
+	  user-select: none;
+  }
+  .emjpdm img#fol{
+	position: absolute;
+	z-index: 0;
+	top: 25px;
+	left: calc(-2vw + 5px);
+  }
+  .emjpdm .emjp{
+	  background: linear-gradient(170deg, rgb(255, 173, 96) 0%, rgb(206, 128, 56) 100%);
+	  float: left;
+	  flex: 50%;
+	  border-radius: 25px;
+	  padding: 50px 20px;
+	  text-align: center;
+	  color: #fff;
+	  text-decoration: none;
+	  cursor: pointer;
+	  position: relative;
+	  z-index: 1;
+  }
+  .emjpdm .dm{
+	  background-image: url(./Assets/dance.gif), linear-gradient(170deg, rgb(106, 210, 255) 0%, rgb(64, 161, 202) 100%);
+	  background-repeat: no-repeat;
+	  background-position: right;
+	  float: right;
+	  flex: 50%;
+	  border-radius: 25px;
+	  padding: 50px 20px;
+	  text-align: center;
+	  cursor: pointer;
+	  position: relative;
+	  z-index: 1;
+  }
+  .emjpt{
+	  z-index: 3;
+	  position: relative;
+  }
+  @media only screen and (max-width: 450px) {
+	.emjpdm img#fol{
+		display: none;
+	}
+	.emjpdm .dm{
+		background: linear-gradient(170deg, rgb(106, 210, 255) 0%, rgb(64, 161, 202) 100%);
+		float: right;
+		flex: 50%;
+		border-radius: 25px;
+		padding: 50px 20px;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+	}
+  }
+  .thptqg h3{
+	  margin-top: 0;
+	  margin-bottom: 5px;
+	  font-family: MontserratExtraBold;
+  }
+  @media only screen and (max-width: 650px) {
+	.thptqg{
+		width: 90vw;
+	}
+	.emjpdm{
+		width: 90vw;
+	}
+	.thptqg img{
+		position: absolute;
+		z-index: 0;
+		top: calc(5vw + 118px);
+		right: calc(5vw + 10vw);
+	}
   }
