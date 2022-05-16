@@ -54,10 +54,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </script>
     <script>
+        //if browser support service worker
         if('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-        }
-    </script>
+          navigator.serviceWorker.register('sw.js');
+        };
+      </script>
     <script src="jquery-min.js"></script>
     <!-- End copy text code -->
     <script src="smoothscroll.js"></script>
