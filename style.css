@@ -1145,7 +1145,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  margin-bottom: 5px;
 	  font-family: MontserratExtraBold;
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 750px) {
 	.thptqg{
 		width: 90vw;
 	}
