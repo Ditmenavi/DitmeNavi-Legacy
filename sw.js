@@ -45,7 +45,7 @@ self.addEventListener('install', function(event) {
 
 // On network request
 self.addEventListener("fetch", event => {
-  if (event.request.url === "https://ditmenavi.xyz") {
+  if (event.request.url === "https://test.ditmenavi.xyz") {
       // or whatever your app's URL is
       event.respondWith(
           fetch(event.request).catch(err =>
