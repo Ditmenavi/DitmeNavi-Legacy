@@ -1175,22 +1175,32 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  justify-content: flex-start;
 	  align-items: center;
 	  box-shadow: 0 0 25px -12px var(--shadow);
+	  overflow-y: scroll;
+	  -ms-overflow-style: none;
+	  scrollbar-width: none;
   }
+  .sidebar::-webkit-scrollbar{
+		display: none;
+	}
   .sidebar a{
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
-	  width: 30px;
-	  height: 30px;
+	  max-width: 30px;
+	  max-height: 30px;
+	  min-width: 30px;
+	  min-height: 30px;
 	  padding: 10px;
-	  margin-top: 5px;
-	  margin-bottom: 5px;
+	  margin-top: 10px;
 	  background: var(--background);
 	  border-radius: 15px;
 	  text-decoration: none;
 	  transition: all 150ms;
 	  cursor: pointer;
 	  user-select: none;
+  }
+  .lastc{
+	  margin-bottom: 10px;
   }
   .sidebar a:hover{
 	  background: var(--new-menu-hover);
@@ -1227,15 +1237,23 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	justify-content: flex-start;
 	align-items: flex-start;
 	user-select: none;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	pointer-events:none;
+}
+.sidebar-text::-webkit-scrollbar{
+	display: none;
 }
 .sidebar-text div.text{
 	display: flex;
 	text-align: center;
 	align-items: center;
-	height: 30px;
+	max-height: 30px;
+	min-height: 30px;
 	padding: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 0px;
 	cursor: default;
 	font-family: MontserratLight;
 	font-size: 14px;
@@ -1245,4 +1263,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background: var(--accordion);
 	border-radius: 15px;
 	user-select: none;
+	pointer-events:none;
+}
+.sidebar-text div.lastc{
+	margin-bottom: 10px;
 }
