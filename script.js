@@ -56,3 +56,33 @@ function getTimeRemaining(endtime){
 	}
   });
   
+var sidebar = document.getElementsByClassName("sidebar-item");
+var sidebarText = document.getElementsByClassName("text");
+for(let i = 0; i < sidebar.length; i++) {
+	sidebar[i].onmouseover = function() {
+		sidebarText[i].style.opacity = "60%";
+		sidebarText[i].css("display", "flex");
+	}
+	sidebar[i].onmouseout = function() {
+		sidebarText[i].style.opacity = "0%";
+		sidebarText[i].css("display", "none");
+	}
+}
+
+if (window.innerWidth < 750) {
+	$(".sidebar").addClass("hidden");
+	$(".box-menu").removeClass("hidden");
+	console.log("width < 750");
+} else {
+	$(".sidebar").removeClass("hidden");
+	$(".box-menu").addClass("hidden");
+	console.log("width > 750");
+}
+
+(function() {
+	var target = $("#sidebarText");
+	$("#sidebar").scroll(function() {
+	  target.prop("scrollTop", this.scrollTop)
+			.prop("scrollLeft", this.scrollLeft);
+	});
+  })();
