@@ -722,6 +722,9 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	justify-content: center;
 	align-items: center;
   }
+  .submit-success{
+	  background-color: #55ff90 !important;
+  }
   
   .submit:hover {
     background-color: #55ff90;
@@ -1110,7 +1113,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  z-index: 1;
   }
   .emjpdm .dm{
-	  background-image: url(./Assets/dance.gif), linear-gradient(170deg, rgb(106, 210, 255) 0%, rgb(64, 161, 202) 100%);
+	  background-image:  linear-gradient(170deg, rgb(106, 210, 255) 0%, rgb(64, 161, 202) 100%);
 	  background-repeat: no-repeat;
 	  background-position: right;
 	  float: right;
