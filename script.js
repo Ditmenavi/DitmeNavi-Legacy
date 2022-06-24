@@ -61,11 +61,9 @@ var sidebarText = document.getElementsByClassName("text");
 for(let i = 0; i < sidebar.length; i++) {
 	sidebar[i].onmouseover = function() {
 		sidebarText[i].style.opacity = "60%";
-		sidebarText[i].css("display", "flex");
 	}
 	sidebar[i].onmouseout = function() {
 		sidebarText[i].style.opacity = "0%";
-		sidebarText[i].css("display", "none");
 	}
 }
 
