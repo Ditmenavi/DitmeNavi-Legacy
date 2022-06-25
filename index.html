@@ -71,6 +71,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <h3 id="loaderText">Dit me Viettel</h3>
 </div>
+<div class="sidebar-tab" id="sidebarTab" onclick="toggleSidebar()">
+    <div id="sidebarTabIcon" class="icon fa-solid fa-angle-right"></div>
+</div>
 <div class="sidebar" id="sidebar">
     <a id="fuckdm2" class="sidebar-item" onclick="theThing()"><span class="icon fa fa-moon"></span></a>
 	<a href="#wibu" class="smoothScroll sidebar-item"><span class="icon fab fa-accessible-icon"></span></a>
@@ -84,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="https://queue.ditmenavi.xyz" class="sidebar-item emojipasta"><span class="icon fas fa-solid fa-list-check emojipasta"></span></a>
     <a href="https://ditmenavi.dev" class="sidebar-item emojipasta lastc"><span class="icon fas fa-solid fa-vial-circle-check emojipasta"></span></a>
     <!--<a id="form"><span class="icon fas fa-paper-plane submitvanmau"></span></a> -->
-    <div class="sidebar-text" id="sidebarText">
+    <div class="sidebar-text hidden" id="sidebarText">
         <div class="text">Dark Mode</div>
         <div class="text">Văn mẫu Wibu</div>
         <div class="text">Văn mẫu chửi nhau</div>
@@ -98,44 +101,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="text emojipasta lastc">Khu thử nghiệm</div>
     </div>
 </div>
-    <!--navbar 2-->
-    <div class="box-menu hidden" id="menu">
-		<div class="wrapper">
-			<div class="hamburger" id="menubutton">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-		<div class="menu">
-            <a id="fuckdm" onclick="theThing()"><span class="icon fa fa-moon"></span><span class="text" id="fuckdarkmode" style="font-family: MontserratSemiBold;">Dark Mode</span></a>
-			<a href="#wibu" class="smoothScroll"><span class="icon fab fa-accessible-icon"></span><span class="text">Văn mẫu Wibu</span></a>
-			<a href="#chuinhau" class="smoothScroll"><span class="icon fas fa-comments"></span><span class="text">Văn mẫu chửi nhau</span></a>
-			<a href="#khochiu" class="smoothScroll"><span class="icon fas fa-flushed"></span><span class="text">Khiến người khác khó chịu khi nhìn vào</span></a>
-            <a href="#vanhoc" class="smoothScroll"><span class="icon fas fa-award"></span><span class="text">Văn học và nghệ thuật trên Facebook</span></a>
-            <a href="#postnay" class="smoothScroll"><span class="icon fas fa-bed"></span><span class="text">Post này khiến tôi muốn</span></a>
-            <a href="#osu" class="smoothScroll"><span class="icon fas fa-dot-circle"></span><span class="text">VN Osu! buddy retard</span></a>
-            <a href="#csgo" class="smoothScroll"><span class="icon fas fa-hat-wizard"></span><span class="text">VN-CSGO</span></a>
-            <a href="#hdh" class="smoothScroll"><span class="icon fas fa-solid fa-brain"></span><span class="text">Hoàng Đức Huy</span></a>
-            <a href="https://queue.ditmenavi.xyz"><span class="icon fas fa-solid fa-list-check emojipasta"></span><span class="text emojipastatext">Queue văn mẫu</span></a>
-            <!--<a id="form"><span class="icon fas fa-paper-plane submitvanmau"></span><span class="text submitvanmautext">Gửi văn mẫu</span></a> -->
-		</div>
-	</div>
-    <!--<button class="button-dark-mode" id="fuckdarkmode" onclick="theThing()" value="toggle Light Mode">toggle Light Mode</button>-->
-    <!--<div>
-        <input type="text" placeholder="Tìm văn mẫu...(Chưa dùng được)" class="search-box" id="searchBox">
-    </div>-->
     <div id="thptqg" class="thptqg">
         <h3>Thông báo của tuần</h3>
         <div>Còn <span id="ngay"></span> ngày <span id="gio"></span> giờ <span id="phut"></span> phút <span id="giay"></span> giây nữa</div>
         <div>Là tới kì thi tốt nghiệp THPTQG</div>
-        <!-- <img src="./Assets/tap.gif" alt="" style="width: 100px;"> -->
     </div>
     <div class="emjpdm">
         <a href="https://ditmenavi.xyz/emojipasta/"  class="emjp">
             <div class="emjpt">EmojiPasta</div>
-            <!-- <img src="./Assets/folontilo.gif" alt="Folontilo" id="fol"> -->
         </a>
         <a id="form"  class="dm">
             <div class="emjpt">Gửi văn mẫu</div>
@@ -143,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <!--accordion 1-->
     <div class="accordion-menu">
-        <h1 name="wibu" id="wibu">VĂN MẪU WIBU</h1>
+        <h1 name="wibu" id="wibu"><span class="fab fa-accessible-icon"></span> VĂN MẪU WIBU</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -224,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <!--end accordion 1-->
     <div class="accordion-menu">
-        <h1 name="chuinhau" id="chuinhau">VĂN MẪU CHỬI NHAU</h1>
+        <h1 name="chuinhau" id="chuinhau"><span class="fas fa-comments"></span> VĂN MẪU CHỬI NHAU</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -330,7 +303,7 @@ We is a same🤝
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="khochiu" id="khochiu">KHIẾN NGƯỜI KHÁC KHÓ CHỊU KHI NHÌN VÀO</h1>
+        <h1 name="khochiu" id="khochiu"><span class="fas fa-flushed"></span> KHIẾN NGƯỜI KHÁC KHÓ CHỊU KHI NHÌN VÀO</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -1283,7 +1256,7 @@ Em có biết không >< nỗi nhớ em không thể nào ngủ nổi từng đê
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="vanhoc" id="vanhoc">VĂN HỌC VÀ NGHỆ THUẬT TRÊN FACEBOOK</h1>
+        <h1 name="vanhoc" id="vanhoc"><span class="fas fa-award"></span> VĂN HỌC VÀ NGHỆ THUẬT TRÊN FACEBOOK</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -2293,7 +2266,7 @@ Lời cuối cùng cháu xin chúc tất cả các cô chú sức khỏe.
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="postnay" id="postnay">POST NÀY KHIẾN TÔI MUỐN</h1>
+        <h1 name="postnay" id="postnay"><span class="fas fa-bed"></span> POST NÀY KHIẾN TÔI MUỐN</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -3641,7 +3614,7 @@ Thế, tối hôm đó anh bạn tôi lang thang cả đêm trong thành phố, 
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="osu" id="osu">VN OSU! BUDDY RETARD</h1>
+        <h1 name="osu" id="osu"><span class="fas fa-dot-circle"></span> VN OSU! BUDDY RETARD</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -3749,7 +3722,7 @@ Cuộc đời tôi đã bị hủy hoại bởi VN Osu! Fan-Club. Tôi năm nay 
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="csgo" id="csgo">VN-CSGO</h1>
+        <h1 name="csgo" id="csgo"><span class="fas fa-hat-wizard"></span> VN-CSGO</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -4441,7 +4414,7 @@ nước mắt trào đồng đội giờ ở nơi đâu disappointed
         </ul>
     </div>
     <div class="accordion-menu">
-        <h1 name="hdh" id="hdh">HOÀNG ĐỨC HUY</h1>
+        <h1 name="hdh" id="hdh"><span class="fa-solid fa-brain"></span> HOÀNG ĐỨC HUY</h1>
         <ul>
             <!--tab 1-->
             <li>
@@ -4826,16 +4799,7 @@ Bố mày khuyên lũ gái Sài Gòn lo mà noi gương gái Hà Nội đê, b�
     </script>
 <!-- Dark Mode-->
 <script>
-    var hieuung = document.getElementById("fuckdm");
     var hieuung2 = document.getElementById("fuckdm2");
-  hieuung.addEventListener('click',function(){
-  document.body.classList.toggle('dark-mode');
-  if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("mode", "dark-theme");
-  } else {
-    localStorage.setItem("mode", "light-theme");
-  }
-  });
   hieuung2.addEventListener('click',function(){
   document.body.classList.toggle('dark-mode');
   if (document.body.classList.contains("dark-mode")) {
@@ -4846,29 +4810,8 @@ Bố mày khuyên lũ gái Sài Gòn lo mà noi gương gái Hà Nội đê, b�
   });
   </script>
   <!-- End Dark Mode -->
-  <!-- change button content on click -->
   <script>
-      function theThing() {
-  var span = document.getElementById("fuckdarkmode");
-  if (span.value == "Light Mode") {
-      span.value = "Dark Mode";
-      span.innerHTML = "Dark Mode";
-  }
-  else {
-      span.value = "Light Mode";
-      span.innerHTML = "Light Mode";
-  }
-  }
-  </script>
-  <script>
-    var menuclose = document.getElementById("menu");
-    var menubutton = document.getElementById("menubutton");
-    var openMenuOnLoad = function() {
-        menuclose.classList.toggle("full-menu");
-        menubutton.classList.toggle("active");
-    }
     window.onload = function() {
-        setTimeout(openMenuOnLoad, 1000);
         setTimeout(function() {
 		$("#loaderWrapper").css("opacity", 0);	
 	}, 1000);
@@ -4885,7 +4828,15 @@ Bố mày khuyên lũ gái Sài Gòn lo mà noi gương gái Hà Nội đê, b�
 	$("#inputCategory").toggleClass("hidden");
     }
   </script>
-  <!-- end change button content on click -->
   <script src="script.js"></script>
+  <script>
+      $(document).ready(function(){
+	var target = $("#sidebarText")
+	$("#sidebar").scroll(function() {
+		target.prop("scrollTop", this.scrollTop)
+		.prop("scrollLeft", this.scrollLeft)
+	})
+  });
+  </script>
 </body>
 </html>

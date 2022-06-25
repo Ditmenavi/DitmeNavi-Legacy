@@ -42,10 +42,9 @@ body {
 	width: 100%;
 	height: 100%;
 	margin:0;
-	perspective: 900;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	font-family: "Titillium Web", sans-serif;
+	font-family: MontserratRegular;
 	color: rgba(48, 69, 92, 0.8);
 	transition: background 150ms;
 	background: var(--background);
@@ -316,30 +315,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   .color-hdh{
 	color: var(--color-hdh) !important;
   }
-.button-dark-mode{
-	border-radius: 10px;
-	background-color: var(--accordion);
-	border: none;
-	padding: 8px;
-	color: var(--text);
-	margin: 0 auto;
-	display: block;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-family: "Montserrat";
-	font-weight: 400;
-	box-shadow: 0px 3px 13px -7px var(--shadow);
-	transition: 150ms;
-}
-.button-dark-mode:hover{
-	background-color: var(--accordion);
-	color: var(--text);
-	box-shadow: 0px 3px 10px -4px var(--shadow);
-	font-family: "Montserrat";
-	font-weight: 600;
-	letter-spacing: 1px;
-	transition: 150ms;	
-}
 .hashtag{
 	color: #50cbff;
 }
@@ -350,174 +325,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .hidden{
 	display: none !important;
 }
-  /*new changes v2*/
-  .box-menu {
-	position: fixed;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-	background: var(--accordion);
-	width: 58px;
-	height: 58px;
-	box-shadow: 0px 0px 15px -1px var(--shadow2);
-	border-radius: 60px;
-	transition: height 150ms;
-	z-index:3 ;
-}
-.full-menu {
-	height: 640px;
-	transition: background 150ms, height 150ms;
-}
-
-.wrapper {
-	position: relative;
-	width: 60px;
-	height: 60px;
-}
-
-/*MENU*/
-.hamburger {
-	position: absolute;
-	left: 22px;
-	top: 22px;
-	width: 16px;
-	height: 16px;
-}
-.hamburger span {
-	position: absolute;
-	display: inline-block;
-	height: 2px;
-	width: 100%;
-	background: var(--text);
-	border-radius: 10px;
-	/*transition: top .3s, transform .3s, left .3s, width .3s;*/
-	transition: all .3s;
-}
-
-.hamburger span:nth-child(1) { top: 3px; }
-.hamburger span:nth-child(2) { top: 8px; }
-.hamburger span:nth-child(3) { top: 8px; }
-.hamburger span:nth-child(4) { top: 13px; }
-
-.hamburger.active span:nth-child(1) { width: 0; margin-left: 8px;}
-.hamburger.active span:nth-child(2) { transform: rotate(45deg); }
-.hamburger.active span:nth-child(3) { transform: rotate(-45deg); }
-.hamburger.active span:nth-child(4) { width: 0; margin-left: 8px;}
-
-  /*ОСНОВНОЕ МЕНЮ*/
-.menu {
-	position: relative;
-	left: -9999px;
-}
-.menu a span.text{
-	display: inline-block;
-	background-color: var(--accordion);
-	border-radius: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
-	box-shadow: 0px 0px 15px -1px var(--shadow2);
-	user-select: none;
-}
-.menu a {
-	white-space: nowrap;
-	position: relative;
-	display: inline-block;
-	color: var(--text);
-	text-decoration: none;
-	width: 58px;
-	height: 58px;
-	line-height: 38px;
-	font-family: MontserratLight;
-}
-.menu a::after {
-	content: '';
-	position: absolute;
-	left: 57px;
-	top: 29px;
-	height: 0px;
-	width: 3px;
-	background: rgba(0, 0, 0, 0);
-	transition: height .3s, top .3s;
-}
-.menu a.active::after {
-	top: 19px;
-	height: 20px;
-}
-.menu a span {
-	opacity: 0;
-	display: inline-block;
-	font-size: 12px;
-}
-.menu a span.icon {
-	padding-top: 18px;
-	transform: scale(.5);
-	color: var(--text);
-	font-size: 18px;
-	display: inline-block;
-	width: 58px;
-	text-align: center;
-	transition: transform .2s;
-}
-.menu a span.submitvanmau{
-	color:#55ff90;
-}
-.menu a span.submitvanmautext{
-	color:#55ff90;
-	font-family: MontserratBold;
-}
-.menu a span.emojipasta{
-	color:#55ff90;
-}
-.menu a span.emojipastatext{
-	color: #55ff90;
-	font-family: MontserratBold;
-}
-.menu a span.text {
-	opacity: 0;
-	margin-left: 40px;
-	transition: margin .3s, opacity .3s, transform .3s, background-color 150ms, color 150ms;
-}
-
-/*Menu*/
-.full-menu .menu {
-	left: 0;
-}
-.full-menu .menu a {
-	/*opacity: .8;*/
-}
-.full-menu .menu a:hover span {
-	opacity: 1;	
-}
-.full-menu .menu a span {
-	opacity: 1;
-}
-.full-menu .menu a span.icon {
-	transform: scale(1.1);
-}
-.full-menu .menu a:hover span.icon {
-	transform: scale(1.0);
-}
-.full-menu .menu a span.text {
-	margin-left: 15px;
-	/*opacity: .7;*/
-}
-.full-menu .menu a:hover span.text {
-	/*margin-left: 30px;*/
-	transform: translateX(5px);
-	transition-delay: 0s;
-}
-
-/*Animation*/
-.menu a:nth-child(1) span.icon { transition: all .3s .1s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(2) span.icon { transition: all .3s .15s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(3) span.icon { transition: all .3s .2s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(4) span.icon { transition: all .3s .25s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(5) span.icon { transition: all .3s .3s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(6) span.icon { transition: all .3s .35s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(7) span.icon { transition: all .3s .4s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(8) span.icon { transition: all .3s .45s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(9) span.icon { transition: all .3s .5s, opacity .3s 0s, transform .3s 0s; }
-.menu a:nth-child(10) span.icon { transition: all .3s .55s, opacity .3s 0s, transform .3s 0s; }
   /*scrollbar*/
   ::-webkit-scrollbar{
 	  width: 12px;
@@ -1160,8 +967,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	  z-index: 12;
 	  position: fixed;
 	  top: 0;
-	  left: 0;
-	  transition: background 150ms;
+	  left: -70px;
+	  transition: background 150ms, left 150ms;
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: flex-start;
@@ -1358,6 +1165,37 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	background: var(--background);
 	margin-right: 5px;
 }
+.footer-links{
+	color: var(--blind-text);
+	text-decoration: none;
+}
+.sidebar-tab{
+	width: 50px;
+	height: 50px;
+	background: var(--accordion);
+	border-radius: 15px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 150ms;
+	box-shadow: 0 0 25px -12px var(--shadow);
+}
+.sidebar-tab div.icon{
+	color: var(--text);
+	font-size: 16px;
+	transition: all 150ms;
+}
+.sidebar-active{
+	left: 0;
+}
+.sidebar-tab-active{
+	left: 80px;
+}
 @media only screen and (max-width: 750px) {
 	.thptqg{
 		width: 90vw;
@@ -1378,7 +1216,3 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 		width: 80vw;
 	}
   }
-.footer-links{
-	color: var(--blind-text);
-	text-decoration: none;
-}
