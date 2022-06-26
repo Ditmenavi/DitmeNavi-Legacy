@@ -786,7 +786,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	pointer-events: none;
 }
 .thptqg{
-	background: linear-gradient(170deg, rgba(85,255,144,1) 0%, rgba(61,180,102,1) 100%);
+	background: linear-gradient(170deg, rgb(255, 87, 87) 0%, rgb(212, 59, 59) 100%);
 	width: 60vw;
 	height: 200px;
 	margin: 0 auto;
@@ -938,6 +938,7 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
   .emjpt{
 	  z-index: 3;
 	  position: relative;
+	  font-size: 20px;
   }
   @media only screen and (max-width: 450px) {
 	.emjpdm img#fol{
@@ -1214,5 +1215,8 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	}
 	.form{
 		width: 80vw;
+	}
+	.emjpt{
+		font-size: 14px;
 	}
   }
