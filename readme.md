@@ -3,7 +3,7 @@
 </div>
 
 <div>
-  <h1 align="center" style="font-size: 30px;">DitmeNavi</h1>
+  <h1 align="center" style="font-size: 30px;">DitmeNavi-Legacy</h1>
 </div>
 
 My copypasta website, version 2
