@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CringeTitle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="../Assets/css/copy.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <h1>CringeTitle</h1>
+  <div class="input-wrapper">
+      <h4>Số lượng từ</h4>
+      <input type="number"id="input" placeholder="Ví dụ: 10" autofocus>
+      <button onclick="cringetitle()">Generate</button>
+  </div>
+  <i class="icon fa-solid fa-caret-down"></i>
+  <div class="output" id="output" onclick="copyToClipboard('#output'); alert('Đã copy')">
+  </div>
+</div>
+<script src="cringetitle.js"></script>
+</body>
+</html>

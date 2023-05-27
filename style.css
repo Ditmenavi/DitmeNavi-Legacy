@@ -1,7 +1,15 @@
+@import url(Assets/css/font.css);
+@import url(color_pallete/css/theme.css);
 :root{
+	--md-elevate-1: #7ddc770D;
+	--md-elevate-2: #7ddc7714;
+	--md-elevate-3: #7ddc771C;
+	--md-elevate-4: #7ddc771F;
+	--md-elevate-5: #7ddc7724;
 	--background: #202020;
 	--event-background: linear-gradient(180deg, rgba(255,106,150,1) 50%, rgba(108,179,255,1) 50%) fixed;
-	--text: #ffffff;
+	--text: #e2e3dd;
+	--primary: #7ddc77;
 	--accordion: #333333;
 	--color-wibu:#44e4a3;
 	--color-chuinhau: #44cde4;
@@ -17,9 +25,15 @@
 	--blind-text: #55ff90;
 }
 .dark-mode{
+	--md-elevate-1: #006e180D;
+	--md-elevate-2: #006e1814;
+	--md-elevate-3: #006e181C;
+	--md-elevate-4: #006e181F;
+	--md-elevate-5: #006e1824;
 	--background: #f0f0f0;
 	--event-background: linear-gradient(180deg, rgba(255,106,150,1) 50%, rgba(108,179,255,1) 50%) fixed;
-	--text: #333333;
+	--text: #1a1c19;
+	--primary: #006e18;
 	--accordion: #ffffff;
 	--color-wibu:#00c073;
 	--color-chuinhau: #34bad1;
@@ -64,6 +78,13 @@ body {
 	/* For mobile phones: */
 	[class*="accordion-menu"] {
 	  max-width: 90vmin;
+	}
+	li p {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	h1 {
+		font-size: 24px !important;
 	}
   }
 h1{
@@ -111,6 +132,9 @@ p {
 	margin-left: 45px;
 	z-index: 2;
 	font-family: MontserratLight;
+}
+sup{
+	font-size: 10px;
 }
 ul {
 	list-style: none;
@@ -241,53 +265,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	font-family: MontserratExtraBold;
 	letter-spacing: 3px;
 	transition: letter-spacing 200ms;
-}
-/*Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
-.montserrat{
-    font-family: MontserratRegular;
-}
-.montserrat-bold{
-    font-family: MontserratBold;
-}
-.montserrat-light{
-    font-family: MontserratLight;
-}
-.montserrat-semi-bold{
-	font-family: MontserratSemiBold
-}
-.montserrat-extra-bold{
-	font-family: MontserratExtraBold;
-}
-@font-face {
-    font-family: MontserratLight;
-    src: url(Assets/Montserrat/Montserrat-Light.ttf) format('truetype');
-    font-weight: 300;
-}
-@font-face {
-    font-family: MontserratBold;
-    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: MontserratRegular;
-    src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
-    font-weight: 400;
-}
-@font-face {
-	font-family: MontserratSemiBold;
-	src: url(Assets/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
-	font-weight: 600;
-}
-@font-face {
-	font-family: MontserratExtraBold;
-	src: url(Assets/Montserrat/Montserrat-ExtraBold.ttf) format('truetype');
-	font-weight: 800;
-}
-@font-face {
-	font-family: MontserratExtraLight;
-	src: url(Assets/Montserrat/Montserrat-ExtraLight.ttf) format('truetype');
-	font-weight: 200;
 }
 
 /*colors*/
@@ -785,34 +762,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .no-u{
 	pointer-events: none;
 }
-.thptqg{
-	background: linear-gradient(170deg, rgb(255, 87, 87) 0%, rgb(212, 59, 59) 100%);
-	width: 60vw;
-	height: 200px;
-	margin: 0 auto;
-	margin-top: calc(10vw / 2);
-	border-radius: 25px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-family: MontserratBold;
-	color: #fff;
-	font-size: 1.4rem;
-	user-select: none;
-}
-.thptqg img{
-	position: absolute;
-	z-index: 0;
-	top: calc(5vw + 118px);
-	right: calc(5vw + 15vw);
-}
-.thptqg div{
-	z-index: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: default;
-}
 
   .loader-wrapper{
 	min-width:100vw;
@@ -956,11 +905,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 		z-index: 1;
 	}
   }
-  .thptqg h3{
-	  margin-top: 0;
-	  margin-bottom: 5px;
-	  font-family: MontserratExtraBold;
-  }
   .sidebar{
 	  width: 70px;
 	  height: 100vh;
@@ -1075,12 +1019,6 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .form-att a{
 	text-decoration: none;
 	color: var(--color-wibu);
-}
-.grecaptcha-badge{
-	visibility: hidden;
-}
-.h-captcha{
-	margin: 20px auto;
 }
 .custom-radio input{
 	display: none;
@@ -1197,18 +1135,78 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 .sidebar-tab-active{
 	left: 80px;
 }
+.d3banner {
+	width: 60vw;
+	margin: 20px auto;
+	border-radius: 25px;
+	background: linear-gradient(90deg, var(--md-elevate-5) 10%,  var(--md-elevate-1) 70%);
+	color: var(--text);
+	display: flex;
+	justify-content: flex-start;
+	padding: 10px;
+	align-items: center;
+	font-size: 0.8rem;
+	box-sizing: border-box;
+	cursor: not-allowed;
+	transition: all 150ms;
+	user-select: none;
+}
+.d3banner:hover {
+	box-shadow: 0 0 0 1.5px var(--primary);
+}
+.d3banner div span.d3title {
+	font-family: MontserratBold;
+	font-size: 1.2rem;
+}
+.d3banner div.d3banner-title {
+	padding: 10px 0;
+}
+.d3banner img{
+	width: 60px;
+	border-radius: 16px;
+	margin-right: 10px;
+}
+.warning{
+	background: rgba(255, 75, 75, 0.3);
+	width: 60vw;
+	margin: 20px auto;
+	border-radius: 25px;
+}
+.warning h3{
+	color: var(--text);
+	font-family: MontserratBold;
+	text-align: center;
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+	transition: color 150ms;
+}
+.warning h3 i{
+	color: rgb(255, 75, 75);
+}
+.warning p{
+	margin: 0;
+	padding: 0 20px;
+	padding-bottom: 20px;
+	transition: color 150ms;
+	font-family: MontserratRegular;
+}
+.ads{
+	width: 60vw;
+	background: var(--background);
+	border: 0;
+	margin: 0 auto;
+}
 @media only screen and (max-width: 750px) {
-	.thptqg{
-		width: 90vw;
+	.ads{
+		width: 80vw;
+	}
+	sup{
+		font-size: 7px;
 	}
 	.emjpdm{
 		width: 90vw;
-	}
-	.thptqg img{
-		position: absolute;
-		z-index: 0;
-		top: calc(5vw + 118px);
-		right: calc(5vw + 10vw);
 	}
 	.input-category{
 		display: none;
@@ -1219,4 +1217,28 @@ ul li input[type=checkbox]:checked ~ .arrow:after {
 	.emjpt{
 		font-size: 14px;
 	}
+	.warning{
+		width: 90vw;
+	  }
+	.d3banner {
+		width: 90vw;
+	}
+	#warningp2,#warningp3{
+		display: none;
+	}
+  }
+  #viewport{
+	width: 100vw;
+	height: 70vh;
+	position: fixed;
+	left: 0;
+	top: 15vh;
+  }
+  .ver {
+	margin-top: 16px;
+  }
+  .ver p {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 4px;
   }

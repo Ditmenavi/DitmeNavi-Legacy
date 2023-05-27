@@ -63,43 +63,43 @@
         die('Connect error ('. mysqli_connect_errno().') '
             . mysqli_connect_error());
     } else {
-        $conn->set_charset('utf8mb4');
-        $lastname2 = mysqli_real_escape_string($conn, $lastname);
-        $sql = "INSERT INTO Copypasta (Id, Timestamp, Name, Content, Category) VALUES (NULL, CURRENT_TIMESTAMP, '$firstname', '$lastname2', '$category') ";
-        if($conn->query($sql)) {
-            echo '
-            <div class="col1">
-                <img src="30-43-64.png" alt="" class="logo">
-            </div>
-            <div class="col2">
-                <h2>Gửi thành công!</h2>
-                <p>Quay về trang trước sau 3 giây...</p>
-            </div>
-            <script>
-                setTimeout(function() {
-                    history.back();
-                }, 3000);
-            </script>
-            ';
-        } else {
-            echo '
-            <div class="col1">
-                <img src="30-43-64.png" alt="" class="logo">
-            </div>
-            <div class="col2">
-                <h2>Gửi thất bại...</h2>
-                <p>Đã xảy ra lỗi khi đang quan hệ với mẫu thân của bạn.</p>
-                <p>Quay về trang trước sau 3 giây...</p>
-            </div>
-            <script>
-                setTimeout(function() {
-                    history.back();
-                }, 3000);
-            </script>
-            ';
-        };
-        $conn->close();
-    }
+            $conn->set_charset('utf8mb4');
+            $lastname2 = mysqli_real_escape_string($conn, $lastname);
+            $sql = "INSERT INTO Copypasta (Id, Timestamp, Name, Content, Category) VALUES (NULL, CURRENT_TIMESTAMP, '$firstname', '$lastname2', '$category') ";
+            if($conn->query($sql)) {
+                echo '
+                <div class="col1">
+                    <img src="./Assets/android-chrome-192x192.png" style="width: 64px;" alt="" class="logo">
+                </div>
+                <div class="col2">
+                    <h2>Gửi thành công!</h2>
+                    <p>Quay về trang trước sau 3 giây...</p>
+                </div>
+                <script>
+                    setTimeout(function() {
+                        history.back();
+                    }, 3000);
+                </script>
+                ';
+            } else {
+                echo '
+                <div class="col1">
+                    <img src="./Assets/android-chrome-192x192.png" style="width: 64px;" alt="" class="logo">
+                </div>
+                <div class="col2">
+                    <h2>Gửi thất bại...</h2>
+                    <p>Đã xảy ra lỗi khi đang quan hệ với mẫu thân của bạn.</p>
+                    <p>Quay về trang trước sau 3 giây...</p>
+                </div>
+                <script>
+                    setTimeout(function() {
+                        history.back();
+                    }, 3000);
+                </script>
+                ';
+            };
+            $conn->close();
+        }
             ?>
         </div>
     </div>

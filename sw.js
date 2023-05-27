@@ -33,19 +33,11 @@ self.addEventListener('install', function(event) {
   );
 });
 
-// async function requestBackgroundSync() {
-//     await self.registration.sync.register('fetch-cps');
-// }
-// // Background sync?
-// self.addEventListener('sync', function() {
-//     self.cache.open('sw-cache-dau-buoi').then(cache => {
-//         cache.put(request, response)
-//     })
-// })
+
 
 // On network request
 self.addEventListener("fetch", event => {
-  if (event.request.url === "https://ditmenavi.dev") {
+  if (event.request.url === "https://test.ditmenavi.xyz") {
       // or whatever your app's URL is
       event.respondWith(
           fetch(event.request).catch(err =>

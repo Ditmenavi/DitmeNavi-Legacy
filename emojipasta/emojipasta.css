@@ -1,0 +1,93 @@
+@import url(../color_pallete/css/theme.css);
+@import url(../Assets/css/font.css);
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    background: var(--md-sys-color-inverse-on-surface);
+    color: var(--md-sys-color-on-background);
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.input-wrapper {
+    height: fit-content;
+    width: 650px;
+    max-width: 80vw;
+    padding: 20px;
+    border-radius: 18px;
+    background: var(--md-elv-3);
+}
+.input-wrapper h4 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.input-wrapper textarea {
+    resize: none;
+    background: var(--md-elv-5);
+    border: 0;
+    border-radius: 16px;
+    padding: 12px;
+    outline: none;
+    transition: box-shadow 150ms;
+    color: var(--md-sys-color-on-background);
+    height: 150px;
+    width: 100%;
+    scrollbar-width: none; 
+}
+.input-wrapper textarea::placeholder {
+    opacity: 1;
+    color: var(--md-sys-color-on-background);
+}
+.input-wrapper textarea::-webkit-scrollbar {
+    display: none;
+}
+.input-wrapper textarea:hover {
+    box-shadow: 0 0 0 1px var(--md-sys-color-primary);
+}
+.input-wrapper textarea:focus {
+    box-shadow: 0 0 0 2px var(--md-sys-color-on-primary-container);
+}
+.icon {
+    font-size: 40px;
+    color: var(--md-sys-color-primary);
+}
+#output {
+    min-height: 225px;
+    overflow-y: auto;
+    width: 650px;
+    max-width: 80vw;
+    padding: 20px;
+    background: var(--md-elv-3);
+    border-radius: 16px;
+    word-wrap: break-word;
+    scrollbar-width: none;
+    transition: box-shadow 150ms;
+}
+#output:hover {
+    box-shadow: 0 0 0 1px var(--md-sys-color-primary);
+    cursor: pointer;
+}
+#output::-webkit-scrollbar {
+    display: none;
+}
+@media only screen and (max-width: 750px) {
+    .input-wrapper {
+        width: 80vw;
+    }
+    #output {
+        width: 80vw;
+    }
+}

@@ -1,19 +1,20 @@
 {
     "name": "DitmeNavi" ,
     "short_name": "DitmeNavi" ,
-    "start_url": "https://ditmenavi.dev/index.html?from=homescreen" ,
+    "start_url": "https://ditmenavi.com/index.html?from=homescreen" ,
     "display": "standalone" ,
     "description": "A copypasta website, Navi vo dich." ,
     "icons": [
         {
-            "src": "30-43-256.png" ,
-            "sizes": "256x256" ,
+            "src": "./Assets/favicon200.png" ,
+            "sizes": "200x200" ,
             "type": "image/png"
         } ,
         {
-            "src": "30-43.png" ,
-            "sizes": "2000x2000" ,
+            "src": "./Assets/favicon512.png" ,
+            "sizes": "512x512" ,
             "type": "image/png"
         }
     ]
+
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    	*{
+    	    font-family: 'Montserrat', sans-serif;
+    	}
+        .logoBlur{
+            position: absolute;
+            width: 19vw;
+            left: calc(50% - 19vw/2 + 0.5px);
+            top: calc(50% - 19vw/2 - 136.5px);
+            opacity: 0.5;
+            filter: blur(25px);
+        }
+        .logo{
+            position: absolute;
+            width: 15vw;
+            left: calc(50% - 15vw/2 + 0.5px);
+            top: calc(50% - 15vw/2 - 136.5px);
+        }
+        h1{
+            text-align: center;
+            position: absolute;
+            width: 100vw;
+            top: 50vh;
+            left: calc(50% - 100vw/2);
+            font-weight: 700;
+            color: #333333;
+        }
+        p{
+            text-align: center;
+            position: absolute;
+            width: 100vw;
+            top: 60vh;
+            left: calc(50% - 100vw/2);
+            font-weight: 400;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    	<image src="https://ditmenavi.xyz/30-43.png" class="logoBlur"></image>
+    	<image src="https://ditmenavi.xyz/30-43.png" class="logo"></image>
+    	<h1>Trang này không tồn tại...</h1>
+    	<p>&lt;span&gt; HTTP 404 &lt;/span&gt;<br>
+&lt;span&gt; Not Found &lt;/span&gt;</p>
+</body>
+</html>
